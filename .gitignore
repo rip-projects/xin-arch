@@ -1,0 +1,32 @@
+# common local files
+.DS_Store
+log
+
+# cordova binary generated files
+/platforms/android/CordovaLib/*
+platforms/android/CordovaLib/*
+/platforms/android/ant-build/*
+platforms/android/ant-build/*
+/platforms/android/ant-gen/*
+platforms/android/ant-gen/*
+/platforms/android/assets/www/*
+/platforms/android/bin/*
+platforms/android/bin/*
+platforms/android/bin
+
+# local.properties
+/platforms/android/CordovaLib/local.properties
+/platforms/android/local.properties
+/platforms/android/local.properties
+
+/platforms/ios/www/*
+/platforms/ios/www
+platforms/ios/www/*
+platforms/ios/www
+
+# application data
+/www/packages/*
+/www/extracted/*
+/www/skel/*
+/www/bower_components/*
+/www/node_modules/*

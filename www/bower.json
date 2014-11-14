@@ -1,0 +1,33 @@
+{
+  "name": "portofol.io",
+  "version": "0.0.1",
+  "authors": [
+    "Farid Hidayat <e.faridhidayat@gmail.com>"
+  ],
+  "description": "Simple Portofolio Applicatio.",
+  "main": "index.html",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "portofolio"
+  ],
+  "dependencies": {
+    "xin": "git@github.com:faridlab/xin.git",
+    "backbone": "git@github.com:jashkenas/backbone.git",
+    "jquery": "git@github.com:jquery/jquery.git",
+    "underscore": "git@github.com:jashkenas/underscore.git",
+    "fontawesome": "git@github.com:FortAwesome/Font-Awesome.git",
+    "naked": "git@github.com:aliaraaab/naked.git"
+  },
+  "license": "MIT",
+  "homepage": "xinix.co.id",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
