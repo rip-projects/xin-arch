@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="bower_components/xin/css/xin.min.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/xin/css/xin-contrib.min.css" />
-    <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/naked/css/font-awesome.css" />
     <!-- <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
     <link href="bower_components/naked/css/naked.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
@@ -35,21 +35,33 @@
             </div>
         </div>
         <div data-region="body" class="center layout-body">
-
         </div>
     </div>
 
     <div data-role="layout" data-id="default" class="xc-flex vertical">
         <div data-region="header">
             <nav class="navbar navbar-default" role="navigation">
+               <div class="row">
+                  <div class="span-2">
+                     <a class="back-button" href="#" onclick="xin.$('.xin-drawer').data('instance').show(); return false"><i class="xn xn-anchor"></i>Menu</a>
+                  </div>
+                  <div class="span-8">
+                     <h6 class="label">Application</h6>
+                  </div>
+                  <div class="span-2">
+                     <a href="#" class="icon-menu"></a>
+                  </div>
+               </div>
+            </nav>
+          <!--   <nav class="navbar navbar-default" role="navigation">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#" onclick="xin.$('.xin-drawer').data('instance').show(); return false"><i class="fa fa-bars"> App</i></a>
+                        <a class="navbar-brand" href="#" onclick="xin.$('.xin-drawer').data('instance').show(); return false"><i class="fa fa-bars"> Appp</i></a>
                         <p class="navbar-text">Login</p>
                         <button type="button" class="btn btn-default navbar-btn pull-right">Sign in</button>
                     </div>
                 </div>
-            </nav>
+            </nav> -->
         </div>
         <div data-region="body" class="center layout-body"></div>
         <div data-region="footer">
