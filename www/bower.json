@@ -18,7 +18,7 @@
     "jquery": "git@github.com:jquery/jquery.git",
     "underscore": "git@github.com:jashkenas/underscore.git",
     "fontawesome": "git@github.com:FortAwesome/Font-Awesome.git",
-    "naked": "git@github.com:aliaraaab/naked.git"
+    "naked": "git@github.com:xinix-technology/naked.git"
   },
   "license": "MIT",
   "homepage": "xinix.co.id",
