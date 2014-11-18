@@ -73,7 +73,76 @@ cms
         </div>
     </div>
 
+    <div data-role="layout" data-id="login" class="xc-flex vertical">
+        <div data-region="body" class="center layout-body"></div>
+    </div>
+
     <div data-role="pane" data-transition="slide" class="xc-fill" data-id="pane">
+
+        <div data-role="view" data-uri="login" data-title="Login" data-layout="login">
+            <div id="login">
+                <div class="title">
+                    <h2>
+                        Xin - <strong>Archetype</strong>
+                    </h2>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="span-12">
+                            <input type="text" placeholder="Email / Username" value="">
+                        </div>
+                        <div class="span-12">
+                            <input type="text" placeholder="Password" />
+                        </div>
+                        <div class="span-12">
+                            <input type="submit" value="Sign In"></input>
+                        </div>
+                        <div class="span-12"><br></div>
+                        <div class="span-12"><hr/></div>
+                        <div class="span-12">
+                            <label class="placeholder">
+                                <a href="#signup">Sign Up</a>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div data-role="view" data-uri="signup" data-title="Signup" data-layout="login">
+            <form>
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <div class="row">
+                        <div class="span-12">
+                            <input type="text" placeholder="Username/Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span-6">
+                            <input type="text" name="first_name" placeholder="First name" />
+                        </div>
+                        <div class="span-6">
+                            <input type="text" name="last_name" placeholder="Last name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span-6">
+                            <input name="password" type="password" placeholder="Password" />
+                        </div>
+                        <div class="span-6">
+                            <input name="password2" type="password" placeholder="Retype Password"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                    <a href="#" class="button">Back</a>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
 
         <div data-role="view" data-uri="home" data-title="Home" data-layout="default">
             hello world !.
@@ -86,7 +155,7 @@ cms
 
     <div data-role="drawer" data-align="left" data-layout="drawer" style="width: 80%">
         <ul data-role="list">
-            <li><a href="#">Login</a></li>
+            <li><a href="#login">Login</a></li>
             <li><a href="#signup">Signup</a></li>
             <li><a href="#list">List</a></li>
         </ul>
