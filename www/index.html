@@ -101,12 +101,17 @@
         </div>
 
         <div data-role="view" data-uri="signup" data-title="Signup" data-layout="login">
-            <form>
+            <form name="signup">
                 <fieldset>
                     <legend>Sign Up</legend>
                     <div class="row">
                         <div class="span-12">
-                            <input type="text" placeholder="Username/Email">
+                            <input type="text" name="username" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span-12">
+                            <input type="text" name="email" placeholder="Email">
                         </div>
                     </div>
                     <div class="row">
@@ -126,13 +131,15 @@
                         </div>
                     </div>
                     <div class="row">
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                    <a href="#" class="button">Back</a>
+                        <div class="span-12">
+                            <input type="submit" value="Sign Up">
+                        </div>
+                        <div class="span-12">
+                            Have an account, <a href="#">sign in here !.</a>
+                        </div>
                     </div>
                 </fieldset>
             </form>
-
         </div>
 
         <div data-role="view" data-uri="home" data-title="Home" data-layout="default">
