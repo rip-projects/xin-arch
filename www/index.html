@@ -15,24 +15,16 @@
     <!-- <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
     <link href="bower_components/naked/css/naked.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/xin-theme/style/style.css" />
 
 </head>
 
 <body data-role="app" style="display: none">
 
     <div data-role="layout" data-id="drawer" class="xc-flex vertical">
-        <div data-region="header">
-            <div class="xin-navbar xc-flex horizontal">
-                <div class="no-flex" style="left:0">
-cms
-                </div>
-                <div class="xin-title center">
-                    Menu
-                </div>
-                <div class="no-flex" style="right:0">
-
-                </div>
-            </div>
+        <div class="box-user">
+            <div class="img-user"></div>
+            <div class="name-user"><span>adoel4razman@gmail.com</span><i class="xn xn-caret-down"></i></div>
         </div>
         <div data-region="body" class="center layout-body">
         </div>
@@ -43,13 +35,13 @@ cms
             <nav class="navbar navbar-default" role="navigation">
                <div class="row">
                   <div class="span-2">
-                     <a class="back-button" href="#" onclick="xin.$('.xin-drawer').data('instance').show(); return false"><i class="xn xn-anchor"></i>Menu</a>
+                     <a class="back-button icon-menu" href="#" onclick="xin.$('.xin-drawer').data('instance').show(); return false"><i class="xn xn-bars"></i></a>
                   </div>
                   <div class="span-8">
                      <h6 class="label">Application</h6>
                   </div>
                   <div class="span-2">
-                     <a href="#" class="icon-menu"></a>
+                     <a href="#" class="icon-menu pull-right"><i class="xn xn-ellipsis-v"></i></a>
                   </div>
                </div>
             </nav>
@@ -154,10 +146,16 @@ cms
     </div>
 
     <div data-role="drawer" data-align="left" data-layout="drawer" style="width: 80%">
-        <ul data-role="list">
-            <li><a href="#login">Login</a></li>
-            <li><a href="#signup">Signup</a></li>
-            <li><a href="#list">List</a></li>
+        <ul data-role="list" class="menu-drawer">
+            <li><i class="xn xn-sign-in"></i><a href="#login">Login</a></li>
+            <li><i class="xn xn-arrow-circle-up"></i><a href="#signup">Signup</a></li>
+            <li><i class="xn xn-list"></i><a href="#list">List</a></li>
+        </ul>
+        <ul data-role="list" class="list-drawer row">
+            <li><a class="span-10" href="#">All Mail</a><i class="notif span-2">i</i></li>
+            <li><a class="span-10" href="#">Trash</a><i class="notif span-2">i</i></li>
+            <li><a class="span-10" href="#">Spam</a><i class="notif span-2">i</i></li>
+            <li><a class="span-10" href="#">Follow Up</a><i class="notif span-2">i</i></li>
         </ul>
     </div>
 

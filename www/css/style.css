@@ -110,7 +110,7 @@
         max-width: 630px;
         margin: 0 auto;
     }
-    .start-searching .btn-search i.fa {
+    .start-searching .btn-search i.xn {
         float: right;
         position: absolute;
         top: 11px;
@@ -236,8 +236,8 @@ span.exit {
     width: inherit !important;
 }
 
-.fa-spin {
-    -webkit-animation: fa-spin 0.8s infinite linear;
-    -webkit-animation: fa-spin 0.8s infinite linear;
-    animation: fa-spin 0.8s infinite linear;
+.xn-spin {
+    -webkit-animation: xn-spin 0.8s infinite linear;
+    -webkit-animation: xn-spin 0.8s infinite linear;
+    animation: xn-spin 0.8s infinite linear;
 }
