@@ -30,3 +30,4 @@ platforms/ios/www
 /www/skel/*
 /www/bower_components/*
 /www/node_modules/*
+/www/vendor/*
