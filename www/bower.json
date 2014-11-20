@@ -1,16 +1,17 @@
 {
-  "name": "portofol.io",
+  "name": "xin-archetype",
   "version": "0.0.1",
   "authors": [
-    "Farid Hidayat <e.faridhidayat@gmail.com>"
+    "Farid Hidayat <e.faridhidayat@gmail.com>",
+    "Abdul Rasman <adoel4razman@gmail.com>"
   ],
-  "description": "Simple Portofolio Applicatio.",
+  "description": "xin-archetype.",
   "main": "index.html",
   "moduleType": [
     "es6"
   ],
   "keywords": [
-    "portofolio"
+    "xin-archetype"
   ],
   "dependencies": {
     "xin": "git@github.com:faridlab/xin.git",
@@ -19,7 +20,8 @@
     "underscore": "git@github.com:jashkenas/underscore.git",
     "fontawesome": "git@github.com:FortAwesome/Font-Awesome.git",
     "naked": "git@github.com:xinix-technology/naked.git",
-    "xin-theme": "git@github.com:adoel/xin-theme.git"
+    "xin-theme": "git@github.com:adoel/xin-theme.git",
+    "md5": "git@github.com:blueimp/JavaScript-MD5.git"
   },
   "license": "MIT",
   "homepage": "xinix.co.id",

@@ -1,24 +1,28 @@
-Xin-archetype
-===
+#Xin-archetype
+====
 Pada pengembangan awal, Xin-archetype ditargetkan pada *Mobile Application* (Single Page Application).
 
-## Instalasi menggunakan bower
-
-Xin-archetype menggunakan bower sebagai mengatur dependencies (ketergantungan) library
-yang dibutuhkan. Kamu bisa membuat direktori project kamu sebagai aplikasi bower dengan cara:
+#Instalasi
+====
+Xin-archetype menggunakan bower sebagai pengatur dependencies (ketergantungan) library yang dibutuhkan. lakukan `bower install` untuk mengunduh semua library yang dibutuhkan.
 
 ```bash
-mkdir my-app
-cd my-app
-bower init
+cd www
+bower install
 ```
 
-Untuk menggunakan Pants, disarankan untuk mengganti default direktori untuk meletakkan kebutuhan library dari yang biasanya berada di bower_components/ ke vendor/. Untuk mengganti direktori tersebut, silakan buat file dengan name .bowerrc lalu isi dengan baris-baris berikut ini.
+#Cordova plugins
+====
+*   https://github.com/brodysoft/Cordova-SQLitePlugin
+*   https://github.com/apache/cordova-plugin-file
+*   https://github.com/Initsogar/cordova-activityindicator
+*   https://github.com/apache/cordova-plugin-splashscreen
 
-```json
-{
-    "directory": "vendor"
-}
+```bash
+cordova plugin add https://github.com/brodysoft/Cordova-SQLitePlugin.git
+cordova plugin add https://github.com/apache/cordova-plugin-file.git
+cordova plugin add https://github.com/Initsogar/cordova-activityindicator.git
+cordova plugin add https://github.com/apache/cordova-plugin-splashscreen.git
 ```
 
 Thats it!

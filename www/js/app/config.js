@@ -2,9 +2,9 @@
 	if(!window.config) window.config = {};
 
 	config = {
-		name: 		'Kamus Pelayaran',
-		desc: 		'kamus Pelayaran',
-		version: 	"0.0.1",
+		name: 		'Xin-archetype',
+		desc: 		'Xin-archetype application',
+		version: 	'0.0.1',
 		versionCode: 1,
 		organization: 'PT. Sagara Xinix Solusitama',
 		url: 'http://xinix.co.id',
@@ -14,8 +14,14 @@
 		db: {
 			// name: 'appDbName.db',
 			// version: 1,
-			// scheme: 1,
+			// scheme: '0.0.1',
 			// package: 'db/dbFile.json'
+			// history: {1: '0.0.1'},
+			schemes: {
+				'0.0.1': [
+					// ...
+				]
+			}
 		},
 
 		api: {

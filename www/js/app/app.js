@@ -19,7 +19,7 @@
     });
 
     _.extend(app, {
-
+        user: {},
         config: function(param) {
 
             if(param) {
