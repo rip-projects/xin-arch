@@ -1,0 +1,13 @@
+{
+  "name": "xin-theme",
+  "homepage": "https://github.com/adoel/xin-theme",
+  "_release": "d45c02ac5d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "d45c02ac5daaa0a8a7e41d841ce1807c87326a02"
+  },
+  "_source": "git@github.com:adoel/xin-theme.git",
+  "_target": "*",
+  "_originalSource": "git@github.com:adoel/xin-theme.git"
+}

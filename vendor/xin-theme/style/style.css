@@ -1,0 +1,21 @@
+/*body*/
+/*end body*/
+
+/*drawer*/
+.xin-drawer {border: 0; box-shadow: 0 1px 1px #ddd;}
+.xin-drawer [data-region="body"] {margin-top: 0; padding: 0}
+.box-user {margin-bottom: 8px; box-shadow: 0 1px 1px #ddd; background-color: #f7fafd}
+div.img-user {width: 60px;height: 60px;display: block;border-radius: 50%;margin: 16px; background: url(../img/2014-01-28.jpg) no-repeat center; background-size: cover}
+.name-user {padding: 16px; color: #575a5e;}
+.name-user i {float: right}
+.xin-drawer .xin-list li {border-top: 0; list-style: none; padding: 13px 16px}
+.xin-drawer .xin-list li a {line-height: 170%;padding: 0; color: #575a5e}
+.xin-drawer .xin-list li i {float: left; padding-right: 44px;font-size: 1.5em;color: #737373;}
+.menu-drawer {border-bottom: 1px solid #eee; padding-bottom: 8px}
+.list-drawer {padding-top: 8px}
+.list-drawer li {height: 48px;}
+.xin-drawer ul.list-drawer li i {padding: 0;float: right;font-style: inherit;max-width: 21px;width: 21px;text-align: center;font-size: 0.9em;color: #fff;background-color: #aaa;border-radius: 50%;display: table;}
+/*end drawer*/
+/*heade*/
+.navbar {padding: 12px;}
+/*end heade*/

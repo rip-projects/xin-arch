@@ -1,0 +1,2627 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Naked CSS</title>
+		<link rel="stylesheet" href="css/naked.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<script type="text/javascript" src="js/zepto.js"></script>
+    	<script type="text/javascript" src="third-party/run_prettify.js"></script>
+	</head>
+	<body>
+		<!-- use html5 header -->
+		<div class="header">
+			<div class="wrapper">
+				<div class="brand">
+					<h2>Naked CSS</h2>
+				</div>
+				<div id="menu_icon">
+					<a href="#">≣</a>
+				</div>
+				<!-- use html5 nav -->
+				<div class="navbar">
+					<ul class="flat nav-menu">
+						<li><a href="#">Menu 1</a></li>
+						<li><a href="#">Menu 2</a></li>
+						<li><a href="#">Menu 3</a></li>
+						<li><a href="#">Menu 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="wrapper">
+				<h3>Using our Predefined HTML Classes</h3>
+				<p>
+					These are examples of different ways to use the Naked CSS Grid. Since Naked is mobile-first, we'll stack content by default. You do have access to an entirely separate small grid to use up to the 768px breakpoint. This means you can create some pretty complex layouts and even drop columns if you want.
+				</p>
+				<hr>
+				<h1 class="title">Container</h1>
+				<hr>
+				<ul>
+					<li>On the Extra Large Screen, Container Fix width is <b>1320px</b>.</li>
+					<li>On the Large Screen, Container Fix width is <b>984px</b>.</li>
+					<li>On the Medium Screen, Container Fix width is <b>728px</b>.</li>
+					<li>On the Small Screen, Container Fix width is <b>440px</b>.</li>
+					<li>On the Tiny Screen, Container Fix width is <b>100%</b>.</li>
+				</ul>
+				<div class="html">
+					<div class="highlight">
+					<pre class="prettyprint">
+&lt;div class="container"&gt;...&lt;/div&gt;
+					</pre>
+					</div>
+				</div>
+
+				<h4 class="sub-title">Container Fluid</h4>
+				<p>Countainer Fluid is a <b>Container</b> whose length is <b>always 100%</b>.</p>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="container-fluid"&gt;...&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h1 class="title">Grid Systems</h1>
+				<hr>
+				<h4 class="sub-title">Span</h4>
+				<p>Span in Naked CSS is use <b>12</b> columns. It will show to all screen.</p>
+				<h5 class="showto">Show to All Screen</h5>
+				<div class="span-example">
+					<div class="row">
+						<div class="span-2">
+							<div class="box">
+								<p>Sp 2</p>
+							</div>
+						</div>
+						<div class="span-6">
+							<div class="box">
+								<p>SP 6</p>
+							</div>
+						</div>
+						<div class="span-4">
+							<div class="box">
+								<p>Sp 4</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="span-3">
+							<div class="box">
+								<p>Sp 3</p>
+							</div>
+						</div>
+						<div class="span-4">
+							<div class="box">
+								<p>Sp 4</p>
+							</div>
+						</div>
+						<div class="span-5">
+							<div class="box">
+								<p>Sp 5</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="span-4">
+							<div class="box">
+								<p>Sp 4</p>
+							</div>
+						</div>
+						<div class="span-4">
+							<div class="box">
+								<p>Sp 4</p>
+							</div>
+						</div>
+						<div class="span-4">
+							<div class="box">
+								<p>Sp 4</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="row"&gt;
+   &lt;div class="span-2"&gt;...&lt;/div&gt;
+   &lt;div class="span-6"&gt;...&lt;/div&gt;
+   &lt;div class="span-4"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="span-3"&gt;...&lt;/div&gt;
+   &lt;div class="span-4"&gt;...&lt;/div&gt;
+   &lt;div class="span-5"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="span-4"&gt;...&lt;/div&gt;
+   &lt;div class="span-4"&gt;...&lt;/div&gt;
+   &lt;div class="span-4"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Extra Large Screen (Minimum Width 1360px)</h4>
+				<p>On the Extra Large Screen, Naked CSS is use <b>12</b> columns.</p>
+				<h5 class="showto">Only Show on Extra Large Screen :</h5>
+				<div class="xlarge-screen">
+					<div class="row">
+						<div class="xlarge-1">
+							<div class="box">
+								<p>XL 1</p>
+							</div>
+						</div>
+						<div class="xlarge-3">
+							<div class="box">
+								<p>XL 3</p>
+							</div>
+						</div>
+						<div class="xlarge-3">
+							<div class="box">
+								<p>XL 3</p>
+							</div>
+						</div>
+						<div class="xlarge-5">
+							<div class="box">
+								<p>XL 5</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="xlarge-4">
+							<div class="box">
+								<p>XL 4</p>
+							</div>
+						</div>
+						<div class="xlarge-4">
+							<div class="box">
+								<p>XL 4</p>
+							</div>
+						</div>
+						<div class="xlarge-4">
+							<div class="box">
+								<p>XL 4</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="xlarge-5">
+							<div class="box">
+								<p>XL 5</p>
+							</div>
+						</div>
+						<div class="xlarge-2">
+							<div class="box">
+								<p>XL 2</p>
+							</div>
+						</div>
+						<div class="xlarge-3">
+							<div class="box">
+								<p>XL 3</p>
+							</div>
+						</div>
+						<div class="xlarge-2">
+							<div class="box">
+								<p>XL 2</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="row"&gt;
+   &lt;div class="xlarge-1"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-3"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-3"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-5"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="xlarge-4"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-4"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-4"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="xlarge-5"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-2"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-3"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-2"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Large Screen (Minimum Width 1024px)</h4>
+				<p>On the Large Screen, Naked CSS is use <b>12</b> columns.</p>
+				<h5 class="showto">Only Show on Large Screen :</h5>
+				<div class="large-screen">
+					<div class="row">
+						<div class="large-1">
+							<div class="box">
+								<p>L 1</p>
+							</div>
+						</div>
+						<div class="large-2">
+							<div class="box">
+								<p>L 2</p>
+							</div>
+						</div>
+						<div class="large-3">
+							<div class="box">
+								<p>L 3</p>
+							</div>
+						</div>
+						<div class="large-6">
+							<div class="box">
+								<p>L 6</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-1">
+							<div class="box">
+								<p>L 1</p>
+							</div>
+						</div>
+						<div class="large-4">
+							<div class="box">
+								<p>L 4</p>
+							</div>
+						</div>
+						<div class="large-7">
+							<div class="box">
+								<p>L 7</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-4">
+							<div class="box">
+								<p>L 4</p>
+							</div>
+						</div>
+						<div class="large-8">
+							<div class="box">
+								<p>L 8</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="row"&gt;
+   &lt;div class="large-1"&gt;...&lt;/div&gt;
+   &lt;div class="large-2"&gt;...&lt;/div&gt;
+   &lt;div class="large-3"&gt;...&lt;/div&gt;
+   &lt;div class="large-6"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="large-1"&gt;...&lt;/div&gt;
+   &lt;div class="large-4"&gt;...&lt;/div&gt;
+   &lt;div class="large-7"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="large-4"&gt;...&lt;/div&gt;
+   &lt;div class="large-8"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Medium Screen (Minimum Width 768px)</h4>
+				<p>On the Medium Screen, Naked CSS is use <b>12</b> columns.</p>
+				<h5 class="showto">Only Show on Medium Screen :</h5>
+				<div class="medium-screen">
+					<div class="row">
+						<div class="medium-4">
+							<div class="box">
+								<p>M 4</p>
+							</div>
+						</div>
+						<div class="medium-4">
+							<div class="box">
+								<p>M 4</p>
+							</div>
+						</div>
+						<div class="medium-4">
+							<div class="box">
+								<p>M 4</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="medium-1">
+							<div class="box">
+								<p>M 1</p>
+							</div>
+						</div>
+						<div class="medium-2">
+							<div class="box">
+								<p>M 2</p>
+							</div>
+						</div>
+						<div class="medium-3">
+							<div class="box">
+								<p>M 3</p>
+							</div>
+						</div>
+						<div class="medium-6">
+							<div class="box">
+								<p>M 6</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="medium-6">
+							<div class="box">
+								<p>M 6</p>
+							</div>
+						</div>
+						<div class="medium-6">
+							<div class="box">
+								<p>M 6</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="html">
+					<!-- <h6 class="code">Code :</h6> -->
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="row"&gt;
+   &lt;div class="medium-4"&gt;...&lt;/div&gt;
+   &lt;div class="medium-4"&gt;...&lt;/div&gt;
+   &lt;div class="medium-4"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="medium-1"&gt;...&lt;/div&gt;
+   &lt;div class="medium-2"&gt;...&lt;/div&gt;
+   &lt;div class="medium-3"&gt;...&lt;/div&gt;
+   &lt;div class="medium-6"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="medium-6"&gt;...&lt;/div&gt;
+   &lt;div class="medium-6"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Small Screen (Minimum Width 480px)</h4>
+				<p>On the Small Screen, Naked CSS is use <b>12</b> columns.</p>
+				<h5 class="showto">Only Show on Small Screen :</h5>
+				<div class="small-screen">
+					<div class="row">
+						<div class="small-6">
+							<div class="box">
+								<p>S 6</p>
+							</div>
+						</div>
+						<div class="small-6">
+							<div class="box">
+								<p>S 6</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-4">
+							<div class="box">
+								<p>S 4</p>
+							</div>
+						</div>
+						<div class="small-4">
+							<div class="box">
+								<p>S 4</p>
+							</div>
+						</div>
+						<div class="small-4">
+							<div class="box">
+								<p>S 4</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-2">
+							<div class="box">
+								<p>S 2</p>
+							</div>
+						</div>
+						<div class="small-3">
+							<div class="box">
+								<p>S 3</p>
+							</div>
+						</div>
+						<div class="small-3">
+							<div class="box">
+								<p>S 3</p>
+							</div>
+						</div>
+						<div class="small-4">
+							<div class="box">
+								<p>S 4</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="row"&gt;
+   &lt;div class="small-6"&gt;...&lt;/div&gt;
+   &lt;div class="small-6"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="small-4"&gt;...&lt;/div&gt;
+   &lt;div class="small-4"&gt;...&lt;/div&gt;
+   &lt;div class="small-4"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="small-2"&gt;...&lt;/div&gt;
+   &lt;div class="small-3"&gt;...&lt;/div&gt;
+   &lt;div class="small-3"&gt;...&lt;/div&gt;
+   &lt;div class="small-4"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Tiny Screen (Minimum Width 240px)</h4>
+				<p>On the Tiny Screen, Naked CSS is use <b>12</b> columns.</p>
+				<h5 class="showto">Only Show on Tiny Screen :</h5>
+				<div class="tiny-screen">
+					<div class="row">
+						<div class="tiny-4">
+							<div class="box">
+								<p>T 4</p>
+							</div>
+						</div>
+						<div class="tiny-4">
+							<div class="box">
+								<p>T 4</p>
+							</div>
+						</div>
+						<div class="tiny-4">
+							<div class="box">
+								<p>T 4</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="tiny-6">
+							<div class="box">
+								<p>T 6</p>
+							</div>
+						</div>
+						<div class="tiny-6">
+							<div class="box">
+								<p>T 6</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="tiny-3">
+							<div class="box">
+								<p>T 3</p>
+							</div>
+						</div>
+						<div class="tiny-2">
+							<div class="box">
+								<p>T 2</p>
+							</div>
+						</div>
+						<div class="tiny-4">
+							<div class="box">
+								<p>T 4</p>
+							</div>
+						</div>
+						<div class="tiny-3">
+							<div class="box">
+								<p>T 3</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="tiny-12">
+							<div class="box">
+								<p>T 12</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="row"&gt;
+   &lt;div class="tiny-4"&gt;...&lt;/div&gt;
+   &lt;div class="tiny-4"&gt;...&lt;/div&gt;
+   &lt;div class="tiny-4"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="tiny-6"&gt;...&lt;/div&gt;
+   &lt;div class="tiny-6"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="tiny-3"&gt;...&lt;/div&gt;
+   &lt;div class="tiny-2"&gt;...&lt;/div&gt;
+   &lt;div class="tiny-4"&gt;...&lt;/div&gt;
+   &lt;div class="tiny-3"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="tiny-12"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Mix Grid</h4>
+				<p>
+					You can mix the grid class between tiny-screen, small-screen, medium-screen, large-screen, and extra-large-screen. They will show depending on screen.
+				</p>
+				<h5 class="showto">Show to All Screen</h5>
+				<div class="mix-screen">
+					<div class="row">
+						<div class="xlarge-2 large-2 medium-5 small-3 tiny-3">
+							<div class="box">
+								<p>Mix 1</p>
+							</div>
+						</div>
+						<div class="xlarge-1 large-3 medium-2 small-3 tiny-3">
+							<div class="box">
+								<p>Mix 2</p>
+							</div>
+						</div>
+						<div class="xlarge-2 large-4 medium-3 small-2 tiny-3">
+							<div class="box">
+								<p>Mix 3</p>
+							</div>
+						</div>
+						<div class="xlarge-7 large-3 medium-2 small-4 tiny-3">
+							<div class="box">
+								<p>Mix 4</p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="row">
+						<div class="xlarge-3 large-2 medium-5 small-4 tiny-3">
+							<div class="box">
+								<p>Mix 1</p>
+							</div>
+						</div>
+						<div class="xlarge-5 large-6 medium-2 small-2 tiny-5">
+							<div class="box">
+								<p>Mix 2</p>
+							</div>
+						</div>
+						<div class="xlarge-4 large-4 medium-5 small-6 tiny-4">
+							<div class="box">
+								<p>Mix 3</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="row"&gt;
+   &lt;div class="xlarge-2 large-2 medium-5 small-3 tiny-3"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-1 large-3 medium-2 small-3 tiny-3"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-2 large-4 medium-3 small-2 tiny-3"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-7 large-3 medium-2 small-4 tiny-3"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+   &lt;div class="xlarge-3 large-2 medium-5 small-4 tiny-3"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-5 large-6 medium-2 small-2 tiny-5"&gt;...&lt;/div&gt;
+   &lt;div class="xlarge-4 large-4 medium-5 small-6 tiny-4"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Infinitely Nested the Grid</h4>
+				<p>
+					The grid allows for nesting down as far as you'd like, though at a certain point it will get absurd. You can use this nesting to create quite complex layouts, as well as some other tricks like form layouts or visual elements.
+				</p>
+				<h5 class="showto">Show to All Screen</h5>
+				<div class="mix-screen">
+					<div class="row">
+						<div class="xlarge-8 large-9 medium-9 small-10 tiny-10">
+							<div class="box">
+								<p>1</p>
+							</div>
+							<div class="row">
+								<div class="xlarge-8 large-9 medium-8 small-10 tiny-10">
+									<div class="box">
+										<p>1.1</p>
+										<div class="row">
+											<div class="xlarge-3 large-3 medium-4 small-5 tiny-4">
+												<div class="box">
+													<p>1.1.1</p>
+												</div>
+											</div>
+											<div class="xlarge-4 large-4 medium-2 small-3 tiny-4">
+												<div class="box">
+													<p>1.1.2</p>
+												</div>
+											</div>
+											<div class="xlarge-5 large-5 medium-6 small-4 tiny-4">
+												<div class="box">
+													<p>1.1.3</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="xlarge-4 large-3 medium-4 small-2 tiny-2">
+									<div class="box">
+										<p>1.2</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="xlarge-4 large-3 medium-3 small-2 tiny-2">
+							<div class="box">
+								<p>2</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="row"&gt;
+   &lt;div class="xlarge-8 large-9 medium-9 small-10 tiny-10"&gt;
+      &lt;p&gt;1&lt;/p&gt;
+      &lt;div class="row"&gt;
+         &lt;div class="xlarge-8 large-9 medium-8 small-10 tiny-10"&gt;
+            &lt;p&gt;1.1&lt;/p&gt;
+            &lt;div class="row"&gt;
+               &lt;div class="xlarge-3 large-3 medium-4 small-5 tiny-4"&gt;
+                  &lt;p&gt;1.1.1&lt;/p&gt;
+               &lt;/div&gt;
+               &lt;div class="xlarge-4 large-4 medium-2 small-3 tiny-4"&gt;
+                  &lt;p&gt;1.1.2&lt;/p&gt;
+               &lt;/div&gt;
+               &lt;div class="xlarge-5 large-5 medium-6 small-4 tiny-4"&gt;
+                  &lt;p&gt;1.1.3&lt;/p&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div class="xlarge-4 large-3 medium-4 small-2 tiny-2"&gt;
+            &lt;p&gt;1.2&lt;/p&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div class="xlarge-4 large-3 medium-3 small-2 tiny-2"&gt;
+      &lt;p&gt;2&lt;/p&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h1 class="title">Typography</h1>
+				<hr>
+				<h1>h1. Very large header.</h1>
+				<h2>h2. Large header.</h2>
+				<h3>h3. Medium header.</h3>
+				<h4>h4. Moderate header.</h4>
+				<h5>h5. Small header.</h5>
+				<h6>h6. Tiny header.</h6>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;h1&gt;h1. Very large header.&lt;/h1&gt;
+&lt;h2&gt;h2. Large header.&lt;/h2&gt;
+&lt;h3&gt;h3. Medium header.&lt;/h3&gt;
+&lt;h4&gt;h4. Moderate header.&lt;/h4&gt;
+&lt;h5&gt;h5. Small header.&lt;/h5&gt;
+&lt;h6&gt;h6. Tiny header.&lt;/h6&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h1 class="subheader">h1.subheader</h1>
+				<h2 class="subheader">h2.subheader</h2>
+				<h3 class="subheader">h3.subheader</h3>
+				<h4 class="subheader">h4.subheader</h4>
+				<h5 class="subheader">h5.subheader</h5>
+				<h6 class="subheader">h6.subheader</h6>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;h1 class="subheader"&gt;h1.subheader&lt;/h1&gt;
+&lt;h2 class="subheader"&gt;h2.subheader&lt;/h2&gt;
+&lt;h3 class="subheader"&gt;h3.subheader&lt;/h3&gt;
+&lt;h4 class="subheader"&gt;h4.subheader&lt;/h4&gt;
+&lt;h5 class="subheader"&gt;h5.subheader&lt;/h5&gt;
+&lt;h6 class="subheader"&gt;h6.subheader&lt;/h6&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<p>
+					This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm. To show what a paragraph looks like this needs a little more content so, did you know that there are storms occurring on Jupiter that are larger than the Earth? Pretty cool. Wrap <code>&lt;strong&gt;</code> / <code>&lt;b&gt;</code> around type to <strong>make it bold!</strong>. You can also you <code>&lt;em&gt;</code> / <code>&lt;i&gt;</code> to <em>italicize</em> your words.
+				</p>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;p&gt;This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall vertical rhythm. To show what a paragraph looks like this needs a little more content so, did you know that there are storms occurring on Jupiter that are larger than the Earth? Pretty cool. Wrap &lt;strong&gt; / &lt;b&gt; around type to &lt;strong&gt;make it bold!&lt;/strong&gt;. You can also you &lt;em&gt; / &lt;i&gt; to &lt;em&gt;italicize your words&lt;/em&gt;.&lt;/p&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Links</h4>
+				<p>Links are very standard, and the <a href="#">color is preset</a> to the Naked primary color.</p>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;p&gt;Links are very standard, and the &lt;a href="#"&gt;color is preset&lt;/a&gt; to the Naked primary color.&lt;/p&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Lists</h4>
+				<p>Lists are helpful for, well, lists of things.</p>
+				<ul>
+					<li>List item with a much longer description or more content.</li>
+					<li>List item</li>
+					<li>List item
+						<ul>
+							<li>Nested List Item</li>
+							<li>Nested List Item</li>
+							<li>Nested List Item</li>
+						</ul>
+					</li>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+				</ul>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;ul&gt;
+  &lt;li&gt;List item with a much longer description or more content.&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item
+    &lt;ul&gt;
+      &lt;li&gt;Nested List Item&lt;/li&gt;
+      &lt;li&gt;Nested List Item&lt;/li&gt;
+      &lt;li&gt;Nested List Item&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</div>
+				<h5>Ordered Lists</h5>
+				<ol>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item
+						<ol>
+							<li>Nested List Item</li>
+							<li>Nested List Item</li>
+							<li>Nested List Item</li>
+						</ol>
+					</li>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+				</ol>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;ol&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item
+    &lt;ol&gt;
+      &lt;li&gt;Nested List Item&lt;/li&gt;
+      &lt;li&gt;Nested List Item&lt;/li&gt;
+      &lt;li&gt;Nested List Item&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+&lt;/ol&gt;
+						</pre>
+					</div>
+				</div>
+				<h5>List Flat</h5>
+				<ul class="flat">
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+					<li>List item</li>
+				</ul>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;ul class="flat"&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+  &lt;li&gt;List item&lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Sub & Sup Tag</h4>
+				<p>
+					The SUB and SUP elements are used for subscripts and superscripts respectively, and are preferably rendered in reduced font. For integral and related signs the SUB and SUP elements are used for the lower and upper limits, for instance:
+				</p>
+				<p>- This text contains <sub>subscript</sub> text.</p>
+				<p>- This text contains <sup>superscript</sup> text.</p>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;p&gt;This text contains &lt;sub&gt;subscript&lt;/sub&gt; text.&lt;/p&gt;
+&lt;p&gt;This text contains &lt;sup&gt;superscript&lt;/sup&gt; text.&lt;/p&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Example Paragraphs</h4>
+				<div class="html">
+					<div class="highlight">
+						<h1>This is a Simple Paragraphs</h1>
+						<p>
+							Nam quis quam accumsan, commodo metus in, dignissim sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis metus, porttitor at sem vitae, fringilla dignissim sapien. Proin congue arcu nisl, quis pretium nulla cursus sit amet. Aliquam interdum risus sed nisl ultrices dignissim. Fusce adipiscing nisl vel nunc malesuada posuere. Ut rutrum tristique orci vitae iaculis. Donec scelerisque mattis tortor laoreet dictum. Praesent tortor turpis, aliquet in lobortis id, porta ut lorem. Nunc tincidunt viverra felis quis hendrerit. Vivamus imperdiet, nulla id rhoncus imperdiet, quam nulla pulvinar dui, vel fringilla nunc nibh id turpis.
+						</p>
+						<p>
+							Maecenas id mauris diam. Maecenas volutpat purus id lectus malesuada euismod sit amet sed justo. Mauris est sapien, mollis nec rutrum vel, iaculis at lorem. Sed sed odio nec risus tempor molestie hendrerit ullamcorper urna. Nulla fermentum lacus ut enim semper, elementum facilisis nibh congue. Suspendisse dictum risus ligula, id viverra dolor sollicitudin et. Etiam quis bibendum lacus, at tincidunt lorem. Sed pretium augue eu sem ultrices posuere. Cras mollis odio et suscipit ullamcorper. Pellentesque tempus pharetra nisi, quis pulvinar lectus mollis in. Nunc in dictum justo, ut imperdiet libero.
+						</p>
+						<p>
+							<ul>
+								<li>Iaculis at lorem</li>
+								<li>building area of 14.892 m<sup>2</sup></li>
+								<li>HCl <sub>(aq)</sub> + NaOH <sub>(aq)</sub> → NaCl <sub>(aq)</sub> + H 2 O <sub>(l)</sub></li>
+							</ul>
+						</p>
+						<p>
+							Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris velit justo, interdum porta feugiat sed, feugiat dignissim ligula. Vivamus quis semper metus. Proin volutpat dapibus sagittis. Pellentesque tristique urna a leo dictum molestie. Maecenas lobortis condimentum lorem, vitae gravida felis tincidunt sit amet. Suspendisse adipiscing ligula sit amet nulla mattis rhoncus.
+						</p>
+						<h2>Heading 2 Example</h2>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris velit justo, interdum porta feugiat sed, feugiat dignissim ligula. Vivamus quis semper metus. Proin volutpat dapibus sagittis. Pellentesque tristique urna a leo dictum molestie. Maecenas lobortis condimentum lorem, vitae gravida felis tincidunt sit amet. Suspendisse adipiscing ligula sit amet nulla mattis rhoncus.</p>
+						<ol>
+							<li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris velit justo, interdum porta feugiat sed, feugiat dignissim ligula. Vivamus quis semper metus. Proin volutpat dapibus sagittis. Pellentesque tristique urna a leo dictum molestie. Maecenas lobortis condimentum lorem, vitae gravida felis tincidunt sit amet. Suspendisse adipiscing ligula sit amet nulla mattis rhoncus.</li>
+							<li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris velit justo, interdum porta feugiat sed, feugiat dignissim ligula. Vivamus quis semper metus. Proin volutpat dapibus sagittis. Pellentesque tristique urna a leo dictum molestie. Maecenas lobortis condimentum lorem, vitae gravida felis tincidunt sit amet. Suspendisse adipiscing ligula sit amet nulla mattis rhoncus.</li>
+							<li>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris velit justo, interdum porta feugiat sed, feugiat dignissim ligula. Vivamus quis semper metus. Proin volutpat dapibus sagittis. Pellentesque tristique urna a leo dictum molestie. Maecenas lobortis condimentum lorem, vitae gravida felis tincidunt sit amet. Suspendisse adipiscing ligula sit amet nulla mattis rhoncus.</li>
+						</ol>
+						<p>
+							Praesent id leo massa. Donec ut viverra lorem. Pellentesque non est nunc. Duis pellentesque orci quis massa laoreet varius. Morbi id congue lorem, a consectetur erat. Ut sed pretium nulla. Nullam egestas, sapien in sodales interdum, erat elit laoreet felis, a condimentum lacus dolor mattis dolor. Morbi vitae risus est. Donec adipiscing lacus et blandit tempus.
+						</p>
+						<h3>Heading 3 Example</h3>
+						<p>
+							In pretium, diam nec eleifend lobortis, nisi ligula facilisis augue, at ullamcorper magna orci in dolor. Mauris semper arcu id massa euismod, consequat imperdiet libero lobortis. Vestibulum scelerisque nunc risus, eget mollis est vehicula ac. Donec ac condimentum dui. Mauris dictum suscipit porttitor. Etiam non arcu viverra, placerat elit sed, tempus elit. Aenean aliquet nisi sit amet magna suscipit adipiscing. Phasellus lectus metus, auctor eget mi quis, ullamcorper eleifend tellus.
+						</p>
+					</div>
+				</div>
+				<hr>
+				<h1 class="title">Form</h1>
+				<hr>
+				<p>
+					With Naked CSS, we set out to create an easy to handle, powerful and versatile form layout system. A combination of form styles and the Naked grid means you can do basically anything
+				</p>
+				<form>
+					<fieldset>
+					    <legend>Fieldset</legend>
+
+					    <div class="row">
+					      <div class="xlarge-12 large-12 medium-12 small-12 tiny-12">
+					      	<div class="wrapper">
+						        <label>Input Label</label>
+						        <input type="text" placeholder="Input">
+						    </div>
+					      </div>
+					    </div>
+
+					    <div class="row">
+					      <div class="xlarge-4 large-4 medium-4 small-4 tiny-4">
+					      	<div class="wrapper">
+						        <label>Input Label</label>
+						        <input type="text" placeholder="Input">
+					      	</div>
+					      </div>
+					      <div class="xlarge-4 large-4 medium-4 small-4 tiny-4">
+					      	<div class="wrapper">
+						        <label>Input Label</label>
+						        <input type="text" placeholder="Input">
+					      	</div>
+					      </div>
+					      <div class="xlarge-4 large-4 medium-4 small-4 tiny-4">
+					      	<div class="wrapper">
+						        <label>Input Label</label>
+						        <input type="text" placeholder="Input">
+					      	</div>
+					      </div>
+					    </div>
+
+					    <div class="row">
+					    	<div class="wrapper">
+								<div class="xlarge-12 large-12 medium-12 small-12 tiny-12">
+									<label>Textarea Label</label>
+									<textarea placeholder="textarea"></textarea>
+								</div>
+					    	</div>
+					    </div>
+
+					    <div class="row">
+						    <div class="wrapper">
+						    	<input class="button submit" type="submit" value="Submit">
+						    </div>
+					    </div>
+
+				  	</fieldset>
+			  	</form>
+			  	<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Fieldset&lt;/legend&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="xlarge-12 large-12 medium-12 small-12 tiny-12"&gt;
+        &lt;div class="wrapper"&gt;
+          &lt;label&gt;Input Label&lt;/label&gt;
+          &lt;input type="text" placeholder="Input"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="xlarge-4 large-4 medium-4 small-4 tiny-4"&gt;
+        &lt;div class="wrapper"&gt;
+          &lt;label&gt;Input Label&lt;/label&gt;
+          &lt;input type="text" placeholder="Input"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="xlarge-4 large-4 medium-4 small-4 tiny-4"&gt;
+        &lt;div class="wrapper"&gt;
+          &lt;label&gt;Input Label&lt;/label&gt;
+          &lt;input type="text" placeholder="Input"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="xlarge-4 large-4 medium-4 small-4 tiny-4"&gt;
+        &lt;div class="wrapper"&gt;
+          &lt;label&gt;Input Label&lt;/label&gt;
+          &lt;input type="text" placeholder="Input"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="wrapper"&gt;
+      &lt;input class="button submit" type="submit" value="Submit"&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+						</pre>
+					</div>
+				</div>
+			  	<hr>
+				<h4 class="sub-title">Pre/Postfix Labels</h4>
+				<p>
+					Naked CSS forms support prefix and postfix labels, through a versatile approach using special grid properties. You use the Naked CSS columns to define the size of the pre/postfix <code>&lt;span class="postfix"&gt;</code> or <code>&lt;span class="prefix"&gt;</code>. Here are a few examples:
+				</p>
+			  	<form>
+			  		<div class="row">
+				    	<div class="xlarge-6 large-6 medium-6 small-6 tiny-6">
+							<div class="wrapper">
+								<label>Input Domain</label>
+								<div class="xlarge-10 large-10 medium-9 small-8 tiny-8">
+									<input class="postfix-input" type="text" placeholder="Enter your Domain...">
+								</div>
+								<div class="xlarge-2 large-2 medium-3 small-4 tiny-4">
+									<span class="postfix">.com</span>
+								</div>
+							</div>
+						</div>
+						<div class="xlarge-6 large-6 medium-6 small-6 tiny-6">
+							<div class="wrapper">
+								<label>Input URL</label>
+								<div class="xlarge-2 large-2 medium-3 small-4 tiny-4">
+									<span class="prefix">http://</span>
+								</div>
+								<div class="xlarge-10 large-10 medium-9 small-8 tiny-8">
+									<input class="postfix-input" type="text" placeholder="Enter your URL...">
+								</div>
+							</div>
+						</div>
+				    </div>
+			  	</form>
+			  	<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Fieldset&lt;/legend&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="xlarge-6 large-6 medium-6 small-6 tiny-2"&gt;
+        &lt;div class="wrapper"&gt;
+          &lt;label&gt;Input Domain&lt;/label&gt;
+          &lt;div class="xlarge-10 large-10 medium-9 small-8 tiny-8"&gt;
+            &lt;input class="postfix-input" type="text" placeholder="Enter your Domain..."&gt;
+          &lt;/div&gt;
+          &lt;div class="xlarge-2 large-2 medium-3 small-4 tiny-4"&gt;
+            &lt;span class="postfix"&gt;.com&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="xlarge-6 large-6 medium-6 small-6 tiny-6"&gt;
+        &lt;div class="wrapper"&gt;
+          &lt;label&gt;Input URL&lt;/label&gt;
+          &lt;div class="xlarge-2 large-2 medium-3 small-4 tiny-4"&gt;
+            &lt;span class="prefix"&gt;http://&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="xlarge-10 large-10 medium-9 small-8 tiny-8"&gt;
+            &lt;input class="postfix-input" type="text" placeholder="Enter your URL..."&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+						</pre>
+					</div>
+				</div>
+			  	<hr>
+				<h4 class="sub-title">Radio Button, Checkbox and Dropdown</h4>
+			  	<form>
+			  		<div class="row">
+				      	<div class="xlarge-4 large-4 medium-4 small-4 tiny-4">
+				      		<div class="wrapper">
+						    	<span for="radio1" class="radio-label">
+						    		<input class="radio" name="radio1" type="radio" id="radio1">Radio Button 1
+						    	</span>
+						    	<span for="radio1" class="radio-label">
+						    		<input class="radio" name="radio1" type="radio" id="radio2">Radio Button 2
+						    	</span>
+						    	<span for="radio1" class="radio-label">
+						    		<input class="radio" name="radio1" type="radio" id="radio3" disabled>Radio Button 3
+						    	</span>
+				      		</div>
+				    	</div>
+				    	<div class="xlarge-4 large-4 medium-4 small-4 tiny-4">
+				    		<div class="wrapper">
+								<span class="check-label" for="checkbox1">
+									<input class="checkbox" type="checkbox" id="checkbox1">Checkbox 1
+								</span>
+								<span class="check-label" for="checkbox2">
+									<input class="checkbox" type="checkbox" id="checkbox2" CHECKED>Checkbox 2
+								</span>
+								<span class="check-label" for="checkbox3">
+									<input class="checkbox" type="checkbox" id="checkbox3" CHECKED>Checkbox 3
+								</span>
+				    		</div>
+				    	</div>
+				    	<div class="xlarge-4 large-4 medium-4 small-4 tiny-4">
+				    		<div class="wrapper">
+								<span class="dropdown-label">Dropdown Example</span>
+								<select class="dropdown">
+									<option>This is a dropdown</option>
+									<option>This is another option</option>
+									<option>This is another option too</option>
+									<option>Look, a third option</option>
+								</select>
+				    		</div>
+				    	</div>
+				    </div>
+			  	</form>
+			  	<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;form&gt;
+   &lt;div class="row"&gt;
+      &lt;div class="xlarge-4 large-4 medium-4 small-4 tiny-4"&gt;
+         &lt;div class="wrapper"&gt;
+            &lt;span for="radio1" class="radio-label"&gt;
+               &lt;input class="radio" name="radio1" type="radio" id="radio1"&gt;...
+            &lt;/span&gt;
+            &lt;span for="radio1" class="radio-label"&gt;
+               &lt;input class="radio" name="radio1" type="radio" id="radio2"&gt;...
+            &lt;/span&gt;
+            &lt;span for="radio1" class="radio-label"&gt;
+               &lt;input class="radio" name="radio1" type="radio" id="radio3" disabled&gt;...
+            &lt;/span&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="xlarge-4 large-4 medium-4 small-4 tiny-4"&gt;
+         &lt;div class="wrapper"&gt;
+            &lt;span class="check-label" for="checkbox1"&gt;
+               &lt;input class="checkbox" type="checkbox" id="checkbox1"&gt;...
+            &lt;/span&gt;
+            &lt;span class="check-label" for="checkbox2"&gt;
+               &lt;input class="checkbox" type="checkbox" id="checkbox2" CHECKED&gt;...
+            &lt;/span&gt;
+            &lt;span class="check-label" for="checkbox3"&gt;
+               &lt;input class="checkbox" type="checkbox" id="checkbox3" CHECKED&gt;...
+            &lt;/span&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="xlarge-4 large-4 medium-4 small-4 tiny-4"&gt;
+         &lt;div class="wrapper"&gt;
+            &lt;span class="dropdown-label"&gt;Dropdown Example&lt;/span&gt;
+            &lt;select class="dropdown"&gt;
+               &lt;option&gt;...&lt;/option&gt;
+               &lt;option&gt;...&lt;/option&gt;
+               &lt;option&gt;...&lt;/option&gt;
+               &lt;option&gt;...&lt;/option&gt;
+            &lt;/select&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/form&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h1 class="title">Button</h1>
+				<hr>
+				<h4 class="sub-title">Button Group</h4>
+				<p>
+					Button groups are great when you need to display a group of actions in a bar. These build off the button styles and work perfectly with the grid.
+					There are two ways to build button groups in Naked CSS: with our predefined HTML classes or with our structure and mixins. Building button groups using our predefined classes is a breeze, you'll just wrap a button inside an <code>&lt;ul&gt;</code>. <br><br>
+
+					The button styles will work the same as they do when building a single button, but they'll float next to each other to create a group. You also have access to the same radius classes as buttons, only they'll go on the unordered list instead of the button. You can even make sure the buttons take up even space within the container you put them in.
+				</p>
+				<ul class="button-group">
+					<li><a href="#" class="button">Button 1</a></li>
+					<li><a href="#" class="button">Button 2</a></li>
+					<li><a href="#" class="button">Button 3</a></li>
+				</ul>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;ul class="button-group"&gt;
+   &lt;li&gt;&lt;a href="#" class="button"&gt;Button 1&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#" class="button"&gt;Button 2&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#" class="button"&gt;Button 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Button Bar</h4>
+				<p>
+					A button bar is a group of button groups (I N C E P T I O N), perfect for situations where you want groups of actions that are all related to a similar element or page. Simply wrap two or more button groups in a <code>.button-bar</code>.
+				</p>
+				<div class="button-bar">
+					<ul class="button-group pull-left">
+						<li><a href="#" class="button">Cancel</a></li>
+						<li><a href="#" class="button">Submit</a></li>
+					</ul>
+					<ul class="button-group pagination-centered">
+						<li><a href="#" class="button">Cancel</a></li>
+						<li><a href="#" class="button">Submit</a></li>
+					</ul>
+					<ul class="button-group pull-right">
+						<li><a href="#" class="button">Cancel</a></li>
+						<li><a href="#" class="button">Submit</a></li>
+					</ul>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="button-bar"&gt;
+   &lt;ul class="button-group pull-left"&gt;
+      &lt;li&gt;&lt;a href="#" class="button"&gt;Cancel&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#" class="button"&gt;Submit&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;ul class="button-group pagination-centered"&gt;
+      &lt;li&gt;&lt;a href="#" class="button"&gt;Cancel&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#" class="button"&gt;Submit&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;ul class="button-group pull-right"&gt;
+      &lt;li&gt;&lt;a href="#" class="button"&gt;Cancel&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#" class="button"&gt;Submit&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+
+				<hr>
+				<h1 class="title">Tables</h1>
+				<hr>
+				<p>
+					With Naked CSS, we set out to create an easy to handle, powerful and versatile form layout system. A combination of form styles and the Naked grid means you can do basically anything
+				</p>
+				<h4 class="sub-title">Table Grid</h4>
+				<div class="wrapper">
+					<div class="grid-container">
+						<table class="table" width="100%">
+							<thead>
+								<tr class="grid-head-row">
+									<th>#</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="grid-container"&gt;
+   &lt;table class="table"&gt;
+      &lt;thead&gt;
+	   &lt;tr class="grid-head-row"&gt;
+	      &lt;th&gt;#&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	   &lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;1&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;2&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;3&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;4&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	&lt;/tbody&gt;
+   &lt;/table&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Table No Wrap</h4>
+				<div class="wrapper">
+					<div class="grid-container">
+						<table class="table table-nowrap" width="100%">
+							<thead>
+								<tr class="grid-head-row">
+									<th>#</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="grid-container"&gt;
+   &lt;table class="table table-nowrap"&gt;
+      &lt;thead&gt;
+	   &lt;tr class="grid-head-row"&gt;
+	      &lt;th&gt;#&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	   &lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;1&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;2&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;3&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;4&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	&lt;/tbody&gt;
+   &lt;/table&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Table Stripped</h4>
+				<div class="wrapper">
+					<div class="grid-container">
+						<table class="table table-nowrap table-stripped" width="100%">
+							<thead>
+								<tr class="grid-head-row">
+									<th>#</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="grid-container"&gt;
+   &lt;table class="table table-nowrap table-stripped"&gt;
+      &lt;thead&gt;
+	   &lt;tr class="grid-head-row"&gt;
+	      &lt;th&gt;#&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	   &lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;1&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;2&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;3&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;4&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	&lt;/tbody&gt;
+   &lt;/table&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Table Hover</h4>
+				<div class="wrapper">
+					<div class="grid-container">
+						<table class="table table-nowrap table-stripped table-hover" width="100%">
+							<thead>
+								<tr class="grid-head-row">
+									<th>#</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
+									<th>Table Header</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+									<td>Content Goes Here</td>
+									<td>Content Goes Here</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="grid-container"&gt;
+   &lt;table class="table table-nowrap table-stripped table-hover"&gt;
+      &lt;thead&gt;
+	   &lt;tr class="grid-head-row"&gt;
+	      &lt;th&gt;#&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	      &lt;th&gt;Table Header&lt;/th&gt;
+	   &lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;1&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;2&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;3&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	   &lt;tr&gt;
+	      &lt;td&gt;4&lt;/td&gt;
+	      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	      &lt;td&gt;Content Goes Here&lt;/td&gt;
+	   &lt;/tr&gt;
+	&lt;/tbody&gt;
+   &lt;/table&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h1 class="title">Pagination</h1>
+				<hr>
+				<p>
+					There are two ways to build pagination in Foundation 4: with our predefined HTML or with our mixin. Building pagination using our predefined classes isn't hard at all. You'll start with an unordered list and add a class of <code>.pagination</code> to it. From there, you just need to add list items with links in them. Those list items have a few options you can use:
+				</p>
+				<ul>
+					<li>Add a class of <code>.unavailable</code> to a list item to make it not clickable, like for the ellipsis in the middle.</li>
+					<li>The page numbers and symbols are always inside of an anchor that you'll link to the page.</li>
+				</ul>
+				<ul class="flat pagination">
+					<li class="arrow-first"><a href="#">|&lt;</a></li>
+					<li class="prev"><a href="#">&lt;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li class="unavailable"><a href="#">&hellip;</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li><a href="#">11</a></li>
+					<li class="next"><a href="#">&gt;</a></li>
+					<li class="arrow-last"><a href="#">&gt;|</a></li>
+				</ul>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;ul class="flat pagination"&gt;
+   &lt;li class="arrow-first"&gt;&lt;a href="#"&gt; |&lt; &lt;/a&gt;&lt;/li&gt;
+   &lt;li class="prev"&gt;&lt;a href="#"&gt; &lt; &lt;/a&gt;&lt;/li&gt;
+   &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+   &lt;li class="unavailable"&gt;&lt;a href="#"&gt;&hellip;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#"&gt;9&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#"&gt;10&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#"&gt;11&lt;/a&gt;&lt;/li&gt;
+   &lt;li class="next"&gt;&lt;a href="#"&gt; &gt; &lt;/a&gt;&lt;/li&gt;
+   &lt;li class="arrow-last"&gt;&lt;a href="#"&gt; &gt;| &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Centered Pagination</h4>
+				<p>
+					In some instances, you'll want you pagination to be centered within a container. We've got you covered! Just wrap your unordered list in something that has a defined width and add the class, <code>.pagination-centered</code>.
+				</p>
+				<ul class="flat pagination pagination-centered">
+					<li class="arrow-first"><a href="#">|&lt;</a></li>
+					<li class="prev"><a href="#">&lt;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li class="unavailable"><a href="">&hellip;</a></li>
+					<li><a href="#">8</a></li>
+					<li><a href="#">9</a></li>
+					<li><a href="#">10</a></li>
+					<li class="next"><a href="#">&gt;</a></li>
+					<li class="arrow-last"><a href="#">&gt;|</a></li>
+				</ul>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;ul class="flat pagination pagination-centered"&gt;
+   &lt;li class="arrow-first"&gt;&lt;a href="#"&gt; |&lt; &lt;/a&gt;&lt;/li&gt;
+   &lt;li class="prev"&gt;&lt;a href="#"&gt; &lt; &lt;/a&gt;&lt;/li&gt;
+   &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+   &lt;li class="unavailable"&gt;&lt;a href="#"&gt;&hellip;&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#"&gt;8&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#"&gt;9&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href="#"&gt;10&lt;/a&gt;&lt;/li&gt;
+   &lt;li class="next"&gt;&lt;a href="#"&gt; &gt; &lt;/a&gt;&lt;/li&gt;
+   &lt;li class="arrow-last"&gt;&lt;a href="#"&gt; &gt;| &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">Mix Pagination</h4>
+				<p>
+					In some instances, you'll want you pagination to be centered within a container. We've got you covered! Just wrap your unordered list in something that has a defined width and add the class, <code>.pagination-mix</code>.
+				</p>
+				<div class="pagination-mix">
+					<ul class="flat pagination pull-left">
+						<li class="arrow-first"><a href="#">|&lt;</a></li>
+						<li class="prev"><a href="#">&lt;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li class="next"><a href="#">&gt;</a></li>
+						<li class="arrow-last"><a href="#">&gt;|</a></li>
+					</ul>
+					<ul class="flat pagination pagination-centered">
+						<li class="arrow-first"><a href="#">|&lt;</a></li>
+						<li class="prev"><a href="#">&lt;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li class="next"><a href="#">&gt;</a></li>
+						<li class="arrow-last"><a href="#">&gt;|</a></li>
+					</ul>
+					<ul class="flat pagination pull-right">
+						<li class="arrow-first"><a href="#">|&lt;</a></li>
+						<li class="prev"><a href="#">&lt;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">6</a></li>
+						<li class="next"><a href="#">&gt;</a></li>
+						<li class="arrow-last"><a href="#">&gt;|</a></li>
+					</ul>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;div class="row pagination-mix"&gt;
+    &lt;ul class="flat pagination pull-left"&gt;
+      &lt;li class="arrow-first"&gt;&lt;a href="#"&gt; |&lt; &lt;/a&gt;&lt;/li&gt;
+      &lt;li class="prev"&gt;&lt;a href="#"&gt; &lt; &lt;/a&gt;&lt;/li&gt;
+      &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;6&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="next"&gt;&lt;a href="#"&gt; &gt; &lt;/a&gt;&lt;/li&gt;
+      &lt;li class="arrow-last"&gt;&lt;a href="#"&gt; &gt;| &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="flat pagination pagination-centered"&gt;
+      &lt;li class="arrow-first"&gt;&lt;a href="#"&gt; |&lt; &lt;/a&gt;&lt;/li&gt;
+      &lt;li class="prev"&gt;&lt;a href="#"&gt; &lt; &lt;/a&gt;&lt;/li&gt;
+      &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;6&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="next"&gt;&lt;a href="#"&gt; &gt; &lt;/a&gt;&lt;/li&gt;
+      &lt;li class="arrow-last"&gt;&lt;a href="#"&gt; &gt;| &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="flat pagination pull-right"&gt;
+      &lt;li class="arrow-first"&gt;&lt;a href="#"&gt; |&lt; &lt;/a&gt;&lt;/li&gt;
+      &lt;li class="prev"&gt;&lt;a href="#"&gt; &lt; &lt;/a&gt;&lt;/li&gt;
+      &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;6&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="next"&gt;&lt;a href="#"&gt; &gt; &lt;/a&gt;&lt;/li&gt;
+      &lt;li class="arrow-last"&gt;&lt;a href="#"&gt; &gt;| &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h1 class="title">List View</h1>
+				<hr>
+				<p>
+					There are two ways to build pagination in Foundation 4: with our predefined HTML or with our mixin. Building pagination using our predefined classes isn't hard at all. You'll start with an unordered list and add a class of <code>.pagination</code> to it. From there, you just need to add list items with links in them. Those list items have a few options you can use:
+				</p>
+				<div class="list-view-content">
+					<div class="wrapper">
+						<ul class="listview">
+							<li class="list-group-container">
+								<div class="group-title">Group Title</div>
+								<ul class="list-group">
+									<li>
+										<a class="listview-link" href="#">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et tellus vel lacus ullamcorper elementum.
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											Duis mollis, urna bibendum tincidunt blandit
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											Sed tristique arcu vitae arcu blandit, nec vulputate dui sagittis. Etiam tincidunt turpis ullamcorper
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="list-group-container">
+								<ul class="list-group">
+									<li>
+										<a class="listview-link" href="#">
+											Network
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											Line
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											Song
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											Videos
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											Photos
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											Applications
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											Capacity
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;ul class="listview"&gt;
+   &lt;li class="list-group-container"&gt;
+      &lt;div class="group-title"&gt;Group Title&lt;/div&gt;
+      &lt;ul class="list-group"&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &hellip;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &hellip;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &hellip;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &hellip;
+            &lt;/a&gt;
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">List View Nested</h4>
+				<div class="list-view-content">
+					<div class="wrapper">
+						<ul class="listview nest">
+							<li class="list-group-container">
+								<div class="group-title">Group Title</div>
+								<ul class="list-group">
+									<li>
+										<a class="listview-link" href="#">
+											Network
+										</a>
+										<ul class="nested">
+											<li>
+												<a class="listview-link" href="#">
+													Line
+												</a>
+											</li>
+											<li>
+												<a class="listview-link" href="#">
+													Song
+												</a>
+											</li>
+											<li>
+												<a class="listview-link" href="#">
+													Videos
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											Photos
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											Applications
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											Capacity
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;ul class="listview nest"&gt;
+   &lt;li class="list-group-container"&gt;
+      &lt;div class="group-title"&gt;Group Title&lt;/div&gt;
+      &lt;ul class="list-group"&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               Network
+            &lt;/a&gt;
+            &lt;ul class="nested"&gt;
+               &lt;li&gt;
+                  &lt;a class="listview-link" href="#"&gt;
+                     &hellip;
+                  &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li&gt;
+                  &lt;a class="listview-link" href="#"&gt;
+                     &hellip;
+                  &lt;/a&gt;
+               &lt;/li&gt;
+               &lt;li&gt;
+                  &lt;a class="listview-link" href="#"&gt;
+                     &hellip;
+                  &lt;/a&gt;
+               &lt;/li&gt;
+            &lt;/ul&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               Photos
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               Applications
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               Capacity
+            &lt;/a&gt;
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">List View Icon</h4>
+				<div class="list-view-content">
+					<div class="wrapper">
+						<ul class="listview text">
+							<li class="list-group-container">
+								<div class="group-title">Group Title</div>
+								<ul class="list-group">
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/airplane-icon.png" alt="">
+											Airplane Mode
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/wifi-icon.png" alt="">
+											Wifi
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/bluetooth-icon.png" alt="">
+											Bluetooth
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/cellular-icon.png" alt="">
+											Cellular
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/hotspot-icon.png" alt="">
+											Personal Hotspot
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/phone-icon.png" alt="">
+											Carrier
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="list-group-container">
+								<ul class="list-group">
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/notif-icon.png" alt="">
+											Notification Center
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/cellular-icon.png" alt="">
+											Cellular
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/wifi-icon.png" alt="">
+											Wifi
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;ul class="listview text"&gt;
+   &lt;li class="list-group-container"&gt;
+      &lt;div class="group-title"&gt;Group Title&lt;/div&gt;
+      &lt;ul class="list-group"&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="icon" src="images/&hellip;"&gt;
+               &hellip;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="icon" src="images/&hellip;"&gt;
+               &hellip;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="icon" src="images/&hellip;"&gt;
+               &hellip;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="icon" src="images/&hellip;"&gt;
+               &hellip;
+            &lt;/a&gt;
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">List View Icon + Mix Text</h4>
+				<div class="list-view-content">
+					<div class="wrapper">
+						<ul class="listview mix">
+							<li class="list-group-container">
+								<div class="group-title">Group Title</div>
+								<ul class="list-group">
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/airplane-icon.png" alt="">
+											<span class="title-list">Title 1</span>
+											<span>
+												Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+											</span>
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/cellular-icon.png" alt="">
+											<span class="title-list">Title 2</span>
+											<span>
+												Pellentesque neque augue, dictum quis nisl id, ultrices rhoncus lectus.
+											</span>
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/hotspot-icon.png" alt="">
+											<span class="title-list">Title 3</span>
+											<span>
+												Ut eu erat eros. Suspendisse potenti. Suspendisse vel blandit tortor, at imperdiet augue. Nunc luctus lectus id enim imperdiet accumsan.
+											</span>
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/phone-icon.png" alt="">
+											<span class="title-list">Title 4</span>
+											<span>
+												In quis enim eu mauris dapibus dapibus. Maecenas id metus mattis, pulvinar eros id, aliquam dolor. Suspendisse scelerisque tempor tortor non pharetra.
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="list-group-container">
+								<ul class="list-group">
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/notif-icon.png" alt="">
+											<span class="title-list">Title 5</span>
+											<span>
+												Duis cursus, est et commodo imperdiet, orci nulla accumsan quam, non congue libero dolor vehicula urna.
+											</span>
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/cellular-icon.png" alt="">
+											<span class="title-list">Title 6</span>
+											<span>
+												Donec eget aliquet dolor. Aliquam sollicitudin sapien orci, sit amet aliquam massa malesuada feugiat.
+											</span>
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="icon" src="images/wifi-icon.png" alt="">
+											<span class="title-list">Title 7</span>
+											<span>
+												Duis porta consectetur tellus, ac cursus leo egestas a. Fusce faucibus lacus eu ante posuere pulvinar.
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;ul class="listview mix"&gt;
+   &lt;li class="list-group-container"&gt;
+      &lt;div class="group-title"&gt;Group Title&lt;/div&gt;
+      &lt;ul class="list-group"&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="icon" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 1&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="icon" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 2&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="icon" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 3&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="icon" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 4&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+   &lt;li class="list-group-container"&gt;
+      &lt;div class="group-title"&gt;Group Title&lt;/div&gt;
+      &lt;ul class="list-group"&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="icon" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 5&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="icon" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 6&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="icon" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 7&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">List View Thumb</h4>
+				<div class="list-view-content">
+					<div class="wrapper">
+						<ul class="listview mix thumb">
+							<li class="list-group-container">
+								<div class="group-title">Group Title</div>
+								<ul class="list-group">
+									<li>
+										<a class="listview-link" href="#">
+											<img class="picture" src="images/airplane-icon.png" alt="">
+											<span class="title-list">Title 1</span>
+											<span>
+												Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+											</span>
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="picture" src="images/cellular-icon.png" alt="">
+											<span class="title-list">Title 2</span>
+											<span>
+												Pellentesque neque augue, dictum quis nisl id, ultrices rhoncus lectus.
+											</span>
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="picture" src="images/hotspot-icon.png" alt="">
+											<span class="title-list">Title 3</span>
+											<span>
+												Ut eu erat eros. Suspendisse potenti. Suspendisse vel blandit tortor, at imperdiet augue. Nunc luctus lectus id enim imperdiet accumsan.
+											</span>
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="picture" src="images/phone-icon.png" alt="">
+											<span class="title-list">Title 4</span>
+											<span>
+												In quis enim eu mauris dapibus dapibus. Maecenas id metus mattis, pulvinar eros id, aliquam dolor. Suspendisse scelerisque tempor tortor non pharetra.
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;ul class="listview mix thumb"&gt;
+   &lt;li class="list-group-container"&gt;
+      &lt;div class="group-title"&gt;Group Title&lt;/div&gt;
+      &lt;ul class="list-group"&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="thumb" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 1&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="thumb" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 2&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="thumb" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 3&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="thumb" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 4&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">List View Detail</h4>
+				<div class="list-view-content">
+					<div class="wrapper">
+						<ul class="listview mix thumb">
+							<li class="list-group-container">
+								<div class="group-title">Group Title</div>
+								<img class="image" src="images/doraemon.jpg" alt="">
+								<ul class="list-group">
+									<li>
+										<a class="listview-link" href="#">
+											<img class="picture" src="images/airplane-icon.png" alt="">
+											<span class="title-list">Title 1</span>
+											<span>
+												Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+											</span>
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="picture" src="images/cellular-icon.png" alt="">
+											<span class="title-list">Title 2</span>
+											<span>
+												Pellentesque neque augue, dictum quis nisl id, ultrices rhoncus lectus.
+											</span>
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="picture" src="images/hotspot-icon.png" alt="">
+											<span class="title-list">Title 3</span>
+											<span>
+												Ut eu erat eros. Suspendisse potenti. Suspendisse vel blandit tortor, at imperdiet augue. Nunc luctus lectus id enim imperdiet accumsan.
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="list-group-container">
+								<div class="group-title">Group Title</div>
+								<img class="image" src="images/cat.jpg" alt="">
+								<ul class="list-group">
+									<li>
+										<a class="listview-link" href="#">
+											<img class="picture" src="images/airplane-icon.png" alt="">
+											<span class="title-list">Title 1</span>
+											<span>
+												Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+											</span>
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="picture" src="images/cellular-icon.png" alt="">
+											<span class="title-list">Title 2</span>
+											<span>
+												Pellentesque neque augue, dictum quis nisl id, ultrices rhoncus lectus.
+											</span>
+										</a>
+									</li>
+									<li>
+										<a class="listview-link" href="#">
+											<img class="picture" src="images/hotspot-icon.png" alt="">
+											<span class="title-list">Title 3</span>
+											<span>
+												Ut eu erat eros. Suspendisse potenti. Suspendisse vel blandit tortor, at imperdiet augue. Nunc luctus lectus id enim imperdiet accumsan.
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="html">
+					<div class="highlight">
+						<pre class="prettyprint">
+&lt;ul class="listview mix thumb"&gt;
+   &lt;li class="list-group-container"&gt;
+      &lt;div class="group-title"&gt;Group Title&lt;/div&gt;
+      &lt;img class="image" src="images/&hellip;"&gt;
+      &lt;ul class="list-group"&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="thumb" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 1&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="thumb" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 2&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="thumb" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 3&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+   &lt;li class="list-group-container"&gt;
+      &lt;div class="group-title"&gt;Group Title&lt;/div&gt;
+      &lt;img class="image" src="images/&hellip;"&gt;
+      &lt;ul class="list-group"&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="thumb" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 1&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="thumb" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 2&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+            &lt;a class="listview-link" href="#"&gt;
+               &lt;img class="thumb" src="images/&hellip;"&gt;
+               &lt;span class="title-list"&gt;Title 3&lt;/span&gt;
+               &lt;span&gt;
+                  &hellip;
+               &lt;/span&gt;
+            &lt;/a&gt;
+         &lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/li&gt;
+&lt;/ul&gt;
+						</pre>
+					</div>
+				</div>
+				<hr>
+				<h4 class="sub-title">List View Detail Nested</h4>
+				<div class="list-view-content">
+					<div class="wrapper">
+						<ul class="listview mix thumb detail">
+							<li class="list-group-container">
+								<div class="group-title">Group Title</div>
+								<ul class="list-group detail-group">
+									<li class="detail-content">
+										<img class="image" src="images/doraemon.jpg" alt="">
+										<ul class="detail-list">
+											<li>
+												<a class="listview-link" href="#">
+													<img class="picture" src="images/airplane-icon.png" alt="">
+													<span class="title-list">Title 1</span>
+													<span>
+														Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+													</span>
+												</a>
+											</li>
+											<li>
+												<a class="listview-link" href="#">
+													<img class="picture" src="images/airplane-icon.png" alt="">
+													<span class="title-list">Title 1</span>
+													<span>
+														Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+													</span>
+												</a>
+											</li>
+											<li>
+												<a class="listview-link" href="#">
+													<img class="picture" src="images/airplane-icon.png" alt="">
+													<span class="title-list">Title 1</span>
+													<span>
+														Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+													</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li class="detail-content">
+										<img class="image" src="images/doraemon.jpg" alt="">
+										<ul class="detail-list">
+											<li>
+												<a class="listview-link" href="#">
+													<img class="picture" src="images/airplane-icon.png" alt="">
+													<span class="title-list">Title 1</span>
+													<span>
+														Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+													</span>
+												</a>
+											</li>
+											<li>
+												<a class="listview-link" href="#">
+													<img class="picture" src="images/airplane-icon.png" alt="">
+													<span class="title-list">Title 1</span>
+													<span>
+														Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+													</span>
+												</a>
+											</li>
+											<li>
+												<a class="listview-link" href="#">
+													<img class="picture" src="images/airplane-icon.png" alt="">
+													<span class="title-list">Title 1</span>
+													<span>
+														Proin ut nulla placerat, gravida nunc id, suscipit arcu. Morbi sit amet enim eu sapien feugiat malesuada id sit amet lacus.
+													</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+			</div>
+		</div>
+		<footer>
+			<div class="wrapper">
+				<div class="copyright">
+					<p>Copyright Xinix Technology 2013 - 2014. All Right Reserved</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+
+		function closeMenu(){
+		    if ($('body').hasClass('navigating')) {
+		      $('body').removeClass('navigating')
+		      setTimeout(function(){
+		        $('.navbar').css('display','none')
+		      }, 350)
+		    }
+		  }
+
+			$('#menu_icon a').on('click', function(){
+		    if ($('body').hasClass('navigating')) {
+		      closeMenu()
+		    } else {
+		      $('.navbar').css('display','block')
+		      $('.navbar')[0].offsetLeft // force render
+		      $('body').addClass('navigating')
+		    }
+		    return false
+		  })
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,1182 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"rem",
+				"removeClass"
+			],
+			[
+				"con",
+				"content-search"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"border-col",
+				"table-border-color"
+			],
+			[
+				"conta",
+				"container-fluid"
+			],
+			[
+				"center",
+				"centered"
+			],
+			[
+				"swipe",
+				"swipe-toggle"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"list-",
+				"list-group"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"cle",
+				"clear"
+			],
+			[
+				"bord",
+				"border-box"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"me",
+				"medium"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"medium",
+				"medium-screen"
+			],
+			[
+				"land",
+				"landscape-orientation"
+			],
+			[
+				"id",
+				"id_member"
+			],
+			[
+				"data",
+				"data_point"
+			],
+			[
+				"po",
+				"point_query"
+			],
+			[
+				"mysql_f",
+				"mysql_fetch_assoc"
+			],
+			[
+				"da",
+				"data_point"
+			],
+			[
+				"co",
+				"coba"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"modal",
+				"modal-backdrop"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"detail",
+				"detail-slideshow"
+			],
+			[
+				"m",
+				"margin-top"
+			],
+			[
+				"antisc",
+				"antiscroll-inner"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"date",
+				"date-share"
+			],
+			[
+				"container",
+				"container-fluid"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"cont",
+				"container-fluid"
+			],
+			[
+				"badge-",
+				"badge-icon"
+			],
+			[
+				"maps",
+				"maps-location"
+			],
+			[
+				"dropd",
+				"dropdown-menu"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"a",
+				"active"
+			],
+			[
+				"w",
+				"weather"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"acc",
+				"accordion-group"
+			],
+			[
+				"input",
+				"input-append"
+			],
+			[
+				"drop",
+				"dropdown-menu"
+			],
+			[
+				"dropdown",
+				"dropdown-toggle"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"icon",
+				"icon-prev"
+			],
+			[
+				"carou",
+				"carousel-control"
+			],
+			[
+				"menu",
+				"menu-inner"
+			],
+			[
+				"conte",
+				"content"
+			],
+			[
+				"re",
+				"required"
+			],
+			[
+				"year",
+				"year-lists"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"res",
+				"result_array"
+			],
+			[
+				"lis",
+				"lists"
+			],
+			[
+				"result",
+				"result_array"
+			],
+			[
+				"yox",
+				"yoxview"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"fi",
+				"first-child"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ar",
+				"arrow-down"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "tooltip-dropdown.php",
+			"settings":
+			{
+				"buffer_size": 5359,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/include/_tooltip-dropdown.scss",
+			"settings":
+			{
+				"buffer_size": 3410,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/include/_docs.scss",
+			"settings":
+			{
+				"buffer_size": 5217,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/include/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 2399,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "navbar-tabstrip.php",
+			"settings":
+			{
+				"buffer_size": 10521,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/include/_navbar-tabstrip.scss",
+			"settings":
+			{
+				"buffer_size": 4081,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"sa",
+				"Set Syntax: Sass"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Preferences: Settings - Default"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"bro",
+				"Preferences: Browse Packages"
+			],
+			[
+				"inst",
+				"Preferences: Settings - Default"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_context-menu.scss",
+		"/Users/mc700/Documents/workspaces/naked/context-menu.php",
+		"/Users/mc700/Documents/workspaces/naked/index.php",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_docs.scss",
+		"/Users/mc700/Documents/workspaces/naked/scss/naked.scss",
+		"/Users/mc700/Documents/workspaces/naked/part-header.php",
+		"/Users/mc700/Documents/workspaces/hki/application/default/config/development/database.php",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_tooltip-dropdown.scss",
+		"/Users/mc700/Documents/workspaces/naked/tooltip-dropdown.php",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_navbar-tabstrip.scss",
+		"/Users/mc700/Documents/workspaces/naked/navbar-tabstrip.php",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_button.scss",
+		"/Users/mc700/Documents/workspaces/naked/button.php",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_login.scss",
+		"/Users/mc700/Documents/workspaces/naked/login.php",
+		"/Users/mc700/Documents/workspaces/naked/form.php",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_variables.scss",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_alert.scss",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_tabs.scss",
+		"/Users/mc700/Documents/workspaces/naked/tabs.php",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_tree.scss",
+		"/Users/mc700/Documents/workspaces/naked/tree.php",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_globals.scss",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_form.scss",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_pagination.scss",
+		"/Users/mc700/Documents/workspaces/naked/pagination.php",
+		"/Users/mc700/Documents/workspaces/naked/table.php",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_table.scss",
+		"/Users/mc700/Documents/workspaces/naked/css/docs.css",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_listview.scss",
+		"/Users/mc700/Documents/workspaces/naked/css/naked.css",
+		"/Users/mc700/Documents/workspaces/naked/alert.php",
+		"/Users/mc700/Documents/workspaces/naked/list-view.php",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_grid.scss",
+		"/Users/mc700/Documents/workspaces/naked/grid-system.php",
+		"/Users/mc700/Documents/workspaces/naked/part-script.php",
+		"/Users/mc700/Documents/workspaces/naked/part-head.php",
+		"/Users/mc700/Documents/workspaces/naked/scss/tooltip-dropdown.php",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/alert.scss",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/navbar-tabstrip.scss",
+		"/Users/mc700/Documents/workspaces/naked/typography.php",
+		"/Users/mc700/Documents/workspaces/naked/container.php",
+		"/Users/mc700/Documents/workspaces/naked/part-footer.php",
+		"/Users/mc700/Documents/workspaces/naked/untitled",
+		"/Users/mc700/Documents/workspaces/naked/index2.html",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_responsive.scss",
+		"/Users/mc700/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/mc700/Documents/workspaces/naked/scss/include/_normalize.scss",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/arch/config/pagination.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/arch/libraries/MY_Pagination.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/themes/web-ksopbanten/css/main.css",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/application/default/views/web/news_detail.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/index.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/proses/koneksi.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/koneksi.php",
+		"/Users/mc700/Documents/workspaces/naked/index.html",
+		"/Users/mc700/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/mc700/Documents/workspaces/itech-journal/css/style.css",
+		"/Users/mc700/Documents/workspaces/itech-journal/update-buku.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/admin/part-head.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/part-head.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/footer.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/update-buku-proses.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/admin/hapus-pesan.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/admin/hapus-member.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/edit_profil.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/hapus-buku.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/admin/hapus-buku.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/admin/update-password.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/admin/member.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/admin/update-buku.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/detail_buku_reg.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/detail_buku_not.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/detail_buku.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/admin/update-member.php",
+		"/Users/mc700/Documents/workspaces/public_html/part-footer.php",
+		"/Users/mc700/Documents/workspaces/public_html/calculation-main.php",
+		"/Users/mc700/Documents/workspaces/public_html/calculation.php",
+		"/Users/mc700/Documents/workspaces/public_html/input_harga.php",
+		"/Users/mc700/Documents/workspaces/public_html/about.php",
+		"/Users/mc700/Documents/workspaces/public_html/input_kriteria.php",
+		"/Users/mc700/Documents/workspaces/public_html/testimonial.php",
+		"/Users/mc700/Documents/workspaces/public_html/admin/testimonial_admin.php",
+		"/Users/mc700/Documents/workspaces/public_html/admin/admin-sidebar.php",
+		"/Users/mc700/Documents/workspaces/public_html/admin/user.php",
+		"/Users/mc700/Documents/workspaces/public_html/admin/user_manage.php",
+		"/Users/mc700/Documents/workspaces/public_html/part-sidebar.php",
+		"/Users/mc700/Documents/workspaces/public_html/admin/admin.php",
+		"/Users/mc700/Documents/workspaces/public_html/admin/testimonial_manage.php",
+		"/Users/mc700/Documents/workspaces/public_html/chart/chart.php",
+		"/Users/mc700/Documents/workspaces/public_html/kriteria.php",
+		"/Users/mc700/Documents/workspaces/public_html/input_desain.php",
+		"/Users/mc700/Documents/workspaces/public_html/input_irit.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/buku_journal.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/buku_project.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/profil.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/registrasi.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/hubungi.php",
+		"/Users/mc700/Documents/workspaces/web-kabar-icbc/application/default/views/web/activities.php",
+		"/Users/mc700/Documents/workspaces/web-kabar-icbc/application/default/views/web/culture.php",
+		"/Users/mc700/Documents/workspaces/web-kabar-icbc/application/default/views/web/areas.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/proses/insert-buku.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/proses/register.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/kanan_bawah.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/buku_galeri.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/galeri.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/admin/buku.php",
+		"/Users/mc700/Documents/workspaces/itech-journal/buku.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/list-company.php",
+		"/Users/mc700/Documents/workspaces/web-kabar-icbc/application/default/views/layouts/web.php",
+		"/Users/mc700/Documents/workspaces/web-kabar-icbc/application/default/views/web/deals.php",
+		"/Users/mc700/Documents/workspaces/web-kabar-icbc/application/default/views/web/index.php",
+		"/Users/mc700/Documents/workspaces/web-kabar-icbc/application/default/views/culture/show.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/themes/web-ksopbanten/css/bootstrap-responsive.min.css",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/index.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/part-sidebar.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/part-footer.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/weather.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/about.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/maps.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/maps-detail.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/part-head.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/news.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/news-detail.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/regulation.php",
+		"/Users/mc700/Documents/workspaces/ahp_rahma/testimonialindex.php",
+		"/Users/mc700/Documents/workspaces/ahp_rahma/head.php",
+		"/Users/mc700/Documents/workspaces/web-ksopbanten/html/themes/web-ksopbanten/css/bootstrap.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"*.scss",
+			"",
+			"button.php",
+			"*.scss",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"dropdown-nested",
+			" class=\"nested\"",
+			"dropdown-nested",
+			"dropdown-menu",
+			"dropdown\"",
+			"dropdown-menu",
+			">",
+			"<",
+			"99",
+			"text ",
+			"li",
+			"&lt;td",
+			"&lt;th",
+			"th&gt;",
+			"tr&gt;",
+			"thead&gt;",
+			"placeholder",
+			"check-label",
+			"&lt;li",
+			"ul&gt;",
+			"&lt;li",
+			">",
+			"<",
+			"divider",
+			"right: 7px",
+			"h1",
+			"4",
+			"5px",
+			"round",
+			"button-group",
+			".button-group",
+			">",
+			"<",
+			">",
+			"<",
+			"button",
+			"h3",
+			"&lt;/li&gt;",
+			"&lt;li&gt;",
+			"<h4 class=\"sub-title\">",
+			"color",
+			"botton",
+			">",
+			"<",
+			"container",
+			"container-fluid",
+			"navbar",
+			"navbar-",
+			">",
+			"<",
+			"btn",
+			"btn btn-primary",
+			"slidingDiv",
+			"down",
+			"44",
+			"content-detail",
+			"margin",
+			"li:",
+			".content:",
+			"section",
+			":nth-child",
+			"section",
+			".navbar input",
+			"100",
+			" class=\"animated\"",
+			"fadeInRight",
+			"  ",
+			"2",
+			"10",
+			"2",
+			"10",
+			"   ",
+			"     ",
+			"    ",
+			"   ",
+			"overflow",
+			"navbar",
+			"grid-container",
+			" &lt;td&gt",
+			"&lt;td&gt",
+			"	",
+			"nowrap",
+			"&lt;td",
+			"Company\"",
+			"Company",
+			"Code",
+			"Price",
+			"Change",
+			"Content Goes Here",
+			"This is longer content Donec id elit non mi porta gravida at eget metus.",
+			"class=\"numeric\"",
+			"<td>",
+			"#no-more-tables",
+			"odd",
+			"even",
+			"grid-container",
+			"#flip-scroll",
+			"&lt;div class=\"back-button\"&gt;\n            &lt;a href=\"#\"&gt;Back&lt;/a&gt;\n         &lt;/div&gt;",
+			"<div class=\"back-button\">\n									<a href=\"#\">Back</a>\n								</div>",
+			"menu_icon",
+			"pagination-centered",
+			"pull-",
+			"li",
+			"pagination-",
+			"flat",
+			"pull-right",
+			"pull-left",
+			"pagination-centered",
+			"table-",
+			"nowrap",
+			"table-hover",
+			"table-stripped",
+			"table-nowrap",
+			"&.table-stripped ",
+			"&.table-nowrap ",
+			".table-",
+			".table",
+			"&.",
+			".table",
+			"pull-",
+			"checked>",
+			"10px",
+			" class=\"list-group-container\"",
+			"id=\"checkbox",
+			">",
+			"<",
+			"span",
+			".check-label"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"group"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "tooltip-dropdown.php",
+					"settings":
+					{
+						"buffer_size": 5359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								949,
+								949
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scss/include/_tooltip-dropdown.scss",
+					"settings":
+					{
+						"buffer_size": 3410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282,
+								282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scss/include/_docs.scss",
+					"settings":
+					{
+						"buffer_size": 5217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4010,
+								4010
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3059.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "scss/include/_variables.scss",
+					"settings":
+					{
+						"buffer_size": 2399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 705.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "navbar-tabstrip.php",
+					"settings":
+					{
+						"buffer_size": 10521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2029,
+								2029
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 482.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "scss/include/_navbar-tabstrip.scss",
+					"settings":
+					{
+						"buffer_size": 4081,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								736,
+								736
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 250.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"my_pa",
+				"arch/libraries/MY_Pagination.php"
+			],
+			[
+				"pagination",
+				"arch/config/pagination.php"
+			],
+			[
+				"main.css",
+				"themes/web-ksopbanten/css/main.css"
+			],
+			[
+				"pagina",
+				"arch/config/pagination.php"
+			],
+			[
+				"main",
+				"themes/web-ksopbanten/js/main.js"
+			],
+			[
+				"web",
+				"themes/icbc/js/web.js"
+			],
+			[
+				"web.css",
+				"themes/icbc/css/web.css"
+			],
+			[
+				"web/deal",
+				"application/default/views/web/deals.php"
+			],
+			[
+				"web/ind",
+				"application/default/views/web/index.php"
+			],
+			[
+				"web/cu",
+				"application/default/views/web/culture.php"
+			],
+			[
+				"culture/",
+				"application/default/views/culture/show.php"
+			],
+			[
+				"web.js",
+				"themes/icbc/js/web.js"
+			],
+			[
+				"boots",
+				"html/themes/web-ksopbanten/css/bootstrap.css"
+			],
+			[
+				"main.js",
+				"html/themes/web-ksopbanten/js/main.js"
+			],
+			[
+				"main.cs",
+				"html/themes/web-ksopbanten/css/main.css"
+			],
+			[
+				"sty",
+				"css/style.css"
+			],
+			[
+				"butt",
+				"css/button.css"
+			],
+			[
+				"boo",
+				"html/themes/web-ksopbanten/css/bootstrap.css"
+			],
+			[
+				"web/about",
+				"application/default/views/web/about.php"
+			],
+			[
+				"emagz/inde",
+				"application/default/modules/emagz/views/indeks.php"
+			],
+			[
+				"emagz/l",
+				"application/default/modules/emagz/views/lists.php"
+			],
+			[
+				"emagz/list",
+				"application/default/modules/emagz/views/lists.php"
+			],
+			[
+				"web/inde",
+				"application/default/views/web/index.php"
+			],
+			[
+				"news/lis",
+				"application/default/modules/news/views/lists.php"
+			],
+			[
+				"event/lis",
+				"application/default/modules/event/views/lists.php"
+			],
+			[
+				"member/lo",
+				"application/default/modules/member/views/member/login.php"
+			],
+			[
+				"web/reser",
+				"application/default/views/web/reservation.php"
+			],
+			[
+				"user.css",
+				"themes/icircle/css/user.css"
+			],
+			[
+				"web/con",
+				"application/default/views/web/contact.php"
+			],
+			[
+				"web/pr",
+				"application/default/views/web/profile.php"
+			],
+			[
+				"web/mer",
+				"application/default/views/web/merchant.php"
+			],
+			[
+				"web.p",
+				"application/default/controllers/web.php"
+			],
+			[
+				"merch",
+				"application/default/modules/merchant/controllers/merchant.php"
+			],
+			[
+				"contact",
+				"application/default/views/web/contact.php"
+			],
+			[
+				"news/view",
+				"application/default/modules/news/views/view.php"
+			],
+			[
+				"event/view",
+				"application/default/modules/event/views/lists.php"
+			],
+			[
+				"event/list",
+				"application/default/modules/event/views/lists.php"
+			],
+			[
+				"emagz/indeks",
+				"application/default/modules/emagz/views/indeks.php"
+			],
+			[
+				"member/login",
+				"application/default/modules/member/views/member/login.php"
+			],
+			[
+				"web/re",
+				"application/default/views/web/reservation.php"
+			],
+			[
+				"web/profi",
+				"application/default/views/web/profile.php"
+			],
+			[
+				"web/index",
+				"application/default/views/web/index.php"
+			],
+			[
+				"emagz",
+				"application/default/modules/emagz/models/emagz_model.php"
+			],
+			[
+				"emagz/li",
+				"application/default/modules/emagz/views/lists.php"
+			],
+			[
+				"emagz/in",
+				"application/default/modules/emagz/views/indeks.php"
+			],
+			[
+				"emagz/lis",
+				"application/default/modules/emagz/views/lists.php"
+			],
+			[
+				"news",
+				"application/default/modules/news/controllers/news.php"
+			],
+			[
+				"web.php",
+				"application/default/views/layouts/web.php"
+			],
+			[
+				"demo",
+				"themes/icircle/css/demo.css"
+			],
+			[
+				"web/abou",
+				"application/default/views/web/about.php"
+			],
+			[
+				"we",
+				"application/default/controllers/web.php"
+			],
+			[
+				"web/prof",
+				"application/default/views/web/profile.php"
+			],
+			[
+				"web/conta",
+				"application/default/views/web/contact.php"
+			],
+			[
+				"web/profile",
+				"application/default/views/web/profile.php"
+			],
+			[
+				"emagz/ind",
+				"application/default/modules/emagz/views/indeks.php"
+			],
+			[
+				"web/member",
+				"application/default/views/web/member.php"
+			],
+			[
+				"layout/w",
+				"application/default/views/layouts/web.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/mc700/Documents/workspaces/naked/naked.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true
+}
