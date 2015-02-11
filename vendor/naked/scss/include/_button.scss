@@ -1,0 +1,198 @@
+button,
+.button {
+    padding: 6px 16px;
+    cursor: pointer;
+    line-height: #{$body-line-height};
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #{$border-button-color};
+    color: #{$submit-color};
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: #{$font-bold};
+
+    &:active {
+        -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+    }
+
+    &:hover {
+        background: #{$submit-bg};
+	    color: #{$submit-solid-color};
+    }
+
+    &.error {
+    	background: transparent;
+	    border: 1px solid #{$button-alert};
+	    color: #{$button-alert};
+
+	    &:hover {
+	        background: #{$button-alert};
+		    color: #{$submit-solid-color};
+	    }
+    }
+
+    &.success {
+    	background: transparent;
+	    border: 1px solid #{$button-success};
+	    color: #{$button-success};
+
+	    &:hover {
+	        background: #{$button-success};
+		    color: #{$submit-solid-color};
+	    }
+    }
+
+    &.warning {
+    	background: transparent;
+	    border: 1px solid #{$button-warning};
+	    color: #{$button-warning};
+
+	    &:hover {
+	        background: #{$button-warning};
+		    color: #{$submit-solid-color};
+	    }
+    }
+
+    &.round {
+        -webkit-border-radius: 1000px;
+        -moz-border-radius: 1000px;
+        border-radius: 1000px;
+		padding: 5px 20px 5px;
+    }
+
+    &.solid {
+		background: #{$submit-bg};
+	    border: 1px solid #{$border-button-solid-color};
+	    color: #{$submit-solid-color};
+
+		&.error {
+	    	background: #{$button-alert};
+		    color: #{$submit-solid-color};
+	    }
+
+	    &.success {
+	    	background: #{$button-success};
+		    color: #{$submit-solid-color};
+	    }
+
+	    &.warning {
+	    	background: #{$button-warning};
+		    color: #{$submit-solid-color};
+	    }
+    }
+}
+
+.button-group {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+
+	&.left {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	&.centered {
+		display: table;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	&.right {
+		position: absolute;
+		left: initial;
+		right: 0;
+		top: 0;
+	}
+
+	&.round {
+		li {
+			a {
+				border-radius:0;
+			}
+			&:first-child {
+				a {
+					border-top-left-radius: 10px;
+					border-bottom-left-radius: 10px;
+					border-top-right-radius: 0;
+					border-bottom-right-radius: 0;
+				}
+			}
+			&:last-child {
+				a{
+					border-top-right-radius: 10px;
+					border-bottom-right-radius: 10px;
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
+				}
+			}
+		}
+	}
+}
+.button-group > :first-child {
+	margin-left: 0;
+}
+.button-group > * {
+	margin: 0 0 0 -1px;
+	float: left;
+}
+.button-group::after {
+	clear: both;
+}
+.button-group::before,
+.button-group::after {
+	content: " ";
+	display: table;
+}
+.button-bar {
+	position: relative;
+}
+.button-bar {
+	width: 100%
+}
+.button-bar::after {
+	clear: both;
+}
+.submit { border: 0; }
+
+
+// =========================== media query =======================
+
+@media #{$small} {
+	.button-bar {
+		ul.button-group {
+	        position: relative;
+	        margin: 0 auto;
+	        // float: none;
+	        width: 100%;
+	        margin-bottom: 10px;
+
+	        &.left ,
+	        &.centered ,
+	        &.right {
+				width: auto;
+				clear: both;
+	        }
+	        &.right {
+	        	float: right;
+	        }
+	    }
+		ul.pagination-centered,
+		ul.button-group.right, ul.button-group.left {
+		}
+	}
+}

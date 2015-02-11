@@ -45,199 +45,37 @@
     .form-signin .form-control:focus {
         z-index: 2;
     }
-
-/*adoel modified*/
-
-    body {
-        font-family: 'Lato', sans-serif;
-    }
-
-    * {
-         -webkit-transition: all 1s;
-                 transition: all 1s;
-    }
-
-    div[data-role="view"] {
-        background-color:  rgb(234, 244, 255);
-        /*background-color: rgb(247, 250, 253);*/
-    }
-
-    [data-region="body"].searching {
-        background: inherit;
-    }
-    .form-search input {border-radius: 3px; padding: 10px; border: 1px solid #9e9e9e; margin-bottom:0 ;}
-
-    .result,
-    .form-search {
-        display: none;
-        opacity: 0;
-    }
-    .start-searching {
-        top: calc(50% - 156px);
-        position: absolute;
-        right: 16px;
-        left: 16px;
-    }
-    .start-searching img {
-        width: 111px;
-        display: block;
-        margin: 0 auto;
-    }
-    .start-searching span {
-        text-align: center;
-        display: block;
-        font-size: 2.4em;
-        font-weight: 200;
-        line-height: 35px;
-        margin: 17px 0;
-
-
-    }
-    .start-searching span b {
-        font-weight: 400;
-        line-height: inherit;
-        /*font-size: 1.2em;*/
-        color: #2f318b;
-    }
-    .btn-search {
-        padding: 14px 10px;
-        border: 1px solid #9e9e9e;
-        color: #9e9e9e;
-        background: #fff;
-        border-radius: 3px;
-        font-size: 1.2em;
-        position: relative;
-        max-width: 630px;
-        margin: 0 auto;
-    }
-    .start-searching .btn-search i.xn {
-        float: right;
-        position: absolute;
-        top: 11px;
-        right: 14px;
-        font-size: 1.5em;
-    }
-
-    [data-region="body"].searching .start-searching {
-        top: -150%;
-        opacity: 0;
-    }
-    .xin-navbar{
-        border:none;
-        background-color: inherit;
-    }
-    [data-region="footer"] .xin-title {
-        color: #AAA1A1;
-        font-size: 0.8em;
-        letter-spacing: 1px;
-    }
-
-    [data-region="body"].searching .result  {display: block; opacity: 1;}
-    [data-region="body"].searching .form-search {
-        display: block;
-        opacity: 1;
-        z-index: 999;
-        background: #fff;
-    }
-    [data-region="body"].searching .form-search input{
-        width: calc(100% - 20px);
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        left: 10px;
-    }
-    .result .listview .list-group li span {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: initial;
-        display: inline-block;
-        font-size: 10px;
-    }
-    .desc { color: #333; font-size: 14px; padding-top: 5px; text-align: justify;}
-    .title {
-        font-size: 14px;
-        font-weight: 400;
-        color: #2f318b
-    }
-    li.wrapText .desc.wrap {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    .hide {display: none;}
-    .listview .list-group {
-        background: rgba(255,255,255,0.9);
-    }
-    .listview .list-group li.noResult {
-        border-bottom: 0;
-        color: red;
-        letter-spacing: 1px;
-        text-align: center;
-    }
-
-
 }
 
+.xin-pane {height: 100%}
 
-#splashscreen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
-    background: #fff;
-}
+/*static page*/
+/*static page*/
 
-#splashscreen span {
-    top: 48%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
+/*login*/
+#login {padding: 10px 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;}
+#login input[type="text"], #login input[type="password"] {margin: 0;padding: 12px; border-radius: 0}
+#login input[type="password"]{ border-top: 0; margin-bottom: 10px; border-radius: 0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; -ms-border-radius: 0 0 5px 5px; -o-border-radius: 0 0 5px 5px}
+#login input[type="text"] {border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0; -ms-border-radius: 5px 5px 0 0; -o-border-radius: 5px 5px 0 0;   }
+#login .forgotPassword {margin-bottom: 10px;}
+#login .placeholder {margin-bottom: 10px;}
+#login .xn {font-size: inherit; width: inherit}
+#login .or {position: relative; border-top: 1px solid #ddd; margin-top: 13px}
+#login .or center span {position: relative; top: -10px; background: #F9F9F9; padding: 0 10px }
+#login .connectTo { color: #fff; border: 0; position: relative; padding: 10px}
+#login .connectTo i {position: absolute;left: 0;display: inline-block;width: 40px;top: 0;padding: 12px;font-size: 1.4em;}
+#login .twitter {background: #5EA9DD;}
+#login .facebook {background: #3B5998; margin-bottom: 10px}
+/*end login*/
 
-#splashscreen.splashscreen {
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0,0,0,0.7);
-}
-span.exit {
-    top: 0;
-    position: absolute;
-    right: 15px;
-    z-index: 9;
-    color: #2f318b;
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    font-size: 1.2em;
-}
-
-.viewDetail.active {
-    position: fixed !important;
-    z-index: 9;
-    left: 10px;
-    top: 58px;
-    background: #fff;
-    right: 10px;
-    width: inherit !important;
-}
-
-.xn-spin {
-    -webkit-animation: xn-spin 0.8s infinite linear;
-    -webkit-animation: xn-spin 0.8s infinite linear;
-    animation: xn-spin 0.8s infinite linear;
-}
+/*register page*/
+#signup {text-align: center;margin: 0 auto;border: 1px solid #eee;background: #f9f9f9; padding: 10px 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;}
+#signup input[type="text"] {margin: 0;padding: 12px; border-radius: 0}
+#signup input[type="password"] {margin: 0;padding: 12px; border-radius: 0 0 0 5px; -webkit-border-radius: 0 0 0 5px; -o-border-radius: 0 0 0 5px; -ms-border-radius: 0 0 0 5px; }
+#signup input.password { border-radius: 0 0 0 5px; -webkit-border-radius: 0 0 0 5px; -o-border-radius: 0 0 0 5px; -ms-border-radius: 0 0 0 5px; }
+#signup input.password2 { border-radius: 0 0 5px 0; -webkit-border-radius: 0 0 5px 0; -o-border-radius: 0 0 5px 0; -ms-border-radius: 0 0 5px 0; }
+#signup input.inputNext {border-top: 0}
+#signup input.inputNext.inputNexts {border-left: 0}
+#signup input.inputFirst {border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0; -o-border-radius: 5px 5px 0 0; -ms-border-radius: 5px 5px 0 0; }
+#signup input[type="submit"] {margin: 10px auto; font-size: 16px;}
+/*end register page*/

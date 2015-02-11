@@ -1,0 +1,12 @@
+{
+  "name": "naked",
+  "_release": "094a441be9",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "094a441be9b78d87cb717ac57be06aee25a894b6"
+  },
+  "_source": "ssh://git@111.221.43.117:22033/home/git/internal/naked.git",
+  "_target": "*",
+  "_originalSource": "ssh://git@111.221.43.117:22033/home/git/internal/naked.git"
+}
