@@ -19,7 +19,6 @@
 </head>
 
 <body data-role="app" style="display: none">
-
     <div data-role="layout" data-id="drawer" class="xc-flex vertical">
         <div class="box-user">
             <div class="img-user"></div>
@@ -44,15 +43,6 @@
                   </div>
                </div>
             </nav>
-          <!--   <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#" onclick="xin.$('.xin-drawer').data('instance').show(); return false"><i class="fa fa-bars"> Appp</i></a>
-                        <p class="navbar-text">Login</p>
-                        <button type="button" class="btn btn-default navbar-btn pull-right">Sign in</button>
-                    </div>
-                </div>
-            </nav> -->
         </div>
         <div data-region="body" class="center layout-body"></div>
         <div data-region="footer">
@@ -64,11 +54,48 @@
         </div>
     </div>
 
+    <div data-role="layout" data-id="intro" class="xc-flex vertical">
+       <div data-region="body" class="center layout-body"></div>
+        <div data-region="footer">
+            <div data-region="xin-navbar">
+            <div class="row">
+               <div class="span-2"><a href=""><i class="xn xn-angle-left"></i></a></div>
+               <div class="span-8">
+                   <div class="xin-title">
+                        <ul class="indicator">
+                            <li class="active"></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                        </ul>
+                    </div>
+               </div>
+               <div class="span-2"><a href=""><i class="xn xn-angle-right"></i></a></div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div data-role="layout" data-id="clean" class="xc-flex vertical">
+        <div data-region="header">
+            <nav class="navbar navbar-default" role="navigation">
+               <div class="row">
+                  <div class="span-2">
+                     <a class="back-button icon-menu" href="#"><i class="xn xn-angle-left xn-3x">Back</i></a>
+                  </div>
+               </div>
+            </nav>
+        </div>
+        <div data-region="body" class="center layout-body"></div>
+    </div>
+
     <div data-role="layout" data-id="login" class="xc-flex vertical">
         <div data-region="body" class="center layout-body"></div>
     </div>
 
     <div data-role="pane" data-transition="slide" class="xc-fill" data-id="pane">
+
+<!--        login-->
 
         <div data-role="view" data-uri="login" data-title="Login" data-layout="login">
             <div id="login">
@@ -89,12 +116,12 @@
                         <div class="span-12">
                             <input type="submit" value="Sign In" class="button solid"></input>
                         </div>
-                        <div class="span-12 or"><center><span>or</span></center></div>
+                        <div class="span-12 or"><center><span>&nbsp;</span></center></div>
                         <a href="" class="button span-12 connectTo facebook"><i class="xn xn-facebook"></i> Connect to facebook</a>
                         <a href="" class="button span-12 connectTo twitter"><i class="xn xn-twitter"></i> Connect to twitter</a>
                         <div class="span-12">
                             <label class="placeholder">
-                                <a href="#signup">Sign Up</a>
+                                <strong><a href="#signup">Sign Up</a></strong>
                             </label>
                         </div>
                     </div>
@@ -159,8 +186,14 @@
         </div>
 <!--        home-->
 
+<!--      intro-->
+
+       <div data-role="view" data-uri="intro" data-title="intro" data-layout="intro">
+           adoel
+       </div>
+
 <!--Static Page-->
-        <div data-role="view" data-uri="static" data-title="static" data-layout="default">
+        <div data-role="view" data-uri="static" data-title="static" data-layout="clean">
             <span class="title">About Us</span>
             <p class="subheader">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         </div>

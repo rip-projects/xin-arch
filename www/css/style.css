@@ -48,34 +48,3 @@
 }
 
 .xin-pane {height: 100%}
-
-/*static page*/
-/*static page*/
-
-/*login*/
-#login {padding: 10px 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;}
-#login input[type="text"], #login input[type="password"] {margin: 0;padding: 12px; border-radius: 0}
-#login input[type="password"]{ border-top: 0; margin-bottom: 10px; border-radius: 0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; -ms-border-radius: 0 0 5px 5px; -o-border-radius: 0 0 5px 5px}
-#login input[type="text"] {border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0; -ms-border-radius: 5px 5px 0 0; -o-border-radius: 5px 5px 0 0;   }
-#login .forgotPassword {margin-bottom: 10px;}
-#login .placeholder {margin-bottom: 10px;}
-#login .xn {font-size: inherit; width: inherit}
-#login .or {position: relative; border-top: 1px solid #ddd; margin-top: 13px}
-#login .or center span {position: relative; top: -10px; background: #F9F9F9; padding: 0 10px }
-#login .connectTo { color: #fff; border: 0; position: relative; padding: 10px}
-#login .connectTo i {position: absolute;left: 0;display: inline-block;width: 40px;top: 0;padding: 12px;font-size: 1.4em;}
-#login .twitter {background: #5EA9DD;}
-#login .facebook {background: #3B5998; margin-bottom: 10px}
-/*end login*/
-
-/*register page*/
-#signup {text-align: center;margin: 0 auto;border: 1px solid #eee;background: #f9f9f9; padding: 10px 20px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px;}
-#signup input[type="text"] {margin: 0;padding: 12px; border-radius: 0}
-#signup input[type="password"] {margin: 0;padding: 12px; border-radius: 0 0 0 5px; -webkit-border-radius: 0 0 0 5px; -o-border-radius: 0 0 0 5px; -ms-border-radius: 0 0 0 5px; }
-#signup input.password { border-radius: 0 0 0 5px; -webkit-border-radius: 0 0 0 5px; -o-border-radius: 0 0 0 5px; -ms-border-radius: 0 0 0 5px; }
-#signup input.password2 { border-radius: 0 0 5px 0; -webkit-border-radius: 0 0 5px 0; -o-border-radius: 0 0 5px 0; -ms-border-radius: 0 0 5px 0; }
-#signup input.inputNext {border-top: 0}
-#signup input.inputNext.inputNexts {border-left: 0}
-#signup input.inputFirst {border-radius: 5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0; -o-border-radius: 5px 5px 0 0; -ms-border-radius: 5px 5px 0 0; }
-#signup input[type="submit"] {margin: 10px auto; font-size: 16px;}
-/*end register page*/
