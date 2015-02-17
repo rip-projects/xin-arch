@@ -29,5 +29,8 @@ platforms/ios/www
 /www/extracted/*
 /www/skel/*
 /www/bower_components/*
+www/boew_components/*
 /www/node_modules/*
+www/node_modules/*
 /www/vendor/*
+www/vendor/*
