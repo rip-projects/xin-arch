@@ -34,3 +34,11 @@ www/boew_components/*
 www/node_modules/*
 /www/vendor/*
 www/vendor/*
+
+/hooks/
+hooks/
+config.xml
+/platforms/
+platforms/
+/plugins/
+plugins/
