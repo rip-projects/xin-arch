@@ -34,36 +34,49 @@
 
     <div data-role="pane" data-transition="slide" class="xc-fill" data-id="pane">
 
-        <div data-role="view" data-uri="login" data-title="Login" data-layout="login">
-            <div id="login">
-                <div class="title">
-                    <center><h2>
-                        Sign - <strong>In</strong>
-                    </h2></center>
-                </div>
-                <form>
+        <!-- signup -->
+        <div data-role="view" data-uri="signup" data-title="Signup" data-layout="login">
+            <form name="signup">
+                <div id="signup">
+                    <h2>
+                        Sign - <strong>Up</strong>
+                    </h2>
                     <div class="row">
                         <div class="span-12">
-                            <input type="text" placeholder="Email / Username" value="">
-                        </div>
-                        <div class="span-12">
-                            <input type="password" placeholder="Password" />
-                        </div>
-                        <center class="forgotPassword"><a href="">Forgot password?</a></center>
-                        <div class="span-12">
-                            <input type="submit" value="Sign In" class="button solid"></input>
-                        </div>
-                        <div class="span-12 or"><center><span>&nbsp;</span></center></div>
-                        <a href="" class="button span-12 connectTo facebook"><i class="xn xn-facebook"></i> Connect to facebook</a>
-                        <a href="" class="button span-12 connectTo twitter"><i class="xn xn-twitter"></i> Connect to twitter</a>
-                        <div class="span-12">
-                            <label class="placeholder">
-                                <strong><a href="signup.html">Sign Up</a></strong>
-                            </label>
+                            <input class="inputFirst" type="text" name="username" placeholder="Username">
                         </div>
                     </div>
-                </form>
-            </div>
+                    <div class="row">
+                        <div class="span-12">
+                            <input class="inputNext" type="text" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span-6">
+                            <input class="inputNext" type="text" name="first_name" placeholder="First name" />
+                        </div>
+                        <div class="span-6">
+                            <input class="inputNext inputNexts" type="text" name="last_name" placeholder="Last name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span-6">
+                            <input class="inputNext password" name="password" type="password" placeholder="Password" />
+                        </div>
+                        <div class="span-6">
+                            <input class="inputNext inputNexts password2" name="password2" type="password" placeholder="Retype Password"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span-12">
+                            <center><input type="submit" value="Sign Up" class="button solid"></center>
+                        </div>
+                        <div class="span-12">
+                            <center>Have an account, <a href="login.html">sign in here !.</a></center>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
 
         <span class="exit hide">+</span>
