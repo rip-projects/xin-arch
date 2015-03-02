@@ -158,15 +158,89 @@
 
         <!-- home-->
         <div data-role="view" data-uri="home" data-title="Home" data-layout="default">
-            <div id="tos">
+            <div id="tos" class="hide">
               <div>
                 <span class="tosClose">+</span>
                 <strong>Lorem ipsum dolor sit amet</strong>
                 <p>onsectetur adipiscing elit. In sit amet nibh sem. Fusce cursus lacinia ligula quis iaculis. Sed ultrices commodo suscipit.</p>
               </div>
             </div>
-            hello world !.
+            <h1 class="titleHead">
+                hello world !.    
+            </h1>
+
+<!--            listing-->
+            <ul class="listing">
+                <li>
+                    <div class="thumb-img" style="background-image:url(../vendor/xin-theme/img/2014-01-28.jpg)"></div>
+                    <div class="data">
+                        <a href="#detailArisan" class="title">Bpk. Ust. Jumrie</a>
+                        <p class="sub-title noWrap">
+                            <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb-img" style="background-image:url(../vendor/xin-theme/img/2014-01-28.jpg)"></div>
+                    <div class="data">
+                        <a href="#detailArisan" class="title">Bpk. Roy Tong</a>
+                        <p class="sub-title noWrap">
+                            <span class="descrip noWrap subheader">Tong@gmail.com</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+<!--            end listing-->
+
+<!--           tab Strip-->
+            <div class="tabstrip">
+               <div class="row">
+                  <a class="tabspan-2 tabs" href="#">
+                     <span class="xn xn-star"></span>
+                     <span>Featured</span>
+                  </a>
+                  <a class="tabspan-2 tabs" href="#">
+                     <span class="xn xn-user"></span>
+                     <span>Profile</span>
+                  </a>
+                  <a class="tabspan-2 tabs" href="#">
+                     <span class="xn xn-search"></span>
+                     <span>Search</span>
+                  </a>
+                  <a class="tabspan-2 tabs" href="#">
+                     <span class="xn xn-ellipsis-h"></span>
+                     <span>More</span>
+                  </a>
+                  <a class="tabspan-2 tabs" href="#">
+                     <span class="xn xn-ellipsis-h"></span>
+                     <span>More</span>
+                  </a>
+               </div>
+            </div>
+<!--           end tab Strip-->
+
         </div>
+
+
+        <!-- form -->
+        <div data-role="view" data-uri="form" data-title="Form" data-layout="clean">
+            <h1 class="titleHead">
+                form input
+            </h1>
+            <form>
+                <input type="text" placeholder="username">
+                <input type="password" placeholder="password">
+                <textarea></textarea>
+                <select>
+                    <option>one</option>
+                    <option>two</option>
+                </select>
+                <input type="checkbox">checkbox
+                <input type="radio">radio
+                <input type="submit" class="button solid">
+            </form> 
+        </div>
+        <!-- end form -->
 
         <!-- intro-->
         <div class="intro" data-role="view" data-uri="intro" data-title="intro" data-layout="intro">
