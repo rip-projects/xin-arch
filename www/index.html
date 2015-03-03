@@ -8,17 +8,25 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="white" />
 
     <title>Xin Archetype | Xinix Technology</title>
-    <link rel="stylesheet" href="fonts/stylesheet.css">
+
+    <!--    ##Start Production Stylesheet##
+    <link rel="stylesheet" type="text/css" href="dist/css/production.css">
+            ##End Production Stylesheet## -->
+
+    <!--    ##Start Development Stylesheet## -->
+    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="vendor/xin/css/xin.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/xin/css/xin-contrib.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/jacket-awesome/jacket-awesome.css" />
-    <link href="vendor/naked/css/naked.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/naked/css/naked.css" />
     <link rel="stylesheet" type="text/css" href="vendor/xin-theme/style/style.css" />
+    <!--    ##End Development Stylesheet## -->
 
 </head>
 
 <body data-role="app" style="display: none">
+
     <div data-role="layout" data-id="drawer" class="xc-flex vertical">
         <div class="box-user">
             <div class="img-user"></div>
@@ -77,8 +85,7 @@
 
     <div data-role="pane" data-transition="slide" class="xc-fill" data-id="pane">
 
-<!--        login-->
-
+        <!--    ##login##   -->
         <div data-role="view" data-uri="login" data-title="Login" data-layout="login">
             <div id="login">
                 <div class="title">
@@ -111,7 +118,7 @@
             </div>
         </div>
 
-        <!-- signup -->
+        <!--    ##signup##  -->
         <div data-role="view" data-uri="signup" data-title="Signup" data-layout="login">
             <form name="signup">
                 <div id="signup">
@@ -156,20 +163,18 @@
             </form>
         </div>
 
-        <!-- home-->
+        <!--    ##home##    -->
         <div data-role="view" data-uri="home" data-title="Home" data-layout="default">
             <div id="tos" class="hide">
-              <div>
-                <span class="tosClose">+</span>
-                <strong>Lorem ipsum dolor sit amet</strong>
-                <p>onsectetur adipiscing elit. In sit amet nibh sem. Fusce cursus lacinia ligula quis iaculis. Sed ultrices commodo suscipit.</p>
-              </div>
+                <div>
+                    <span class="tosClose">+</span>
+                    <strong>Lorem ipsum dolor sit amet</strong>
+                    <p>onsectetur adipiscing elit. In sit amet nibh sem. Fusce cursus lacinia ligula quis iaculis. Sed ultrices commodo suscipit.</p>
+                </div>
             </div>
-            <h1 class="titleHead">
-                hello world !.    
-            </h1>
 
-<!--            listing-->
+            <h1 class="titleHead"> hello world !. </h1>
+
             <ul class="listing">
                 <li>
                     <div class="thumb-img" style="background-image:url(../vendor/xin-theme/img/2014-01-28.jpg)"></div>
@@ -190,34 +195,33 @@
                     </div>
                 </li>
             </ul>
-<!--            end listing-->
 
-<!--           tab Strip-->
+            <!--    ##tab Strip##   -->
             <div class="tabstrip">
-               <div class="row">
-                  <a class="tabspan-2 tabs" href="#">
-                     <span class="xn xn-star"></span>
-                     <span>Featured</span>
-                  </a>
-                  <a class="tabspan-2 tabs" href="#">
-                     <span class="xn xn-user"></span>
-                     <span>Profile</span>
-                  </a>
-                  <a class="tabspan-2 tabs" href="#">
-                     <span class="xn xn-search"></span>
-                     <span>Search</span>
-                  </a>
-                  <a class="tabspan-2 tabs" href="#">
-                     <span class="xn xn-ellipsis-h"></span>
-                     <span>More</span>
-                  </a>
-                  <a class="tabspan-2 tabs" href="#">
-                     <span class="xn xn-ellipsis-h"></span>
-                     <span>More</span>
-                  </a>
-               </div>
+                <div class="row">
+                    <a class="tabspan-2 tabs" href="#">
+                        <span class="xn xn-star"></span>
+                        <span>Featured</span>
+                    </a>
+                    <a class="tabspan-2 tabs" href="#">
+                        <span class="xn xn-user"></span>
+                        <span>Profile</span>
+                    </a>
+                    <a class="tabspan-2 tabs" href="#">
+                        <span class="xn xn-search"></span>
+                        <span>Search</span>
+                    </a>
+                    <a class="tabspan-2 tabs" href="#">
+                        <span class="xn xn-ellipsis-h"></span>
+                        <span>More</span>
+                    </a>
+                    <a class="tabspan-2 tabs" href="#">
+                        <span class="xn xn-ellipsis-h"></span>
+                        <span>More</span>
+                    </a>
+                </div>
             </div>
-<!--           end tab Strip-->
+            <!--    ##end tab Strip##   -->
 
         </div>
 
@@ -238,15 +242,15 @@
                 <input type="checkbox">checkbox
                 <input type="radio">radio
                 <input type="submit" class="button solid">
-            </form> 
+            </form>
         </div>
         <!-- end form -->
 
         <!-- intro-->
         <div class="intro" data-role="view" data-uri="intro" data-title="intro" data-layout="intro">
-           <div class="imgIntro">
-               <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
-           </div>
+            <div class="imgIntro">
+                <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
+            </div>
             <div class="descIntro">
                 <span class="title">Nam laoreet nulla nec tempus</span>
                 <p>Phasellus dictum leo tellus, quis accumsan leo condimentum at. Praesent fermentum enim at libero facilisis, eu ornare ligula tincidunt. </p>
@@ -272,9 +276,9 @@
         </div>
 
         <div class="intro" data-role="view" data-uri="intro1" data-title="intro" data-layout="intro">
-           <div class="imgIntro">
-               <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
-           </div>
+            <div class="imgIntro">
+                <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
+            </div>
             <div class="descIntro">
                 <span class="title">Nam laoreet nulla nec tempus</span>
                 <p>Phasellus dictum leo tellus, quis accumsan leo condimentum at. Praesent fermentum enim at libero facilisis, eu ornare ligula tincidunt. </p>
@@ -300,9 +304,9 @@
         </div>
 
         <div class="intro" data-role="view" data-uri="intro2" data-title="intro" data-layout="intro">
-           <div class="imgIntro">
-               <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
-           </div>
+            <div class="imgIntro">
+                <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
+            </div>
             <div class="descIntro">
                 <span class="title">Nam laoreet nulla nec tempus</span>
                 <p>Phasellus dictum leo tellus, quis accumsan leo condimentum at. Praesent fermentum enim at libero facilisis, eu ornare ligula tincidunt. </p>
@@ -328,9 +332,9 @@
         </div>
 
         <div class="intro" data-role="view" data-uri="intro3" data-title="intro" data-layout="intro">
-           <div class="imgIntro">
-               <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
-           </div>
+            <div class="imgIntro">
+                 <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
+            </div>
             <div class="descIntro">
                 <span class="title">Nam laoreet nulla nec tempus</span>
                 <p>Phasellus dictum leo tellus, quis accumsan leo condimentum at. Praesent fermentum enim at libero facilisis, eu ornare ligula tincidunt. </p>
@@ -355,14 +359,13 @@
             </div>
         </div>
 
-
-        <!--Static Page-->
+        <!--    ##Static Page##     -->
         <div data-role="view" data-uri="static" data-title="static" data-layout="clean">
             <span class="title">About Us</span>
             <p class="subheader">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         </div>
-        <!--Static Page-->
 
+        <!--    ##Static Page##     -->
         <span class="exit hide">+</span>
         <div class="overlay hide"></div>
 
@@ -383,26 +386,29 @@
         </ul>
     </div>
 
+
     <!-- Application: Script -->
     <!-- Uncomment below when it used as Cordova app -->
     <!-- <script type="text/javascript" src="cordova.js"></script> -->
 
+    <!--    ##Start Production Javascript##
+    <script type="text/javascript" src="dist/js/production.min.js"></script>
+            ##End Production Javascript## -->
+
+    <!--    ##Start Development Javascript## -->
     <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="vendor/underscore/underscore-min.js"></script>
     <script type="text/javascript" src="vendor/backbone/backbone-min.js"></script>
-
     <script type="text/javascript" src="./js/collections/countries.js"></script>
-
     <script type="text/javascript" src="vendor/xin/js/xin.js"></script>
-
     <script type="text/javascript" src="js/api/db.js"></script>
-
     <script type="text/javascript" src="./js/app/directives.js"></script>
     <script type="text/javascript" src="./js/app/middlewares.js"></script>
     <script type="text/javascript" src="./js/app/app.js"></script>
     <script type="text/javascript" src="./js/app/config.js"></script>
     <script type="text/javascript" src="./js/app/routes.js"></script>
     <script type="text/javascript" src="./js/app/init.js"></script>
+    <!--    ##End Development Javascript## -->
 
 </body>
 </html>
