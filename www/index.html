@@ -9,69 +9,35 @@
 
     <title>Xin Archetype | Xinix Technology</title>
 
-    <!--    ##Start Production Stylesheet##
-    <link rel="stylesheet" type="text/css" href="dist/css/production.css">
-            ##End Production Stylesheet## -->
+    <!--    ##Start Production Stylesheet## -->
+    <link rel="stylesheet" type="text/css" href="dist/css/production.min.css">
+    <!--    ##End Production Stylesheet## -->
 
-    <!--    ##Start Development Stylesheet## -->
     <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <!--    ##Start Development Stylesheet##
     <link rel="stylesheet" type="text/css" href="vendor/xin/css/xin.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/xin/css/xin-contrib.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/jacket-awesome/jacket-awesome.css" />
     <link rel="stylesheet" type="text/css" href="vendor/naked/css/naked.css" />
     <link rel="stylesheet" type="text/css" href="vendor/xin-theme/style/style.css" />
-    <!--    ##End Development Stylesheet## -->
+            ##End Development Stylesheet## -->
 
 </head>
 
 <body data-role="app" style="display: none">
-
-    <div data-role="layout" data-id="drawer" class="xc-flex vertical">
-        <div class="box-user">
-            <div class="img-user"></div>
-            <div class="name-user"><span>adoel4razman@gmail.com</span><i class="xn xn-caret-down"></i></div>
-        </div>
-        <div data-region="body" class="center layout-body">
-        </div>
-    </div>
-
-    <div data-role="layout" data-id="default" class="xc-flex vertical">
-        <div data-region="header">
-            <nav class="navbar navbar-default" role="navigation">
-               <div class="row">
-                  <div class="span-2">
-                     <a class="back-button icon-menu" href="#" onclick="xin.$('.xin-drawer').data('instance').show(); return false"><i class="xn xn-bars"></i></a>
-                  </div>
-                  <div class="span-8">
-                     <h6 class="label">Application</h6>
-                  </div>
-                  <div class="span-2">
-                     <a href="#" class="icon-menu pull-right"><i class="xn xn-ellipsis-v"></i></a>
-                  </div>
-               </div>
-            </nav>
-        </div>
-        <div data-region="body" class="center layout-body"></div>
-        <div data-region="footer">
-            <div class="xin-navbar">
-                <div class="xin-title">
-                    Footer
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div data-role="layout" data-id="intro" class="xc-flex vertical">
-       <div data-region="body" class="center layout-body"></div>
-    </div>
 
     <div data-role="layout" data-id="clean" class="xc-flex vertical">
         <div data-region="header">
             <nav class="navbar navbar-default" role="navigation">
                <div class="row">
                   <div class="span-2">
-                     <a class="back-button icon-menu" href="#"><i class="xn xn-angle-left xn-3x">Back</i></a>
+                    &nbsp;
+                    <!-- <a class="back-button icon-menu" href="#"><i class="xn xn-angle-left xn-3x">Back</i></a> -->
+                  </div>
+                  <div class="span-8">
+                     <h6 class="label" data-region='title'></h6>
                   </div>
                </div>
             </nav>
@@ -79,336 +45,42 @@
         <div data-region="body" class="center layout-body"></div>
     </div>
 
-    <div data-role="layout" data-id="login" class="xc-flex vertical">
-        <div data-region="body" class="center layout-body"></div>
-    </div>
-
     <div data-role="pane" data-transition="slide" class="xc-fill" data-id="pane">
 
-        <!--    ##login##   -->
-        <div data-role="view" data-uri="login" data-title="Login" data-layout="login">
-            <div id="login">
-                <div class="title">
-                    <center><h2>
-                        Sign - <strong>In</strong>
-                    </h2></center>
-                </div>
-                <form>
-                    <div class="row">
-                        <div class="span-12">
-                            <input type="text" placeholder="Email / Username" value="">
-                        </div>
-                        <div class="span-12">
-                            <input type="password" placeholder="Password" />
-                        </div>
-                        <center class="forgotPassword"><a href="">Forgot password?</a></center>
-                        <div class="span-12">
-                            <input type="submit" value="Sign In" class="button solid"></input>
-                        </div>
-                        <div class="span-12 or"><center><span>&nbsp;</span></center></div>
-                        <a href="" class="button span-12 connectTo facebook"><i class="xn xn-facebook"></i> Connect to facebook</a>
-                        <a href="" class="button span-12 connectTo twitter"><i class="xn xn-twitter"></i> Connect to twitter</a>
-                        <div class="span-12">
-                            <label class="placeholder">
-                                <strong><a href="#signup">Sign Up</a></strong>
-                            </label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!--    ##signup##  -->
-        <div data-role="view" data-uri="signup" data-title="Signup" data-layout="login">
-            <form name="signup">
-                <div id="signup">
-                    <h2>
-                        Sign - <strong>Up</strong>
-                    </h2>
-                    <div class="row">
-                        <div class="span-12">
-                            <input class="inputFirst" type="text" name="username" placeholder="Username">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span-12">
-                            <input class="inputNext" type="text" name="email" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span-6">
-                            <input class="inputNext" type="text" name="first_name" placeholder="First name" />
-                        </div>
-                        <div class="span-6">
-                            <input class="inputNext inputNexts" type="text" name="last_name" placeholder="Last name" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span-6">
-                            <input class="inputNext password" name="password" type="password" placeholder="Password" />
-                        </div>
-                        <div class="span-6">
-                            <input class="inputNext inputNexts password2" name="password2" type="password" placeholder="Retype Password"/>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="span-12">
-                            <center><input type="submit" value="Sign Up" class="button solid"></center>
-                        </div>
-                        <div class="span-12">
-                            <center>Have an account, <a href="#">sign in here !.</a></center>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-
         <!--    ##home##    -->
-        <div data-role="view" data-uri="home" data-title="Home" data-layout="default">
-            <div id="tos" class="hide">
-                <div>
-                    <span class="tosClose">+</span>
-                    <strong>Lorem ipsum dolor sit amet</strong>
-                    <p>onsectetur adipiscing elit. In sit amet nibh sem. Fusce cursus lacinia ligula quis iaculis. Sed ultrices commodo suscipit.</p>
-                </div>
-            </div>
-
-            <h1 class="titleHead"> hello world !. </h1>
-
-            <ul class="listing">
-                <li>
-                    <div class="thumb-img" style="background-image:url(../vendor/xin-theme/img/2014-01-28.jpg)"></div>
-                    <div class="data">
-                        <a href="#detailArisan" class="title">Bpk. Ust. Jumrie</a>
-                        <p class="sub-title noWrap">
-                            <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="thumb-img" style="background-image:url(../vendor/xin-theme/img/2014-01-28.jpg)"></div>
-                    <div class="data">
-                        <a href="#detailArisan" class="title">Bpk. Roy Tong</a>
-                        <p class="sub-title noWrap">
-                            <span class="descrip noWrap subheader">Tong@gmail.com</span>
-                        </p>
-                    </div>
-                </li>
-            </ul>
-
-            <!--    ##tab Strip##   -->
-            <div class="tabstrip">
-                <div class="row">
-                    <a class="tabspan-2 tabs" href="#">
-                        <span class="xn xn-star"></span>
-                        <span>Featured</span>
-                    </a>
-                    <a class="tabspan-2 tabs" href="#">
-                        <span class="xn xn-user"></span>
-                        <span>Profile</span>
-                    </a>
-                    <a class="tabspan-2 tabs" href="#">
-                        <span class="xn xn-search"></span>
-                        <span>Search</span>
-                    </a>
-                    <a class="tabspan-2 tabs" href="#">
-                        <span class="xn xn-ellipsis-h"></span>
-                        <span>More</span>
-                    </a>
-                    <a class="tabspan-2 tabs" href="#">
-                        <span class="xn xn-ellipsis-h"></span>
-                        <span>More</span>
-                    </a>
-                </div>
-            </div>
-            <!--    ##end tab Strip##   -->
-
+        <div data-role="view" data-uri="home" data-id="home" data-title="KamusKu" data-layout="clean">
+            <progress id="progressBar" max="100" value="0"></progress>
         </div>
 
-
-        <!-- form -->
-        <div data-role="view" data-uri="form" data-title="Form" data-layout="clean">
-            <h1 class="titleHead">
-                form input
-            </h1>
-            <form>
-                <input type="text" placeholder="username">
-                <input type="password" placeholder="password">
-                <textarea></textarea>
-                <select>
-                    <option>one</option>
-                    <option>two</option>
-                </select>
-                <input type="checkbox">checkbox
-                <input type="radio">radio
-                <input type="submit" class="button solid">
-            </form>
-        </div>
-        <!-- end form -->
-
-        <!-- intro-->
-        <div class="intro" data-role="view" data-uri="intro" data-title="intro" data-layout="intro">
-            <div class="imgIntro">
-                <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
-            </div>
-            <div class="descIntro">
-                <span class="title">Nam laoreet nulla nec tempus</span>
-                <p>Phasellus dictum leo tellus, quis accumsan leo condimentum at. Praesent fermentum enim at libero facilisis, eu ornare ligula tincidunt. </p>
-            </div>
-            <div data-region="footer">
-                <div data-region="xin-navbar">
-                    <div class="row">
-                        <div class="span-2"><a href=""><i class="xn xn-angle-left"></i></a></div>
-                        <div class="span-8">
-                            <div class="xin-title">
-                                <ul class="indicator">
-                                    <li class="active"></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="span-2"><a href="intro1"><i class="xn xn-angle-right"></i></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="intro" data-role="view" data-uri="intro1" data-title="intro" data-layout="intro">
-            <div class="imgIntro">
-                <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
-            </div>
-            <div class="descIntro">
-                <span class="title">Nam laoreet nulla nec tempus</span>
-                <p>Phasellus dictum leo tellus, quis accumsan leo condimentum at. Praesent fermentum enim at libero facilisis, eu ornare ligula tincidunt. </p>
-            </div>
-            <div data-region="footer">
-                <div data-region="xin-navbar">
-                    <div class="row">
-                        <div class="span-2"><a href="intro"><i class="xn xn-angle-left"></i></a></div>
-                        <div class="span-8">
-                            <div class="xin-title">
-                                <ul class="indicator">
-                                    <li class=""></li>
-                                    <li class="active"></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="span-2"><a href="intro2"><i class="xn xn-angle-right"></i></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="intro" data-role="view" data-uri="intro2" data-title="intro" data-layout="intro">
-            <div class="imgIntro">
-                <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
-            </div>
-            <div class="descIntro">
-                <span class="title">Nam laoreet nulla nec tempus</span>
-                <p>Phasellus dictum leo tellus, quis accumsan leo condimentum at. Praesent fermentum enim at libero facilisis, eu ornare ligula tincidunt. </p>
-            </div>
-            <div data-region="footer">
-                <div data-region="xin-navbar">
-                    <div class="row">
-                        <div class="span-2"><a href="intro1"><i class="xn xn-angle-left"></i></a></div>
-                        <div class="span-8">
-                            <div class="xin-title">
-                                <ul class="indicator">
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class="active"></li>
-                                    <li class=""></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="span-2"><a href="intro3"><i class="xn xn-angle-right"></i></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="intro" data-role="view" data-uri="intro3" data-title="intro" data-layout="intro">
-            <div class="imgIntro">
-                 <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
-            </div>
-            <div class="descIntro">
-                <span class="title">Nam laoreet nulla nec tempus</span>
-                <p>Phasellus dictum leo tellus, quis accumsan leo condimentum at. Praesent fermentum enim at libero facilisis, eu ornare ligula tincidunt. </p>
-            </div>
-            <div data-region="footer">
-                <div data-region="xin-navbar">
-                    <div class="row">
-                        <div class="span-2"><a href="intro2"><i class="xn xn-angle-left"></i></a></div>
-                        <div class="span-8">
-                            <div class="xin-title">
-                                <ul class="indicator">
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class=""></li>
-                                    <li class="active"></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="span-2"><a href="intro"><i class="xn xn-angle-right"></i></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--    ##Static Page##     -->
-        <div data-role="view" data-uri="static" data-title="static" data-layout="clean">
-            <span class="title">About Us</span>
-            <p class="subheader">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-        </div>
-
-        <!--    ##Static Page##     -->
         <span class="exit hide">+</span>
         <div class="overlay hide"></div>
 
     </div>
 
-    <div data-role="drawer" data-align="left" data-layout="drawer" style="width: 80%">
-        <ul data-role="list" class="menu-drawer">
-            <li><i class="xn xn-sign-in"></i><a href="#login">Login</a></li>
-            <li><i class="xn xn-arrow-circle-up"></i><a href="#signup">Signup</a></li>
-            <li><i class="xn xn-list"></i><a href="#list">List</a></li>
-        </ul>
-        <ul data-role="list" class="list-drawer row">
-            <li><a class="span-10" href="#static">Static Page</a><i class="notif span-2">i</i></li>
-            <li><a class="span-10" href="#">All Mail</a><i class="notif span-2">i</i></li>
-            <li><a class="span-10" href="#">Trash</a><i class="notif span-2">i</i></li>
-            <li><a class="span-10" href="#">Spam</a><i class="notif span-2">i</i></li>
-            <li><a class="span-10" href="#">Follow Up</a><i class="notif span-2">i</i></li>
-        </ul>
-    </div>
-
-
     <!-- Application: Script -->
     <!-- Uncomment below when it used as Cordova app -->
-    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+    <script type="text/javascript" src="cordova.js"></script>
 
-    <!--    ##Start Production Javascript##
-    <script type="text/javascript" src="dist/js/production.min.js"></script>
-            ##End Production Javascript## -->
+    <!--    ##Start Production Javascript## -->
+    <script type="text/javascript" src="dist/js/vendor.min.js"></script>
+    <!-- ##End Production Javascript## -->
 
-    <!--    ##Start Development Javascript## -->
+    <!--    ##Start Development Javascript##
     <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="vendor/underscore/underscore-min.js"></script>
     <script type="text/javascript" src="vendor/backbone/backbone-min.js"></script>
-    <script type="text/javascript" src="./js/collections/countries.js"></script>
     <script type="text/javascript" src="vendor/xin/js/xin.js"></script>
-    <script type="text/javascript" src="js/api/db.js"></script>
+            ##End Development Javascript## -->
+
+    <script type="text/javascript" src="./js/collections/countries.js"></script>
+    <script type="text/javascript" src="./js/api/db.js"></script>
+    <script type="text/javascript" src="./js/api/downloader.js"></script>
     <script type="text/javascript" src="./js/app/directives.js"></script>
     <script type="text/javascript" src="./js/app/middlewares.js"></script>
     <script type="text/javascript" src="./js/app/app.js"></script>
     <script type="text/javascript" src="./js/app/config.js"></script>
     <script type="text/javascript" src="./js/app/routes.js"></script>
     <script type="text/javascript" src="./js/app/init.js"></script>
-    <!--    ##End Development Javascript## -->
 
 </body>
 </html>

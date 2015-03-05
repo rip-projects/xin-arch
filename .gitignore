@@ -35,6 +35,9 @@ www/node_modules/*
 /www/vendor/*
 www/vendor/*
 
+/www/node_modules/*
+www/node_modules/*
+
 /hooks/
 hooks/
 config.xml

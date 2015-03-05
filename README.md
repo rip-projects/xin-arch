@@ -12,12 +12,18 @@ bower install
 #Cordova plugins
 *   https://github.com/brodysoft/Cordova-SQLitePlugin
 *   https://github.com/apache/cordova-plugin-file
+*   https://github.com/apache/cordova-plugin-file-transfer
+*   https://github.com/sgrebnov/cordova-plugin-background-download
+*   https://github.com/MobileChromeApps/zip
 *   https://github.com/Initsogar/cordova-activityindicator
 *   https://github.com/apache/cordova-plugin-splashscreen
 
 ```bash
 cordova plugin add https://github.com/brodysoft/Cordova-SQLitePlugin.git
 cordova plugin add https://github.com/apache/cordova-plugin-file.git
+cordova plugin add https://github.com/apache/cordova-plugin-file-transfer.git
+cordova plugin add https://github.com/sgrebnov/cordova-plugin-background-download.git
+cordova plugin add https://github.com/MobileChromeApps/zip.git
 cordova plugin add https://github.com/Initsogar/cordova-activityindicator.git
 cordova plugin add https://github.com/apache/cordova-plugin-splashscreen.git
 ```

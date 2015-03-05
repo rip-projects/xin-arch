@@ -50,11 +50,18 @@
         },
 
         invoke: function(api, param, cb) {
+
             api = api.split('.');
             if(typeof(param) == "function") {
                 window.API[api[0]][api[1]](param);
             } else {
-                window.API[api[0]][api[1]](param, cb);
+                delete arguments[0];
+                var opt = [],
+                    j = 0;
+                for (var i in arguments) {
+                    opt.push(arguments[i]);
+                }
+                window.API[api[0]][api[1]].apply(this, opt);
             }
         },
 
