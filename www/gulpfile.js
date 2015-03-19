@@ -29,7 +29,8 @@ gulp.task('css', function() {
         "./vendor/xin/css/xin.min.css",
         "./vendor/xin/css/xin-contrib.min.css",
         "./vendor/jacket-awesome/jacket-awesome.css",
-        "./vendor/xin-theme/style/style.css"
+        "./vendor/xin-theme/style/style.css",
+        "./vendor/naked/css/naked.min.css"
     ];
 
     gulp.src(css)
@@ -38,4 +39,23 @@ gulp.task('css', function() {
         .pipe(gulp.dest('./dist/css'));
 });
 
-gulp.task('default', ['js', 'css']);
+
+gulp.task('move', function(){
+
+    var filesToMove = [
+            "./vendor/font-awesome/fonts/*.*"
+        ];
+
+  gulp.src(filesToMove)
+  .pipe(gulp.dest('./dist/font-awesome/fonts'));
+
+    filesToMove = [
+            "./vendor/font-awesome/css/*.*"
+        ];
+
+  gulp.src(filesToMove)
+  .pipe(gulp.dest('./dist/font-awesome/css'));
+
+});
+
+gulp.task('default', ['js', 'css', 'move']);
