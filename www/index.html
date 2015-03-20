@@ -37,8 +37,12 @@
                   </div>
                   <div class="span-8">
                      <h6 class="label">Application</h6>
+                     <form id="search" class="hide">
+                         <input type="text"  placeholder="Search">
+                     </form>
                   </div>
                   <div class="span-2">
+                     <a href="#" class="icon-menu"><i class="xn xn-search"></i></a>
                      <a href="#" class="icon-menu pull-right"><i class="xn xn-ellipsis-v"></i></a>
                   </div>
                </div>
@@ -63,7 +67,26 @@
             <nav class="navbar navbar-default" role="navigation">
                <div class="row">
                   <div class="span-2">
-                     <a class="back-button icon-menu" href="#"><i class="xn xn-angle-left xn-3x">Back</i></a>
+                     <a class="back-button icon-menu" href="#"><i class="xn xn-angle-left xn-3x"></i></a>
+                  </div>
+               </div>
+            </nav>
+        </div>
+        <div data-region="body" class="center layout-body"></div>
+    </div>
+
+    <div data-role="layout" data-id="form" class="xc-flex vertical">
+        <div data-region="header">
+            <nav class="navbar navbar-default" role="navigation">
+               <div class="row">
+                  <div class="span-2">
+                     <a class="back-button icon-menu" href="#"><i class="xn xn-angle-left xn-3x"></i></a>
+                  </div>
+                  <div class="span-8">
+                     <h6 class="label">&nbsp;</h6>
+                  </div>
+                  <div class="span-2">
+                     <a href="#" class="icon-menu pull-right"><i class="xn xn-check"></i></a>
                   </div>
                </div>
             </nav>
@@ -165,7 +188,7 @@
                 <p>onsectetur adipiscing elit. In sit amet nibh sem. Fusce cursus lacinia ligula quis iaculis. Sed ultrices commodo suscipit.</p>
               </div>
             </div>
-            <h1 class="titleHead">
+            <h1 class="title">
                 hello world !.    
             </h1>
 
@@ -186,6 +209,14 @@
                         <a href="#detailArisan" class="title">Bpk. Roy Tong</a>
                         <p class="sub-title noWrap">
                             <span class="descrip noWrap subheader">Tong@gmail.com</span>
+                        </p>
+                    </div>
+                </li> 
+                <li>
+                    <div class="data">
+                        <a href="#detailArisan" class="title">Bpk. Ust. Jumrie</a>
+                        <p class="sub-title noWrap">
+                            <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
                         </p>
                     </div>
                 </li>
@@ -223,21 +254,18 @@
 
 
         <!-- form -->
-        <div data-role="view" data-uri="form" data-title="Form" data-layout="clean">
-            <h1 class="titleHead">
-                form input
+        <div data-role="view" data-uri="form" data-title="Form" data-layout="form">
+            <h1 class="title">
+                create
             </h1>
             <form>
                 <input type="text" placeholder="username">
                 <input type="password" placeholder="password">
-                <textarea></textarea>
+                <textarea placeholder="note"></textarea>
                 <select>
                     <option>one</option>
                     <option>two</option>
                 </select>
-                <input type="checkbox">checkbox
-                <input type="radio">radio
-                <input type="submit" class="button solid">
             </form> 
         </div>
         <!-- end form -->
@@ -375,6 +403,7 @@
             <li><i class="xn xn-sign-in"></i><a href="#login">Login</a></li>
             <li><i class="xn xn-arrow-circle-up"></i><a href="#signup">Signup</a></li>
             <li><i class="xn xn-list"></i><a href="#list">List</a></li>
+            <li><i class="xn xn-list"></i><a href="#form">Form</a></li>
         </ul>
         <ul data-role="list" class="list-drawer row">
             <li><a class="span-10" href="#static">Static Page</a><i class="notif span-2">i</i></li>
