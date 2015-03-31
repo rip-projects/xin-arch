@@ -250,22 +250,83 @@
             </div>
 <!--           end tab Strip-->
 
+            <!-- action sheet -->
+            <div class="action-sheet-backdrop">
+                <div class="action-sheet-wrapper actionheet-up">
+                    <div class="action-sheet action-sheet-has-icons">
+                        <div class="action-sheet-group action-sheet-options">
+                        <!-- ngIf: titleText -->
+                        <div class="action-sheet-title ng-binding">ActionSheet Example</div>
+                        <!-- end ngIf: titleText -->
+                        <!-- ngRepeat: b in buttons -->
+                        <button class="button action-sheet-option ng-binding">Share</button>
+                        <!-- end ngRepeat: b in buttons -->
+                        <button class="button action-sheet-option ng-binding">Move</button>
+                        <!-- end ngRepeat: b in buttons -->
+                        <!-- ngIf: destructiveText -->
+                        <button class="button destructive action-sheet-destructive ng-binding">Delete</button>
+                        <!-- end ngIf: destructiveText -->
+                        </div>
+                        <!-- ngIf: cancelText -->
+                        <div class="action-sheet-group action-sheet-cancel">
+                            <button class="button ng-binding">Cancel</button>
+                        </div>
+                    <!-- end ngIf: cancelText -->
+                    </div>
+                </div>
+            </div>
+
         </div>
 
 
         <!-- form -->
         <div data-role="view" data-uri="form" data-title="Form" data-layout="form">
-            <h1 class="title">
-                create
-            </h1>
+            
             <form>
-                <input type="text" placeholder="username">
-                <input type="password" placeholder="password">
-                <textarea placeholder="note"></textarea>
-                <select>
-                    <option>one</option>
-                    <option>two</option>
-                </select>
+
+                <div class="row">
+                    <div class="span-12">
+                        <div class="wrapper">
+                            <label>Input Label</label>
+                            <input type="text" placeholder="Input">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span-12">
+                        <div class="wrapper">
+                            <label>Input Label</label>
+                            <input type="text" placeholder="Input">
+                        </div>
+                    </div>
+                    <div class="span-12">
+                        <div class="wrapper">
+                            <label>Input Label</label>
+                            <select>
+                                <option>Options #1</option>
+                                <option>Options #2</option>
+                                <option>Options #3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="span-12">
+                        <div class="wrapper">
+                            <label>Input Label</label>
+                            <span class="field">This is read-only</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="wrapper">
+                        <div class="span-12">
+                            <label>Textarea Label</label>
+                            <textarea placeholder="textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+
             </form> 
         </div>
         <!-- end form -->
