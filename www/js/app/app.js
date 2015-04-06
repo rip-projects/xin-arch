@@ -19,6 +19,20 @@
         }
     });
 
+    var ValueDirective = function() {
+
+    };
+
+    _.extend(ValueDirective.prototype, {
+        matcher: function($el) {
+            return $el.data('value');
+        },
+
+        run: function($el) {
+            $el.html($el.data('value'));
+        }
+    });
+
     window.app = new xin.App({
         el: xin.$('body'),
         directives: {
@@ -26,7 +40,8 @@
             '[data-role]': xin.directive.RoleDirective,
             '[data-uri]': xin.directive.URIDirective,
             '[data-bind]': xin.directive.BindDirective,
-            '[data-value]': ValueDirective
+            '[data-value]': ValueDirective,
+            '[data-background]': xin.directive.BackgroundDirective
         },
         middlewares: {
             'AuthMiddleware': AuthMiddleware
