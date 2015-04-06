@@ -39,9 +39,12 @@
         <div data-region="header">
             <nav class="navbar navbar-default" role="navigation">
                <div class="row">
+
                   <div class="span-2">
-                     <a class="back-button icon-menu" href="#" onclick="xin.$('.xin-drawer').data('instance').show(); return false"><i class="xn xn-bars"></i></a>
+                     <!-- <span data-target="#sideMenu" class="back-button icon-menu"><i class="xn xn-bars"></i></span> -->
+                     <a class="back-button icon-menu" onclick="xin.$('.xin-drawer').data('instance').show(); return false"><i class="xn xn-bars"></i></a>
                   </div>
+
                   <div class="span-8">
                      <h6 class="label">Application</h6>
                      <form id="search" class="hide">
@@ -442,6 +445,7 @@
     <script type="text/javascript" src="./js/collections/countries.js"></script>
     <script type="text/javascript" src="./js/api/db.js"></script>
     <script type="text/javascript" src="./js/api/downloader.js"></script>
+    <script type="text/javascript" src="./js/app/constant.js"></script>
     <script type="text/javascript" src="./js/app/directives.js"></script>
     <script type="text/javascript" src="./js/app/middlewares.js"></script>
     <script type="text/javascript" src="./js/app/app.js"></script>

@@ -14,6 +14,7 @@ gulp.task('js', function() {
         "./vendor/underscore/underscore-min.js",
         "./vendor/backbone/backbone-min.js",
         "./vendor/localforage/dist/localforage.min.js",
+        "./vendor/touchswipe/jquery.touchSwipe.min.js",
         "./vendor/xin/js/xin.js"
     ];
 
