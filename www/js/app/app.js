@@ -44,7 +44,7 @@
             '[data-background]': xin.directive.BackgroundDirective
         },
         middlewares: {
-            'AuthMiddleware': AuthMiddleware
+            // 'AuthMiddleware': AuthMiddleware
         },
         providers: {
 

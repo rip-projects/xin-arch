@@ -20,7 +20,6 @@
     "underscore": "git@github.com:jashkenas/underscore.git",
     "naked": "git@github.com:xinix-technology/naked.git",
     "xin-theme": "git@github.com:adoel/xin-theme.git",
-    "md5": "git@github.com:blueimp/JavaScript-MD5.git",
     "touchswipe": "git@github.com:mattbryson/TouchSwipe-Jquery-Plugin.git",
     "localforage": "~1.2.2"
   },

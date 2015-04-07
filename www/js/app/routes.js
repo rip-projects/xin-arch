@@ -1,10 +1,10 @@
 ;(function() {
 
-	'use strict';
+    'use strict';
 
-	app.router.route('anu', function() {
-	    alert('anu');
-	});
+    app.router.route('anu', function() {
+        alert('anu');
+    });
 
 
 })();
