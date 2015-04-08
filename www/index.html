@@ -28,16 +28,76 @@
 
 <body data-role="app" style="display: none">
 
+    <!-- layout drawer -->
+    <div data-role="layout" data-id="drawer" class="xc-flex vertical">
+        <div class="box-user">
+            <div class="img-user"></div>
+            <div class="name-user"><span>adoel4razman@gmail.com</span><i class="xn xn-caret-down"></i></div>
+        </div>
+        <div data-region="body" class="center layout-body">
+        </div>
+    </div>
+
+
+    <div data-role="layout" data-id="default" class="xc-flex vertical">
+        <div data-region="header">
+            <nav class="navbar navbar-default" role="navigation">
+               <div class="row">
+                  <div class="span-2">
+                     <a class="back-button icon-menu" href="#" onclick="xin.$('.xin-drawer').data('instance').show(); return false"><i class="xn xn-bars"></i></a>
+                  </div>
+                  <div class="span-8">
+                     <h6 class="label">Application</h6>
+                     <form id="search" class="hide">
+                         <input type="text"  placeholder="Search">
+                     </form>
+                  </div>
+                  <div class="span-2">
+                     <a href="#" class="icon-menu"><i class="xn xn-search"></i></a>
+                     <a href="#" class="icon-menu pull-right"><i class="xn xn-ellipsis-v"></i></a>
+                  </div>
+               </div>
+            </nav>
+        </div>
+        <div data-region="body" class="center layout-body"></div>
+        <div data-region="footer">
+            <div class="xin-navbar">
+                <div class="xin-title">
+                    Footer
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="layout" data-id="intro" class="xc-flex vertical">
+       <div data-region="body" class="center layout-body"></div>
+    </div>
+
     <div data-role="layout" data-id="clean" class="xc-flex vertical">
         <div data-region="header">
             <nav class="navbar navbar-default" role="navigation">
                <div class="row">
                   <div class="span-2">
-                    &nbsp;
+                     <a class="back-button icon-menu" href="#"><i class="xn xn-angle-left xn-3x"></i></a>
+                  </div>
+               </div>
+            </nav>
+        </div>
+        <div data-region="body" class="center layout-body"></div>
+    </div>
+
+    <div data-role="layout" data-id="form" class="xc-flex vertical">
+        <div data-region="header">
+            <nav class="navbar navbar-default" role="navigation">
+               <div class="row">
+                  <div class="span-2">
                     <!-- <a class="back-button icon-menu" href="#"><i class="xn xn-angle-left xn-3x">Back</i></a> -->
                   </div>
                   <div class="span-8">
                      <h6 class="label" data-region='title'></h6>
+                  </div>
+                  <div class="span-2">
+                     <a href="#" class="icon-menu pull-right"><i class="xn xn-check"></i></a>
                   </div>
                </div>
             </nav>
@@ -47,14 +107,409 @@
 
     <div data-role="pane" data-transition="slide" class="xc-fill" data-id="pane">
 
-        <!--    ##home##    -->
-        <div data-role="view" data-uri="home" data-id="home" data-title="KamusKu" data-layout="clean">
-            <progress id="progressBar" max="100" value="0"></progress>
+    <div data-role="layout" data-id="login" class="xc-flex vertical">
+        <div data-region="body" class="center layout-body"></div>
+    </div>
+
+    <div data-role="pane" data-transition="slide" class="xc-fill" data-id="pane">
+
+        <!-- login-->
+        <div data-role="view" data-uri="login" data-title="Login" data-layout="login" data-background="red">
+            <div id="login">
+                <div class="title">
+                    <center><h2>
+                        Sign - <strong>In</strong>
+                    </h2></center>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="span-12">
+                            <input type="text" placeholder="Email / Username" value="">
+                        </div>
+                        <div class="span-12">
+                            <input type="password" placeholder="Password" />
+                        </div>
+                        <center class="forgotPassword"><a href="">Forgot password?</a></center>
+                        <input type="submit" value="Sign In" class="button solid span-12"></input>
+                        <div class="span-12 or"><center><span>or</span></center></div>
+                        <a href="" class="button span-12 connectTo facebook"><i class="xn xn-facebook"></i> Connect to facebook</a>
+                        <a href="" class="button span-12 connectTo twitter"><i class="xn xn-twitter"></i> Connect to twitter</a>
+                        <div class="span-12">
+                            <label class="placeholder">
+                                <strong><a href="#signup">Sign Up</a></strong>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
+
+        <!-- signup-->
+        <div data-role="view" data-uri="signup" data-title="Signup" data-layout="login">
+            <form name="signup">
+                <div id="signup">
+                    <h2>
+                        Sign - <strong>Up</strong>
+                    </h2>
+                    <div class="row">
+                        <div class="span-12">
+                            <input class="inputFirst" type="text" name="username" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span-12">
+                            <input class="inputNext" type="text" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span-6">
+                            <input class="inputNext" type="text" name="first_name" placeholder="First name" />
+                        </div>
+                        <div class="span-6">
+                            <input class="inputNext inputNexts" type="text" name="last_name" placeholder="Last name" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span-6">
+                            <input class="inputNext password" name="password" type="password" placeholder="Password" />
+                        </div>
+                        <div class="span-6">
+                            <input class="inputNext inputNexts password2" name="password2" type="password" placeholder="Retype Password"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <center><input type="submit" value="Sign Up" class="button solid span-12"></center>
+                        <div class="span-12">
+                            <center>Have an account, <a href="#">sign in here !.</a></center>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- home-->
+        <div data-role="view" data-uri="home" data-title="Home" data-layout="default">
+            <div id="tos" class="">
+              <div>
+                <span class="tosClose">+</span>
+                <strong>Lorem ipsum dolor sit amet</strong>
+                <p>onsectetur adipiscing elit. In sit amet nibh sem. Fusce cursus lacinia ligula quis iaculis. Sed ultrices commodo suscipit.</p>
+              </div>
+            </div>
+
+            <!-- listing-->
+            <ul class="listing">
+                <li>
+                    <div class="thumb-img" style="background-image:url(../vendor/xin-theme/img/2014-01-28.jpg)"></div>
+                    <div class="data">
+                        <a href="#detailArisan" class="title">Bpk. Ust. Jumrie</a>
+                        <p class="sub-title noWrap">
+                            <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="thumb-img" style="background-image:url(../vendor/xin-theme/img/2014-01-28.jpg)"></div>
+                    <div class="data">
+                        <a href="#detailArisan" class="title">Bpk. Roy Tong</a>
+                        <p class="sub-title noWrap">
+                            <span class="descrip noWrap subheader">Tong@gmail.com</span>
+                        </p>
+                    </div>
+                </li> 
+                <li>
+                    <div class="data">
+                        <a href="#detailArisan" class="title">Bpk. Ust. Jumrie</a>
+                        <p class="sub-title noWrap">
+                            <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <!-- end listing-->
+
+            <!-- tab Strip-->
+            <div class="tabstrip">
+               <div class="row">
+                  <a class="tabspan-2 tabs" href="#">
+                     <span class="xn xn-star"></span>
+                     <span>Featured</span>
+                  </a>
+                  <a class="tabspan-2 tabs" href="#">
+                     <span class="xn xn-user"></span>
+                     <span>Profile</span>
+                  </a>
+                  <a class="tabspan-2 tabs" href="#">
+                     <span class="xn xn-search"></span>
+                     <span>Search</span>
+                  </a>
+                  <a class="tabspan-2 tabs" href="#">
+                     <span class="xn xn-ellipsis-h"></span>
+                     <span>More</span>
+                  </a>
+                  <a class="tabspan-2 tabs" href="#">
+                     <span class="xn xn-ellipsis-h"></span>
+                     <span>More</span>
+                  </a>
+               </div>
+            </div>
+            <!-- end tab Strip-->
+
+            <!-- action sheet -->
+            <div class="action-sheet-backdrop">
+                <div class="action-sheet-wrapper actionheet-up">
+                    <div class="action-sheet action-sheet-has-icons">
+                        <div class="action-sheet-group action-sheet-options">
+                        <!-- ngIf: titleText -->
+                        <div class="action-sheet-title ng-binding">ActionSheet Example</div>
+                        <!-- end ngIf: titleText -->
+                        <!-- ngRepeat: b in buttons -->
+                        <button class="button action-sheet-option ng-binding">Share</button>
+                        <!-- end ngRepeat: b in buttons -->
+                        <button class="button action-sheet-option ng-binding">Move</button>
+                        <!-- end ngRepeat: b in buttons -->
+                        <!-- ngIf: destructiveText -->
+                        <button class="button destructive action-sheet-destructive ng-binding">Delete</button>
+                        <!-- end ngIf: destructiveText -->
+                        </div>
+                        <!-- ngIf: cancelText -->
+                        <div class="action-sheet-group action-sheet-cancel">
+                            <button class="button ng-binding">Cancel</button>
+                        </div>
+                    <!-- end ngIf: cancelText -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- form -->
+        <div data-role="view" data-uri="form" data-title="Form" data-layout="form">
+            <div class="row">
+              <!--form input-->
+              <form class="span-12">
+                <div class="row input-field">
+                  <div class="span-6">
+                    <input id="first_name" type="text">
+                    <label for="first_name">First Name</label>
+                  </div>
+                  <div class="span-6">
+                    <input id="last_name" type="text">
+                    <label for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="span-12 input-field">
+                    <input id="Username" type="text">
+                    <label for="Username">Username</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="span-12 input-field">
+                    <input id="password" type="password">
+                    <label for="password">Password</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field span-12">
+                    <textarea id="textarea1" class="textarea"></textarea>
+                    <label for="textarea1">Textarea</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="span-12">
+                    <label>Materialize Select</label>
+                      <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                  </div>
+                </div>
+              
+            <!--form input type radio-->
+                <div class="radio-button span-12">
+                    <input name="group1" type="radio" id="test1" />
+                    <label for="test1">Red</label>
+                </div>
+                <div class="radio-button span-12">
+                    <input name="group1" type="radio" id="test2" />
+                    <label for="test2">Yellow</label>
+                </div>
+                <div class="radio-button span-12">
+                    <input class="with-gap" name="group1" type="radio" id="test3"  />
+                    <label for="test3">Green</label>
+                </div>
+                <div class="radio-button span-12">
+                    <input name="group1" type="radio" id="test4" disabled="disabled" />
+                    <label for="test4">Brown</label>
+                </div>
+                
+                
+                <!-- input type checkbox -->
+                <div class="input-checkbox span-12">
+                    <input type="checkbox" id="test5" />
+                    <label for="test5">Red</label>
+                </div>
+                <div class="input-checkbox span-12">
+                    <input type="checkbox" id="test6" checked="checked" />
+                    <label for="test6">Yellow</label>
+                </div>
+                <div class="span-12">
+                    <input type="date" />
+                </div>
+
+             <br/>
+              </form>
+            </div>
+        </div>
+        <!-- end form -->
+
+
+        <!-- intro-->
+        <div class="intro" data-role="view" data-uri="intro" data-title="intro" data-layout="intro">
+           <div class="imgIntro">
+               <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
+           </div>
+            <div class="descIntro">
+                <span class="title">Nam laoreet nulla nec tempus</span>
+                <p>Phasellus dictum leo tellus, quis accumsan leo condimentum at. Praesent fermentum enim at libero facilisis, eu ornare ligula tincidunt. </p>
+            </div>
+            <div data-region="footer">
+                <div data-region="xin-navbar">
+                    <div class="row">
+                        <div class="span-2"><a href=""><i class="xn xn-angle-left"></i></a></div>
+                        <div class="span-8">
+                            <div class="xin-title">
+                                <ul class="indicator">
+                                    <li class="active"></li>
+                                    <li class=""></li>
+                                    <li class=""></li>
+                                    <li class=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="span-2"><a href="intro1"><i class="xn xn-angle-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="intro" data-role="view" data-uri="intro1" data-title="intro" data-layout="intro">
+           <div class="imgIntro">
+               <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
+           </div>
+            <div class="descIntro">
+                <span class="title">Nam laoreet nulla nec tempus</span>
+                <p>Phasellus dictum leo tellus, quis accumsan leo condimentum at. Praesent fermentum enim at libero facilisis, eu ornare ligula tincidunt. </p>
+            </div>
+            <div data-region="footer">
+                <div data-region="xin-navbar">
+                    <div class="row">
+                        <div class="span-2"><a href="intro"><i class="xn xn-angle-left"></i></a></div>
+                        <div class="span-8">
+                            <div class="xin-title">
+                                <ul class="indicator">
+                                    <li class=""></li>
+                                    <li class="active"></li>
+                                    <li class=""></li>
+                                    <li class=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="span-2"><a href="intro2"><i class="xn xn-angle-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="intro" data-role="view" data-uri="intro2" data-title="intro" data-layout="intro">
+           <div class="imgIntro">
+               <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
+           </div>
+            <div class="descIntro">
+                <span class="title">Nam laoreet nulla nec tempus</span>
+                <p>Phasellus dictum leo tellus, quis accumsan leo condimentum at. Praesent fermentum enim at libero facilisis, eu ornare ligula tincidunt. </p>
+            </div>
+            <div data-region="footer">
+                <div data-region="xin-navbar">
+                    <div class="row">
+                        <div class="span-2"><a href="intro1"><i class="xn xn-angle-left"></i></a></div>
+                        <div class="span-8">
+                            <div class="xin-title">
+                                <ul class="indicator">
+                                    <li class=""></li>
+                                    <li class=""></li>
+                                    <li class="active"></li>
+                                    <li class=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="span-2"><a href="intro3"><i class="xn xn-angle-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="intro" data-role="view" data-uri="intro3" data-title="intro" data-layout="intro">
+           <div class="imgIntro">
+               <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
+           </div>
+            <div class="descIntro">
+                <span class="title">Nam laoreet nulla nec tempus</span>
+                <p>Phasellus dictum leo tellus, quis accumsan leo condimentum at. Praesent fermentum enim at libero facilisis, eu ornare ligula tincidunt. </p>
+            </div>
+            <div data-region="footer">
+                <div data-region="xin-navbar">
+                    <div class="row">
+                        <div class="span-2"><a href="intro2"><i class="xn xn-angle-left"></i></a></div>
+                        <div class="span-8">
+                            <div class="xin-title">
+                                <ul class="indicator">
+                                    <li class=""></li>
+                                    <li class=""></li>
+                                    <li class=""></li>
+                                    <li class="active"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="span-2"><a href="intro"><i class="xn xn-angle-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Static Page-->
+        <div data-role="view" data-uri="static" data-title="static" data-layout="clean">
+            <span class="title">About Us</span>
+            <p class="subheader">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+
+        <!-- Static Page-->
 
         <span class="exit hide">+</span>
         <div class="overlay hide"></div>
 
+    </div>
+
+    <!-- drawer -->
+    <div data-role="drawer" data-align="left" data-layout="drawer" style="width: 80%">
+        <ul data-role="list" class="menu-drawer">
+            <li><i class="xn xn-sign-in"></i><a href="#login">Login</a></li>
+            <li><i class="xn xn-arrow-circle-up"></i><a href="#signup">Signup</a></li>
+            <li><i class="xn xn-list"></i><a href="#list">List</a></li>
+            <li><i class="xn xn-list"></i><a href="#form">Form</a></li>
+        </ul>
+        <ul data-role="list" class="list-drawer row">
+            <li><a class="span-10" href="#static">Static Page</a><i class="notif span-2">i</i></li>
+            <li><a class="span-10" href="#">All Mail</a><i class="notif span-2">i</i></li>
+            <li><a class="span-10" href="#">Trash</a><i class="notif span-2">i</i></li>
+            <li><a class="span-10" href="#">Spam</a><i class="notif span-2">i</i></li>
+            <li><a class="span-10" href="#">Follow Up</a><i class="notif span-2">i</i></li>
+        </ul>
     </div>
 
     <!-- Application: Script -->
