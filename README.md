@@ -12,30 +12,36 @@ bower install
 
 DIRECTIVES
 ==========
-__[data-role="app"]:__ TBD
-__[data-role="pane"]:__ TBD
-__[data-role="view"]:__ TBD
-__[data-role="layout"]:__ TBD
-__[data-role="drawer"]:__ TBD
+##[data-role="app"]:__
+###TBD
+##[data-role="pane"]:__
+###TBD
+##[data-role="view"]:__
+###TBD
+##[data-role="layout"]:__
+###TBD
+##[data-role="drawer"]:__
+###TBD
 
-##[data-background="drawer"]: Custom background __View__
+##[data-background="drawer"]:
+### Custom background __View__
 
 __Mengganti dengan nama warna__
-```html5
+```html
 <div data-role="view" data-uri="uri" data-background="red" data-layout="layoutid" data-title="Title">
     ...
 </div>
 ```
 
 __Mengganti warna dengan kode warna__
-```html5
+```html
 <div data-role="view" data-uri="uri" data-background="#f3f3f3" data-layout="layoutid" data-title="Title">
     ...
 </div>
 ```
 
 __Mengganti warna dengan kode gambar__
-```html5
+```html
 <div data-role="view" data-uri="uri" data-background="url(awesome.com/image.png)" data-layout="layoutid" data-title="Title">
     ...
 </div>
@@ -122,7 +128,7 @@ var MyView = xin.ui.View.extend({
     });
 ```
 
-```html5
+```html
 <div data-role="MyView" data-uri="uri" data-layout="layoutid" data-title="Title">
     ...
 </div>
