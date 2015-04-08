@@ -83,6 +83,13 @@
 
 		getApi: function(path) {
 			return app.config('api')[app.config('environment')] + path;
+		},
+
+		uri: {
+			// packages: {
+			// 	enid: '/cdn/kamusku/enid.zip',
+			// 	iden: '/cdn/kamusku/iden.zip'
+			// }
 		}
 
 	};

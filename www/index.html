@@ -58,6 +58,7 @@
                </div>
             </nav>
         </div>
+        <hr class="progressBar" />
         <div data-region="body" class="center layout-body"></div>
         <div data-region="footer">
             <div class="xin-navbar">
@@ -111,6 +112,34 @@
     <div data-role="layout" data-id="register" class="xc-flex vertical">
         <div data-region="body" class="center layout-body"></div>
     </div>
+
+    <div data-role="layout" data-id="back" class="xc-flex vertical">
+        <div data-region="header">
+            <div data-role="navbar" class="xc-flex horizontal">
+                <div class="no-flex" style="left:0">
+                    <a href="#" class="back">Back</a>
+                </div>
+                <div data-region="title" class="xin-title center">
+                    Simple Demo
+                </div>
+                <div class="no-flex" style="right:0">
+
+                </div>
+            </div>
+        </div>
+        <div data-region="body" class="center layout-body">
+
+        </div>
+        <div data-region="footer">
+            <div class="xin-navbar">
+                <div class="xin-title">
+                    Footer
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <div data-role="pane" data-transition="slide" class="xc-fill" data-id="pane">
 
@@ -191,6 +220,10 @@
                     </div>
                 </div>
             </form>
+        </div>
+
+        <div data-role="view" data-uri="back" data-layout="back" data-title="Back">
+            Back
         </div>
 
         <!-- home-->

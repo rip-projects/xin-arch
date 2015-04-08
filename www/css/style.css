@@ -47,4 +47,18 @@
     }
 }
 
+hr.progressBar {
+    border: none;
+    width: 0;
+    margin-top: 53px;
+}
+
+hr.progressBar.active {
+    border: 1px solid red;
+}
+
 .xin-pane {height: 100%}
+
+[data-region="body"].loading {
+    background: url('../img/loading.gif') no-repeat center;
+}

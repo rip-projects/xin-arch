@@ -150,7 +150,7 @@
 
 	    	$('body').show();
 
-	    	if(app.config('db').name) {
+	    	if(app.config('db')) {
 
 				app.invoke('db.init', function() {
 
@@ -167,22 +167,27 @@
 		    						function(success) {
 
 		    							// location.href = 'login.html';
+
+		    							$('hr.progressBar').width(0);
+		    							$('hr.progressBar').removeClass('active');
+
 		    							console.log(success);
-		    							// console.log('success');
 
 				    					// app.invoke('db.doPackage', function() {
 
 				    					// });
+
 		    						},
 		    						function(err) {
-
 		    							console.log('err');
 		    							console.log(err);
-
 		    						},
 		    						function(progress) {
+
 		    							var percent = (progress.bytesReceived / progress.totalBytesToReceive) * 100;
-		    							$('#progressBar').attr('value', percent);
+		    							$('hr.progressBar').addClass('active');
+		    							$('hr.progressBar').width(percent + '%');
+
 		    						}
 	    						);
 
