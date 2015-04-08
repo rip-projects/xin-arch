@@ -120,10 +120,8 @@
                             <input type="password" placeholder="Password" />
                         </div>
                         <center class="forgotPassword"><a href="">Forgot password?</a></center>
-                        <div class="span-12">
-                            <input type="submit" value="Sign In" class="button solid"></input>
-                        </div>
-                        <div class="span-12 or"><center><span>&nbsp;</span></center></div>
+                        <input type="submit" value="Sign In" class="button solid span-12"></input>
+                        <div class="span-12 or"><center><span>or</span></center></div>
                         <a href="" class="button span-12 connectTo facebook"><i class="xn xn-facebook"></i> Connect to facebook</a>
                         <a href="" class="button span-12 connectTo twitter"><i class="xn xn-twitter"></i> Connect to twitter</a>
                         <div class="span-12">
@@ -170,9 +168,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="span-12">
-                            <center><input type="submit" value="Sign Up" class="button solid"></center>
-                        </div>
+                        <center><input type="submit" value="Sign Up" class="button solid span-12"></center>
                         <div class="span-12">
                             <center>Have an account, <a href="#">sign in here !.</a></center>
                         </div>
@@ -183,16 +179,13 @@
 
         <!-- home-->
         <div data-role="view" data-uri="home" data-title="Home" data-layout="default">
-            <div id="tos" class="hide">
+            <div id="tos" class="">
               <div>
                 <span class="tosClose">+</span>
                 <strong>Lorem ipsum dolor sit amet</strong>
                 <p>onsectetur adipiscing elit. In sit amet nibh sem. Fusce cursus lacinia ligula quis iaculis. Sed ultrices commodo suscipit.</p>
               </div>
             </div>
-            <h1 class="title">
-                hello world !.    
-            </h1>
 
             <!-- listing-->
             <ul class="listing">
@@ -283,50 +276,84 @@
 
         <!-- form -->
         <div data-role="view" data-uri="form" data-title="Form" data-layout="form">
-            <form>
+            <div class="row">
+              <!--form input-->
+              <form class="span-12">
+                <div class="row input-field">
+                  <div class="span-6">
+                    <input id="first_name" type="text">
+                    <label for="first_name">First Name</label>
+                  </div>
+                  <div class="span-6">
+                    <input id="last_name" type="text">
+                    <label for="last_name">Last Name</label>
+                  </div>
+                </div>
                 <div class="row">
-                    <div class="span-12">
-                        <div class="wrapper">
-                            <label>Input Label</label>
-                            <input type="text" placeholder="Input">
-                        </div>
-                    </div>
+                  <div class="span-12 input-field">
+                    <input id="Username" type="text">
+                    <label for="Username">Username</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="span-12 input-field">
+                    <input id="password" type="password">
+                    <label for="password">Password</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field span-12">
+                    <textarea id="textarea1" class="textarea"></textarea>
+                    <label for="textarea1">Textarea</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="span-12">
+                    <label>Materialize Select</label>
+                      <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                  </div>
+                </div>
+              
+            <!--form input type radio-->
+                <div class="radio-button span-12">
+                    <input name="group1" type="radio" id="test1" />
+                    <label for="test1">Red</label>
+                </div>
+                <div class="radio-button span-12">
+                    <input name="group1" type="radio" id="test2" />
+                    <label for="test2">Yellow</label>
+                </div>
+                <div class="radio-button span-12">
+                    <input class="with-gap" name="group1" type="radio" id="test3"  />
+                    <label for="test3">Green</label>
+                </div>
+                <div class="radio-button span-12">
+                    <input name="group1" type="radio" id="test4" disabled="disabled" />
+                    <label for="test4">Brown</label>
+                </div>
+                
+                
+                <!-- input type checkbox -->
+                <div class="input-checkbox span-12">
+                    <input type="checkbox" id="test5" />
+                    <label for="test5">Red</label>
+                </div>
+                <div class="input-checkbox span-12">
+                    <input type="checkbox" id="test6" checked="checked" />
+                    <label for="test6">Yellow</label>
+                </div>
+                <div class="span-12">
+                    <input type="date" />
                 </div>
 
-                <div class="row">
-                    <div class="span-12">
-                        <div class="wrapper">
-                            <label>Input Label</label>
-                            <input type="text" placeholder="Input">
-                        </div>
-                    </div>
-                    <div class="span-12">
-                        <div class="wrapper">
-                            <label>Input Label</label>
-                            <select>
-                                <option>Options #1</option>
-                                <option>Options #2</option>
-                                <option>Options #3</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="span-12">
-                        <div class="wrapper">
-                            <label>Input Label</label>
-                            <span class="field">This is read-only</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="wrapper">
-                        <div class="span-12">
-                            <label>Textarea Label</label>
-                            <textarea placeholder="textarea"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </form> 
+             <br/>
+              </form>
+            </div>
         </div>
         <!-- end form -->
 
