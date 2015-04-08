@@ -12,16 +12,54 @@ bower install
 
 DIRECTIVES
 ==========
-##[data-role="app"]:__
+
+##[data-role="app"]
 ###TBD
-##[data-role="pane"]:__
+
+##[data-role="pane"]
 ###TBD
-##[data-role="view"]:__
+
+##[data-role="view"]
 ###TBD
-##[data-role="layout"]:__
+
+##[data-role="layout"]
 ###TBD
-##[data-role="drawer"]:__
+
+##[data-role="drawer"]
 ###TBD
+
+##[data-parent-referer="your_uri"]
+### Memastikan _back_ button akan mengembalikan ke uri yang sudah di-define pada attribute data-parent-referer="you_uri"
+
+```html
+<div data-role="layout" data-id="back" class="xc-flex vertical">
+    <div data-region="header">
+        <div data-role="navbar" class="xc-flex horizontal">
+            <div class="no-flex" style="left:0">
+                <a href="#" class="back">Back</a>
+            </div>
+            <div data-region="title" class="xin-title center">
+                Simple Demo
+            </div>
+            <div class="no-flex" style="right:0">
+
+            </div>
+        </div>
+    </div>
+    <div data-region="body" class="center layout-body">
+    </div>
+</div>
+
+<div data-role="view" data-uri="parent" data-layout="default" data-title="Parent">
+    <h3>Parent</h3>
+    <a href="#child">Go to child...</a>
+</div>
+
+<div data-role="view" data-uri="child" data-layout="back" data-title="Child" data-parent-referer="parent">
+    Child
+</div>
+```
+
 
 ##[data-background="drawer"]:
 ### Custom background __View__
@@ -139,7 +177,6 @@ var MyView = xin.ui.View.extend({
 *   https://github.com/brodysoft/Cordova-SQLitePlugin
 *   https://github.com/apache/cordova-plugin-file
 *   https://github.com/apache/cordova-plugin-file-transfer
-*   https://github.com/sgrebnov/cordova-plugin-background-download
 *   https://github.com/MobileChromeApps/zip
 *   https://github.com/Initsogar/cordova-activityindicator
 *   https://github.com/apache/cordova-plugin-splashscreen
@@ -149,7 +186,6 @@ var MyView = xin.ui.View.extend({
 cordova plugin add https://github.com/brodysoft/Cordova-SQLitePlugin.git
 cordova plugin add https://github.com/apache/cordova-plugin-file.git
 cordova plugin add https://github.com/apache/cordova-plugin-file-transfer.git
-cordova plugin add https://github.com/sgrebnov/cordova-plugin-background-download.git
 cordova plugin add https://github.com/MobileChromeApps/zip.git
 cordova plugin add https://github.com/Initsogar/cordova-activityindicator.git
 cordova plugin add https://github.com/apache/cordova-plugin-splashscreen.git

@@ -226,6 +226,16 @@
             Back
         </div>
 
+        <div data-role="view" data-uri="parent" data-layout="default" data-title="Parent">
+            <h3>Parent</h3>
+            <a href="#child">Go to child...</a>
+        </div>
+
+        <div data-role="view" data-uri="child" data-layout="back" data-title="Child" data-parent-referer="parent">
+            Child
+        </div>
+
+
         <!-- home-->
         <div data-role="view" data-uri="home" data-title="Home" data-layout="default">
             <div id="tos" class="hide">
@@ -242,18 +252,18 @@
             <!-- listing-->
             <ul class="listing">
                 <li>
-                    <div class="thumb-img" style="background-image:url(../vendor/xin-theme/img/2014-01-28.jpg)"></div>
+                    <div class="thumb-img" style="background-image:url(./img/2014-01-28.jpg)"></div>
                     <div class="data">
-                        <a href="#detailArisan" class="title">Bpk. Ust. Jumrie</a>
+                        <a href="#detail" class="title">Bpk. Ust. Jumrie</a>
                         <p class="sub-title noWrap">
                             <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
                         </p>
                     </div>
                 </li>
                 <li>
-                    <div class="thumb-img" style="background-image:url(../vendor/xin-theme/img/2014-01-28.jpg)"></div>
+                    <div class="thumb-img" style="background-image:url(./img/2014-01-28.jpg)"></div>
                     <div class="data">
-                        <a href="#detailArisan" class="title">Bpk. Roy Tong</a>
+                        <a href="#detail" class="title">Bpk. Roy Tong</a>
                         <p class="sub-title noWrap">
                             <span class="descrip noWrap subheader">Tong@gmail.com</span>
                         </p>
@@ -261,7 +271,7 @@
                 </li>
                 <li>
                     <div class="data">
-                        <a href="#detailArisan" class="title">Bpk. Ust. Jumrie</a>
+                        <a href="#detail" class="title">Bpk. Ust. Jumrie</a>
                         <p class="sub-title noWrap">
                             <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
                         </p>
@@ -519,6 +529,7 @@
             <li><i class="xn xn-arrow-circle-up"></i><a href="#signup">Signup</a></li>
             <li><i class="xn xn-list"></i><a href="#list">List</a></li>
             <li><i class="xn xn-list"></i><a href="#form">Form</a></li>
+            <li><i class="xn xn-list"></i><a href="#back">Back</a></li>
         </ul>
         <ul data-role="list" class="list-drawer row">
             <li><a class="span-10" href="#static">Static Page</a><i class="notif span-2">i</i></li>
