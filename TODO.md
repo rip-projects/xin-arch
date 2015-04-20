@@ -1,0 +1,5 @@
+TODO List
+=========
+
+*   at first application up, detect platform then add class 'iOS' to body if platform is iOS|iPad
+*
