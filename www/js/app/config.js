@@ -2,22 +2,22 @@
 	if(!window.config) window.config = {};
 
 	config = {
-		name: 		'KamusKu',
-		desc: 		'Kamus English - Indonesia',
+		name: 		'Your Application name',
+		desc: 		'Your Application description',
 		version: 	'0.0.1',
 		versionCode: 1,
 		organization: 'Xinix Technology',
-		url: 'http://xinix.co.id/product/kamusku',
-		package: 	"id.co.xinix.kamusku",
-		environment: 'development',
-		TAG: 'KamusKu',
+		url: 'http://xinix.co.id/your_awesome_app',
+		package: 	"id.co.xinix.your_awesome_app",
+
+		// Change the environment as your needs
+		environment: 'development', // production, staging, testing, development
+
+		TAG: 'MyTaggingOfApplication',
 		db: {
-			// name: 		'kamusku.db',
+			name: 		'app.db',
 			version: 	1,
 			scheme: 	'0.0.1',
-			fileName: 	'enid.zip',
-			package: 	'http://192.168.0.16/cdn/kamusku/enid.zip',
-			packageType: 'zip',
 			log: 		{1: '0.0.1'},
 			schemes: {
 				'0.0.1': [
@@ -74,22 +74,30 @@
 			}
 		},
 
+
 		api: {
-			production: null,
-			staging: null,
-			testing: null,
-			development: null
+			production: 	'http://xinix.co.id/api-prod',
+			staging: 		'http://xinix.co.id/api-staging',
+			testing: 		'http://xinix.co.id/api-testing',
+			development: 	'http://xinix.co.id/api-development'
 		},
 
 		getApi: function(path) {
-			return app.config('api')[app.config('environment')] + path;
+			var split = path.split('.'),
+				res = app.config('uri');
+			for (var i = 0; i < split.length; i++) {
+				res = res[split[i]];
+			}
+			return app.config('api')[app.config('environment')] + res;
 		},
 
 		uri: {
-			// packages: {
-			// 	enid: '/cdn/kamusku/enid.zip',
-			// 	iden: '/cdn/kamusku/iden.zip'
-			// }
+			user: {
+				login: 		'/user/login',
+				register: 	'/user/register',
+				logout: 	'/user/logout',
+				forgot: 	'/user/forgot'
+			}
 		}
 
 	};
