@@ -173,6 +173,80 @@ var MyView = xin.ui.View.extend({
 ```
 
 
+CONFIG
+======
+_www/js/app/config.js_
+```javascript
+;(function(){
+    if(!window.config) window.config = {};
+
+    config = {
+        name:       'Your Application name',
+        desc:       'Your Application description',
+        version:    '0.0.1',
+        versionCode: 1,
+        organization: 'Xinix Technology',
+        url: 'http://xinix.co.id/your_awesome_app',
+        package:    "id.co.xinix.your_awesome_app",
+
+        // Change the environment as your needs
+        environment: 'development', // production, staging, testing, development
+
+        TAG: 'MyTaggingOfApplication',
+        db: {
+            name:       'app.db',
+            version:    1,
+            scheme:     '0.0.1',
+            log:        {1: '0.0.1'},
+            schemes: {
+                '0.0.1': [
+                    'CREATE TABLE IF NOT EXISTS table_name          (id TEXT PRIMARY KEY, from TEXT, to TEXT, term TEXT, pron TEXT)'
+                ]
+            },
+            collections: {
+                // default value apllication
+                '0.0.1': {}
+            }
+        },
+
+
+        api: {
+            production:     'http://xinix.co.id/api-prod',
+            staging:        'http://xinix.co.id/api-staging',
+            testing:        'http://xinix.co.id/api-testing',
+            development:    'http://xinix.co.id/api-development'
+        },
+
+        getApi: function(path) {
+            var split = path.split('.'),
+                res = app.config('uri');
+            for (var i = 0; i < split.length; i++) {
+                res = res[split[i]];
+            }
+            return app.config('api')[app.config('environment')] + res;
+        },
+
+        uri: {
+            user: {
+                login:      '/user/login',
+                register:   '/user/register',
+                logout:     '/user/logout',
+                forgot:     '/user/forgot'
+            }
+        }
+
+    };
+
+})();
+```
+
+ex:
+```javascript
+console.log(app.config('getApi')('user.login'));
+// output: "http://xinix.co.id/api-development/user/login"
+```
+
+
 #Cordova plugins
 *   https://github.com/brodysoft/Cordova-SQLitePlugin
 *   https://github.com/apache/cordova-plugin-file
@@ -181,6 +255,7 @@ var MyView = xin.ui.View.extend({
 *   https://github.com/Initsogar/cordova-activityindicator
 *   https://github.com/apache/cordova-plugin-splashscreen
 *   https://github.com/MobileChromeApps/zip
+*   https://github.com/apache/cordova-plugin-dialogs
 
 ```bash
 cordova plugin add https://github.com/brodysoft/Cordova-SQLitePlugin.git
@@ -190,6 +265,7 @@ cordova plugin add https://github.com/MobileChromeApps/zip.git
 cordova plugin add https://github.com/Initsogar/cordova-activityindicator.git
 cordova plugin add https://github.com/apache/cordova-plugin-splashscreen.git
 cordova plugin add https://github.com/MobileChromeApps/zip.git
+cordova plugin add https://github.com/apache/cordova-plugin-dialogs.git
 ```
 
 Thats it!
