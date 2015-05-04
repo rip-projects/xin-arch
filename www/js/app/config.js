@@ -74,12 +74,11 @@
 			}
 		},
 
-
 		api: {
-			production: 	'http://xinix.co.id/api-prod',
-			staging: 		'http://xinix.co.id/api-staging',
-			testing: 		'http://xinix.co.id/api-testing',
-			development: 	'http://xinix.co.id/api-development'
+			production: null,
+			staging: null,
+			testing: null,
+			development: null,
 		},
 
 		getApi: function(path) {
@@ -93,12 +92,11 @@
 
 		uri: {
 			user: {
-				login: 		'/user/login',
 				register: 	'/user/register',
-				logout: 	'/user/logout',
-				forgot: 	'/user/forgot'
+				forgot: 	'/user/forgot',
+				login: 		'/user/login'
 			}
-		}
+		},
 
 	};
 

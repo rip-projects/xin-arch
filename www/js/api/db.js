@@ -11,8 +11,8 @@ window.API.db = {
 			scheme = db.scheme,
 			schemes = db.schemes[scheme];
 
-		this.db = window.sqlitePlugin.openDatabase({name: app.config('db').name });
-		this.db.transaction(function(tx) {
+		app.db = window.sqlitePlugin.openDatabase({name: app.config('db').name, location: 1});
+		app.db.transaction(function(tx) {
 			// execute db default scheme
 			for (var i = 0; i < that.schemes.default.length; i++) {
 				tx.executeSql(that.schemes.default[i]);
@@ -21,6 +21,7 @@ window.API.db = {
 			for (var j = 0; j < schemes.length; j++) {
 				tx.executeSql(schemes[j]);
 			}
+
 			if(callback) callback();
 		});
 	},
@@ -34,11 +35,25 @@ window.API.db = {
 		]
 	},
 
+	query: function(query, param, callback) {
+
+		app.db.transaction(function(tx) {
+
+			tx.executeSql(query, param, function(tx, res) {
+				if(callback) callback(res);
+			}, function(e) {
+				if(callback) callback([]);
+			});
+
+		});
+
+	},
+
 	isDbExist: function(callback) {
 
 		var exists = false;
 
-		this.db.transaction(function(tx) {
+		app.db.transaction(function(tx) {
 
 			tx.executeSql("SELECT * FROM application;", [], function(tx, res) {
 				if(res.rows.length) exists = true;
@@ -56,48 +71,8 @@ window.API.db = {
 
 	},
 
-	doPackage: function(callback) {
+	doPackage: function(path, manifest, callback, progressCB) {
 
-		var that = this,
-			jobs = [],
-			_data = [],
-			index = 0;
-
-		$.getJSON( app.config('db').package, function( data ) {
-
-			// $('body').prepend('<section id="splashscreen" class="splashscreen"><span>Indexing Database <i class="fa fa-spinner fa-spin"></i></span></section>');
-
-			// for (var i = 0; i < data.length; i++) {
-
-			// 	_data.push(data[i]);
-			// 	jobs.push(function() {
-
-   //                  var perc = parseFloat(((index / _data.length ) * 100).toFixed(2));
-			// 		$('#splashscreen span').html('Indexing Database ' + perc + '%');
-
-			// 		that.db.transaction(function(tx) {
-
-			// 			tx.executeSql("INSERT INTO dictionary (keyword, description) VALUES (?,?)", [_data[index].name, _data[index].description], function(tx, res) {
-			// 				index++;
-			// 				if(jobs[index]) jobs[index]();
-			// 				else { // finish
-
-			// 					var _db = app.config('db');
-			// 					tx.executeSql("INSERT INTO db_app (name, version, scheme) VALUES (?, ?, ?)", [_db.name, _db.version, _db.scheme], function(tx, res) {
-			// 						$('#splashscreen').remove();
-			// 						if(callback) callback();
-			// 					});
-			// 				}
-			// 			});
-			// 		});
-
-			// 	});
-
-			// }
-
-			// jobs[0]();
-
-		});
 	}
 
 };

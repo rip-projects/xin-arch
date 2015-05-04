@@ -52,7 +52,9 @@
 
     });
 
+
     _.extend(app, {
+        db: null,
         user: {},
         config: function(param) {
 
@@ -89,8 +91,54 @@
                 ActivityIndicator.hide();
             }
 
+        },
+
+        storage: function(type, key, value, cb) {
+
+            if (!key && !value) return;
+            if(key && !value) {
+                var res = window[type].getItem(key);
+                try {
+                    res = JSON.parse(res);
+                } catch(e) {}
+
+                if(cb) cb(res);
+
+            } else if(key && value) {
+                if(typeof value !== "string") value = JSON.stringify(value);
+                window[type].setItem(key, value);
+            }
+        },
+
+        sessionStorage: function(key, value) {
+            if(typeof value === 'function') {
+                this.storage('sessionStorage', key, undefined, value);
+            } else {
+                this.storage('sessionStorage', key, value);
+            }
+        },
+
+        localStorage: function(key, value) {
+            if(typeof value === 'function') {
+                this.storage('localStorage', key, undefined, value);
+            } else {
+                this.storage('localStorage', key, value);
+            }
+        },
+
+        clearStorage: function(type) {  //  type = localStorage || sessionStorage
+            if(!type) {
+                localStorage.clear();
+                sessionStorage.clear();
+                return;
+            }
+
+            if(type === 'localStorage' || type === 'sessionStorage') {
+                window[type].clear();
+            }
         }
 
     });
+
 
 })();
