@@ -13,8 +13,6 @@ gulp.task('js', function() {
         "./vendor/jquery/dist/jquery.min.js",
         "./vendor/underscore/underscore-min.js",
         "./vendor/backbone/backbone-min.js",
-        "./vendor/localforage/dist/localforage.min.js",
-        "./vendor/touchswipe/jquery.touchSwipe.min.js",
         "./vendor/xin/js/xin.js"
     ];
 
@@ -29,9 +27,8 @@ gulp.task('css', function() {
     var css = [
         "./vendor/xin/css/xin.min.css",
         "./vendor/xin/css/xin-contrib.min.css",
-        "./vendor/jacket-awesome/jacket-awesome.css",
-        "./vendor/xin-theme/style/style.css",
-        "./vendor/naked/css/naked.min.css"
+        "./vendor/jacket-awesome/dist/css/jacket-awesome.min.css",
+        "./vendor/naked-css/css/naked.min.css"
     ];
 
     gulp.src(css)
@@ -44,18 +41,18 @@ gulp.task('css', function() {
 gulp.task('move', function(){
 
     var filesToMove = [
-            "./vendor/font-awesome/fonts/*.*"
+            "./vendor/jacket-awesome/dist/fonts/*.*"
         ];
 
   gulp.src(filesToMove)
-  .pipe(gulp.dest('./dist/font-awesome/fonts'));
+  .pipe(gulp.dest('./dist/fonts'));
 
     filesToMove = [
-            "./vendor/font-awesome/css/*.*"
+            "./vendor/jacket-awesome/dist/css/*.*"
         ];
 
   gulp.src(filesToMove)
-  .pipe(gulp.dest('./dist/font-awesome/css'));
+  .pipe(gulp.dest('./dist/jacket-awesome/dist/css'));
 
 });
 

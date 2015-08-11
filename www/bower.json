@@ -14,15 +14,16 @@
     "xin-archetype"
   ],
   "dependencies": {
-    "xin": "git@github.com:faridlab/xin.git",
-    "backbone": "git@github.com:jashkenas/backbone.git",
-    "jquery": "git@github.com:jquery/jquery.git",
-    "underscore": "git@github.com:jashkenas/underscore.git",
-    "naked": "git@github.com:xinix-technology/naked.git",
-    "xin-theme": "git@github.com:adoel/xin-theme.git",
-    "md5": "git@github.com:blueimp/JavaScript-MD5.git",
-    "touchswipe": "git@github.com:mattbryson/TouchSwipe-Jquery-Plugin.git",
-    "localforage": "~1.2.2"
+    "jquery": "jquery/jquery",
+    "underscore": "1.8.3",
+    "backbone": "1.2.1",
+    "xin": "faridlab/xin#1.0.0",
+    "naked-css": "1.0.2",
+    "tshirt-scroll": "0.0.6",
+    "xin-theme": "adoel/xin-theme",
+    "tshirt-popup": "1.0.x",
+    "jacket-awesome": "1.0.x",
+    "tshirt-background": "~0.0.1"
   },
   "license": "MIT",
   "homepage": "xinix.co.id",
