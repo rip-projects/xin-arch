@@ -129,45 +129,45 @@
     </div>
 
     <div data-role="layout" data-id="profile" class="xc-flex vertical">
-    	<!-- nav -->
+        <!-- nav -->
         <div data-region="header">
             <nav class="navbar navbar-default row" role="navigation">
                 <div class="span-2">
                     <a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false">
-						<div class="menu-toggle-btn">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-                	</a>
+                        <div class="menu-toggle-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
                 </div>
                 <div class="span-8">
                     <h6 class="label">Profile</h6>
                 </div>
                 <div class="span-2">
-        			<span class="icon-menu navButton">
-        				<i class="pull-right xn xn-caret-down"></i>
-        			</span>
+                    <a href="#edit-profile" class="link">Edit</a>
                 </div>
-                <div class="subMenu">
-                	<div class="listView">
-						<ul class="listArea">
-							<li>
-								<i class="icon xn xn-cogs"></i>
-								<div class="inputArea">
-									<a class="link" href="#">Settings</a>
-									<i class="icon right xn xn-angle-right"></i>
-								</div>
-							</li>
-							<li>
-								<i class="icon xn xn-download"></i>
-								<div class="inputArea">
-									<a class="link" href="#">Download</a>
-									<i class="icon right xn xn-angle-right"></i>
-								</div>
-							</li>
-						</ul>
-    				</div>
+            </nav>
+        </div>
+
+        <!-- body -->
+        <div data-region="body" class="center layout-body has-tabstrip"></div>
+    </div>
+
+    <div data-role="layout" data-id="edit-profile" class="xc-flex vertical">
+    	<!-- nav -->
+        <div data-region="header">
+            <nav class="navbar navbar-default row" role="navigation">
+                <div class="span-2">
+                    <span class="direct close" onclick="window.history.back()">
+                        <span data-bind="back"></span>
+                    </span>
+                </div>
+                <div class="span-8">
+                    <h6 class="label">Edit Profile</h6>
+                </div>
+                <div class="span-2">
+        			&nbsp;
                 </div>
             </nav>
         </div>
@@ -513,6 +513,63 @@
 
         <!-- ========== PROFILE ==========-->
         <div data-role="view" data-uri="profile" data-title="Profile" data-layout="profile" id="scrolling">
+            <div class="scrollVertical">
+                <div class="content scroll">
+                    <div class="avatarProfile">
+                        <div class="row">
+                            <div class="avatar">
+                                <span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
+                            </div>
+                            <div class="profileDesc">
+                                <h4>Raisa Andriana</h4>
+                                <h6>@raisa6690</h6>
+                                <a href="#" class="button follow animated">Follow</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incid.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="postArea">
+                        <div class="row">
+                            <div class="span-4">
+                                <a class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></a>
+                            </div>
+                            <div class="span-4">
+                                <a class="image" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></a>
+                            </div>
+                            <div class="span-4">
+                                <a class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></a>
+                            </div>
+                            <div class="span-4">
+                                <a class="image" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></a>
+                            </div>
+                            <div class="span-4">
+                                <a class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></a>
+                            </div>
+                            <div class="span-4">
+                                <a class="image" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></a>
+                            </div>
+                            <div class="span-4">
+                                <a class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></a>
+                            </div>
+                            <div class="span-4">
+                                <a class="image" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></a>
+                            </div>
+                            <div class="span-4">
+                                <a class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== EDIT PROFILE ==========-->
+        <div data-role="view" data-uri="edit-profile" data-title="Edit Profile" data-layout="edit-profile" id="scrolling">
             <div class="scrollVertical">
                 <div class="content scroll">
                     <div class="container">
@@ -1153,12 +1210,6 @@
         <ul class="listview" data-role="list">
             <li class="list-group-container">
                 <ul class="list-group">
-                    <li class="plain">
-                        <form action="" class="searching">
-                            <input type="text" placeholder="Search...">
-                            <i class="xn xn-search"></i>
-                        </form>
-                    </li>
                     <li class="plain">
                         <div class="accountList">
                             <a href="#profile">

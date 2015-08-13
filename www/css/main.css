@@ -59,8 +59,9 @@ input[type="submit"].button { background: #42A3EA; border: 0; }
 .navbar .span-10 { width: 80%; }
 .navbar .subMenu .span-2 { width: auto; }
 .navbar a { font-size: 1.5em; line-height: 25px; display: inline-block; width: auto; color: #fff; }
+.navbar .link { font-size: 1.2em; color: #fff; line-height: 25px; font-weight: 400; padding: 10px 10px 10px 0; display: block; text-align: right; }
 .navbar .drawer-button { padding: 10px 0 10px 10px; width: 100%; }
-.navbar h6.label { font-size: 1.3em; text-align: center; line-height: 25px; font-weight: 600; padding: 10px 0; letter-spacing: 0.3pt; color: #fff; }
+.navbar h6.label { font-size: 1.2em; text-align: center; line-height: 25px; font-weight: 600; padding: 10px 0; letter-spacing: 0.3pt; color: #fff; text-transform: uppercase; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 .navbar .icon-menu { padding: 10px 10px 10px 0; width: 100%; color: #fff; vertical-align: middle; }
 .navbar .icon-menu span,
 .navbar .icon-menu i { margin: 0; }
@@ -75,7 +76,7 @@ input[type="submit"].button { background: #42A3EA; border: 0; }
 .subMenu input[type="text"] { border: 0; font-weight: 400; }
 .subMenu input[type="submit"] { margin: 0; border: 0; color: #fff; font-weight: 900; height: auto; padding: 4px 0 4px 10px; width: 100%; text-align: right; }
 .subMenu .listView { border: 0; border-radius: 0; background: transparent; }
-.subMenu .listView li a.link { border-bottom: 1px solid rgba(255, 255, 255, 0.5); color: #fff; }
+.subMenu .listView li a.link { border-bottom: 1px solid rgba(255, 255, 255, 0.5); color: #fff; text-align: left; }
 .subMenu .listView li:last-child a { border-bottom: 1px solid transparent; }
 .subMenu .listView li .icon { color: #fff; }
 
@@ -234,7 +235,8 @@ div[data-uri="register"] .content .container { padding: 10px 15px 30px 15px; }
 .profileArea .avatarArea { width: 30%; text-align: center; padding-right: 10px; }
 .profileArea .avatarArea a { display: table; float: right; }
 .profileArea .avatarArea span { margin-top: 10px; display: block; font-size: 0.9em; color: #42A3EA; font-weight: 600; }
-.profileArea .avatarArea .image { 
+.profileArea .avatarArea .image,
+.avatar .image { 
 	width: 77px; height: 77px; display: inline-block; vertical-align: middle; margin: 0;
 	-webkit-border-radius: 100%;
 	-moz-border-radius: 100%;
@@ -245,6 +247,25 @@ div[data-uri="register"] .content .container { padding: 10px 15px 30px 15px; }
 .or { position: relative; text-align: center; padding: 30px 0; }
 .or p { color: #666; background: #fff; position: relative; z-index: 2; display: inline-block; padding: 0 10px; font-size: 0.7em; font-weight: 600; text-transform: uppercase; margin: 0; }
 .or hr { border-color: #666; position: absolute; top: 50%; left: 0; right: 0; }
+
+.avatarProfile { padding: 20px 15px; }
+.avatarProfile .row:first-child { margin-bottom: 15px; }
+.avatar { text-align: center; margin: 0 0 5px; }
+.avatar .image { width: 100px; height: 100px; }
+.profileDesc { text-align: center; }
+.profileDesc h4,
+.profileDesc h6 { line-height: 120%; margin: 0 0 3px; }
+.profileDesc h4 { font-size: 20px; font-weight: 400; }
+.profileDesc h6 { font-size: 14px; color: #999; }
+.avatarProfile p { font-size: 1em; color: #666; line-height: 130%; margin: 0; }
+.profileDesc .button.follow { display: block; margin: 15px 0 0; border-color: #42A3EA; color: #42A3EA; padding: 5px 16px; font-weight: 400; font-size: 1em; line-height: 130%; text-transform: uppercase; }
+.profileDesc .button.follow:hover,
+.profileDesc .button.follow.click { background: #42A3EA; color: #fff; }
+
+/*.postArea { padding: 20px 0; }*/
+.postArea .row,
+.postArea .row .span-4 { padding: 1px; }
+.postArea .image { display: block; width: 100%; height: 100px; }
 
 
 .submitPost { padding-top: 30px; display: inline-block; width: 100%; }
