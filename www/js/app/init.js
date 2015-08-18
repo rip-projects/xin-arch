@@ -32,15 +32,17 @@
 			});
 
 			$(".searchButton").click(function(){
-				$(this).toggleClass("clicked").parent().siblings(".subMenu").slideToggle(128);
+				$(this).parent().siblings(".search").addClass("show");
+				$("input:text:visible:first").focus();
+			});
+
+			$(".search .cancel").click(function(){
+				$(this).parent().parent(".search").removeClass("show");
 			});
 
 			$(".navButton").click(function(){
 				$(this).toggleClass("clicked").parent().siblings(".subMenu").slideToggle(128);
 			});
-
-
-
 
 
 	    	if(app.config('db')) {

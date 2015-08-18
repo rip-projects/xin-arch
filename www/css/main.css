@@ -11,6 +11,7 @@ h1 { font-size: 1.7em; }
 body { color: #333; }
 label { margin: 0 0 2px; }
 fieldset { background-color: #f9f9f9; border: 1px solid #ddd; margin: 0; padding: 15px; }
+label { margin: 0; font-size: 0.85em; color: #666; padding-bottom: 5px; }
 
 /*======================= Body iOS ===============================*/
 body.ios div[data-region="header"],
@@ -40,7 +41,7 @@ input[type=checkbox].swipe:checked { border: 0; }
 input[type=checkbox].swipe { outline: 0; margin: 0; border: 0; background-color: transparent; }
 
 .button.solid,
-input[type="submit"].button { background: #42A3EA; border: 0; }
+input[type="submit"].button { background: #42A3EA; border: 0; padding: 10px 16px; font-weight: 400; margin: 0; font-size: 1.2em; line-height: 130%; text-transform: uppercase; width: 100%; }
 
 ::-webkit-input-placeholder { color: rgba(102, 102, 102, 0.5); }
 :-moz-placeholder { color: rgba(102, 102, 102, 0.5); }
@@ -70,6 +71,7 @@ input[type="submit"].button { background: #42A3EA; border: 0; }
 .navbar .direct.close span { display: table; width: 20px; height: 20px; background: url(../img/close.png)center no-repeat; background-size: contain; }
 
 .subMenu { position: absolute; background-color: #42A3EA; top: 45px; left: 0; right: 0; display: none; border-top: 1px solid rgba(255, 255, 255, 0.5); z-index: 999; }
+
 .ios .subMenu { top: 65px; }
 .ios.web .subMenu { top: 45px; }
 .subMenu form { padding: 10px; }
@@ -80,12 +82,6 @@ input[type="submit"].button { background: #42A3EA; border: 0; }
 .subMenu .listView li:last-child a { border-bottom: 1px solid transparent; }
 .subMenu .listView li .icon { color: #fff; }
 
-.searchMenu input[type="submit"] { margin: 0; border: 0; color: #fff; font-weight: 900; height: auto; padding: 4px 10px 4px 5px; width: 100%; text-align: right; font-size: 12px; background-color: transparent; }
-.searchMenu .listView { border: 0; border-radius: 0; background: transparent; }
-.searchMenu .listView li a { border-bottom: 1px solid rgba(255, 255, 255, 0.5); color: #fff; }
-.searchMenu .listView li:last-child a { border-bottom: 1px solid transparent; }
-.searchMenu .listView li .icon { color: #fff; }
-
 .searching input[type="text"] { 
   text-align: center; margin-bottom: 0; height: 30px; border: 0; font-weight: 400; padding: 10px;
   -webkit-border-radius: 4px;
@@ -95,6 +91,23 @@ input[type="submit"].button { background: #42A3EA; border: 0; }
   border-radius: 4px; 
 }
 .searching input[type="text"]:focus { text-align: left; }
+
+.searching .search { 
+	position: absolute; bottom: 0; left: 0; right: 0; background-color: #42A3EA; opacity: 0; pointer-events: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.searching .search.show { opacity: 1; pointer-events: visible; }
+.searching .search .span-9 { width: 74%; padding: 5px 0 5px 15px; }
+.searching .search .span-3 { padding-right: 15px; }
+.searching .search input[type="text"] { font-size: 1.1em; height: auto; line-height: 120%; padding: 8px 10px; }
+.searching .search input[type="reset"] { margin: 0; color: #fff; border: 0; display: block; text-align: right; width: 100%; padding: 0; font-size: 1.2em; padding: 7px 0; outline: 0; }
+.searching .search input[type="reset"]:hover { background: transparent; }
+
+
 
 /*Drawer*/
 .xin-drawer { background-color: #333; border: 0; }
@@ -143,7 +156,6 @@ div[data-uri="register"] .content .container { padding: 10px 15px 30px 15px; }
 /*Listview*/
 .listViewContainer { padding: 30px 0 0px; }
 .listViewContainer:first-child { padding: 0; }
-.listViewContainer label { margin: 0; font-size: 0.85em; color: #666; padding-bottom: 5px; }
 .listView {
 	padding: 0 0 0 10px; background: #f9f9f9; border: 1px solid #ddd;
 	-webkit-border-radius: 5px;
@@ -262,11 +274,9 @@ div[data-uri="register"] .content .container { padding: 10px 15px 30px 15px; }
 .profileDesc .button.follow:hover,
 .profileDesc .button.follow.click { background: #42A3EA; color: #fff; }
 
-/*.postArea { padding: 20px 0; }*/
 .postArea .row,
 .postArea .row .span-4 { padding: 1px; }
 .postArea .image { display: block; width: 100%; height: 100px; }
-
 
 .submitPost { padding-top: 30px; display: inline-block; width: 100%; }
 .submitPost .buttonSubmit { display: inline-block; vertical-align: middle; width: 100%; }
@@ -277,18 +287,23 @@ div[data-uri="register"] .content .container { padding: 10px 15px 30px 15px; }
 .socialSubmit .button { padding: 10px 16px; font-weight: 400; margin: 0; font-size: 1.2em; line-height: 130%; }
 .socialSubmit a { display: block; }
 .socialSubmit a:last-child { margin-top: 10px }
-.socialSubmit a.button { border: 0; }
+.socialSubmit a.button { border: 0; text-transform: none; }
 .socialSubmit a i { margin-right: 10px; font-size: 1.1em; }
 .socialSubmit .fb { background: #3A5898; }
 .socialSubmit .gplus { background: #D94C2D; margin-bottom: 0; }
 
 .tabstrip { border: 0; background: #F9F9F9; z-index: 9999; height: 50px; }
-.tabstrip .tabs { font-size: 1.5em; padding: 6px 0; border-right: 0; position: relative; border-top: 1px solid #ddd; }
-.tabstrip .tabspan-2 { float: left; position: relative; width: 20%; display: block; }
+.tabstrip .tabs { font-size: 1.5em; padding: 6px 0; border-right: 0; position: relative; border-top: 1px solid #ddd; float: left; display: block; }
+.tabstrip .tabspan-2 { width: 50%; }
+.tabstrip .tabspan-3 { width: 33.3%; }
+.tabstrip .tabspan-4 { width: 25%; }
+.tabstrip .tabspan-5 { width: 20%; }
 .tabstrip .tabs span { color: #666; font-size: 0.5em; margin-top: 3px; letter-spacing: 0.3pt; }
 .tabstrip .tabs.active span { color: #42A3EA; }
 .tabstrip .tabs span.xn { font-size: 1em; margin-top: 0; }
-.tabstrip .tabs span.badge { position: absolute; top: 5px; right: 12px; background: #F23030; border-radius: 100%; z-index: 9999; width: 10px; height: 10px; margin: 0; }
+.tabstrip .tabs span.badge { position: absolute; top: -10px; right: 0; background: #F23030; border-radius: 100%; z-index: 9999; margin: 0; display: table; min-width: 25px; min-height: 25px; }
+.tabstrip .tabs span.badge.empty { top: 2px; right: 12px; min-width: 10px; min-height: 10px; }
+.tabstrip .tabs span.badge i { color: #fff; margin: 0; line-height: 25px; font-weight: 600; font-size: 1.2em; font-style: normal; }
 
 .background { position: absolute; top: 0; bottom: 0; right: 0; left: 0; z-index: 0; }
 
@@ -331,6 +346,7 @@ div[data-uri="register"] ::-moz-placeholder { color: rgba(255, 255, 255, 0.5); }
 div[data-uri="register"] :-ms-input-placeholder { color: rgba(255, 255, 255, 0.5); }
 div[data-uri="register"] .loginInput { margin-top: -203px; }
 div[data-uri="register"] .profileArea .avatarArea span { color: #fff; }
+
 
 
 /*MENU TOGGLE*/

@@ -22,6 +22,10 @@
     <link rel="stylesheet" type="text/css" href="vendor/jacket-awesome/dist/css/jacket-awesome.css" />
     <link rel="stylesheet" type="text/css" href="vendor/naked-css/css/naked.css" /> -->
     <!-- <link rel="stylesheet" type="text/css" href="vendor/xin-theme/style/style.css" /> -->
+
+    <link rel="stylesheet" type="text/css" href="vendor/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="vendor/owl-carousel/owl-carousel/owl.transitions.css">
+
     <link rel="stylesheet" type="text/css" href="./css/main.css" />
         <!-- ##End Development Stylesheet## -->
 
@@ -37,47 +41,48 @@
     <div data-role="layout" data-id="default" class="xc-flex vertical">
         <div data-region="header">
             <nav class="navbar navbar-default row" role="navigation">
-            	<div class="span-2">
-            		<a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false">
-						<div class="menu-toggle-btn">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-                	</a>
-            	</div>
-
-            	<div class="span-8">
-            		<h6 class="label">Application</h6>
-            	</div>
-            	<div class="span-2">
-        			<span class="icon-menu navButton">
-        				<i class="pull-right xn xn-caret-down"></i>
-        			</span>
+                <div class="span-2">
+                    <a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false">
+                        <div class="menu-toggle-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="span-8">
+                    <h6 class="label">Application</h6>
+                </div>
+                <div class="span-2">
+                    <span class="icon-menu navButton">
+                        <i class="pull-right xn xn-caret-down"></i>
+                    </span>
                 </div>
                 <div class="subMenu">
-                	<div class="listView">
-						<ul class="listArea">
-							<li>
-								<i class="icon xn xn-cogs"></i>
-								<div class="inputArea">
-									<a class="link" href="#">Settings</a>
-									<i class="icon right xn xn-angle-right"></i>
-								</div>
-							</li>
-							<li>
-								<i class="icon xn xn-download"></i>
-								<div class="inputArea">
-									<a class="link" href="#">Download</a>
-									<i class="icon right xn xn-angle-right"></i>
-								</div>
-							</li>
-						</ul>
-    				</div>
+                    <div class="listView">
+                        <ul class="listArea">
+                            <li>
+                                <i class="icon xn xn-cogs"></i>
+                                <div class="inputArea">
+                                    <a class="link" href="#">Settings</a>
+                                    <i class="icon right xn xn-angle-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="icon xn xn-download"></i>
+                                <div class="inputArea">
+                                    <a class="link" href="#">Download</a>
+                                    <i class="icon right xn xn-angle-right"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
+
         <div data-region="body" class="center layout-body has-tabstrip"></div>
+
     </div>
 
     <div data-role="layout" data-id="login" class="xc-flex vertical">
@@ -107,7 +112,7 @@
 
     <div data-role="layout" data-id="register" class="xc-flex vertical">
         <div class="background" style="background: url(img/background.jpg) center no-repeat; background-size: cover;"></div>
-    	<!-- nav -->
+        <!-- nav -->
         <div data-region="header">
             <nav class="navbar navbar-default row" role="navigation">
                 <div class="span-2">
@@ -119,12 +124,12 @@
                     <h6 class="label">&nbsp;</h6>
                 </div>
                 <div class="span-2">
-            		&nbsp;
+                    &nbsp;
                 </div>
             </nav>
         </div>
 
-    	<!-- body -->
+        <!-- body -->
         <div data-region="body" class="center layout-body"></div>
     </div>
 
@@ -155,7 +160,7 @@
     </div>
 
     <div data-role="layout" data-id="edit-profile" class="xc-flex vertical">
-    	<!-- nav -->
+        <!-- nav -->
         <div data-region="header">
             <nav class="navbar navbar-default row" role="navigation">
                 <div class="span-2">
@@ -167,156 +172,166 @@
                     <h6 class="label">Edit Profile</h6>
                 </div>
                 <div class="span-2">
-        			&nbsp;
+                    &nbsp;
                 </div>
             </nav>
         </div>
 
-    	<!-- body -->
+        <!-- body -->
         <div data-region="body" class="center layout-body has-tabstrip"></div>
     </div>
 
     <div data-role="layout" data-id="activity" class="xc-flex vertical">
-    	<!-- nav -->
+        <!-- nav -->
         <div data-region="header">
             <nav class="navbar navbar-default row" role="navigation">
                 <div class="span-2">
                     <a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false">
-						<div class="menu-toggle-btn">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-                	</a>
+                        <div class="menu-toggle-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
                 </div>
                 <div class="span-8">
                     <h6 class="label">Activity</h6>
                 </div>
                 <div class="span-2">
-	    			<span class="icon-menu navButton">
-	    				<i class="pull-right xn xn-caret-down"></i>
-	    			</span>
-    			</div>
-                <div class="subMenu">
-                	<div class="listView">
-						<ul class="listArea">
-							<li>
-								<i class="icon xn xn-cogs"></i>
-								<div class="inputArea">
-									<a class="link" href="#">Settings</a>
-									<i class="icon right xn xn-angle-right"></i>
-								</div>
-							</li>
-							<li>
-								<i class="icon xn xn-download"></i>
-								<div class="inputArea">
-									<a class="link" href="#">Download</a>
-									<i class="icon right xn xn-angle-right"></i>
-								</div>
-							</li>
-						</ul>
-    				</div>
+                    <span class="icon-menu navButton">
+                        <i class="pull-right xn xn-caret-down"></i>
+                    </span>
                 </div>
                 <div class="subMenu">
-                	<div class="listView">
-						<ul class="listArea">
-							<li>
-								<i class="icon xn xn-cogs"></i>
-								<div class="inputArea">
-									<a class="link" href="#">Settings</a>
-									<i class="icon right xn xn-angle-right"></i>
-								</div>
-							</li>
-							<li>
-								<i class="icon xn xn-download"></i>
-								<div class="inputArea">
-									<a class="link" href="#">Download</a>
-									<i class="icon right xn xn-angle-right"></i>
-								</div>
-							</li>
-						</ul>
-    				</div>
+                    <div class="listView">
+                        <ul class="listArea">
+                            <li>
+                                <i class="icon xn xn-cogs"></i>
+                                <div class="inputArea">
+                                    <a class="link" href="#">Settings</a>
+                                    <i class="icon right xn xn-angle-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="icon xn xn-download"></i>
+                                <div class="inputArea">
+                                    <a class="link" href="#">Download</a>
+                                    <i class="icon right xn xn-angle-right"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subMenu">
+                    <div class="listView">
+                        <ul class="listArea">
+                            <li>
+                                <i class="icon xn xn-cogs"></i>
+                                <div class="inputArea">
+                                    <a class="link" href="#">Settings</a>
+                                    <i class="icon right xn xn-angle-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="icon xn xn-download"></i>
+                                <div class="inputArea">
+                                    <a class="link" href="#">Download</a>
+                                    <i class="icon right xn xn-angle-right"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
 
-    	<!-- body -->
+        <!-- body -->
         <div data-region="body" class="center layout-body has-tabstrip"></div>
     </div>
 
     <div data-role="layout" data-id="listview" class="xc-flex vertical">
-    	<!-- nav -->
+        <!-- nav -->
         <div data-region="header">
             <nav class="navbar navbar-default row" role="navigation">
                 <div class="span-2">
                     <a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false">
-						<div class="menu-toggle-btn">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-                	</a>
+                        <div class="menu-toggle-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
                 </div>
                 <div class="span-8">
                     <h6 class="label">List View</h6>
                 </div>
                 <div class="span-2">
-        			<span class="icon-menu navButton">
-        				<i class="pull-right xn xn-caret-down"></i>
-        			</span>
+                    <span class="icon-menu navButton">
+                        <i class="pull-right xn xn-caret-down"></i>
+                    </span>
                 </div>
                 <div class="subMenu">
-                	<div class="listView">
-						<ul class="listArea">
-							<li>
-								<i class="icon xn xn-cogs"></i>
-								<div class="inputArea">
-									<a class="link" href="#">Settings</a>
-									<i class="icon right xn xn-angle-right"></i>
-								</div>
-							</li>
-							<li>
-								<i class="icon xn xn-download"></i>
-								<div class="inputArea">
-									<a class="link" href="#">Download</a>
-									<i class="icon right xn xn-angle-right"></i>
-								</div>
-							</li>
-						</ul>
-    				</div>
+                    <div class="listView">
+                        <ul class="listArea">
+                            <li>
+                                <i class="icon xn xn-cogs"></i>
+                                <div class="inputArea">
+                                    <a class="link" href="#">Settings</a>
+                                    <i class="icon right xn xn-angle-right"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="icon xn xn-download"></i>
+                                <div class="inputArea">
+                                    <a class="link" href="#">Download</a>
+                                    <i class="icon right xn xn-angle-right"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
 
-    	<!-- body -->
+        <!-- body -->
         <div data-region="body" class="center layout-body has-tabstrip"></div>
     </div>
 
     <div data-role="layout" data-id="search" class="xc-flex vertical">
-    	<!-- nav -->
+        <!-- nav -->
         <div data-region="header">
             <nav class="navbar searchMenu" role="navigation">
                 <form action="" class="row searching">
                     <div class="span-2">
                         <a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false">
-    						<div class="menu-toggle-btn">
-    							<span></span>
-    							<span></span>
-    							<span></span>
-    						</div>
-                    	</a>
+                            <div class="menu-toggle-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
                     </div>
                     <div class="span-8">
-                        <input type="text" placeholder="Search...">
+                        <h6 class="label">Search</h6>
                     </div>
                     <div class="span-2">
-                        <input type="submit" value="Submit">
+                        <span class="icon-menu searchButton">
+                            <i class="pull-right xn xn-search"></i>
+                        </span>
+                    </div>
+                    <div class="search row">
+                        <div class="span-9">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <div class="span-3">
+                            <input type="reset" class="cancel" value="Cancel">
+                        </div>
                     </div>
                 </form>
             </nav>
         </div>
 
-    	<!-- body -->
+        <!-- body -->
         <div data-region="body" class="center layout-body has-tabstrip"></div>
     </div>
 
@@ -441,73 +456,73 @@
             <div class="scrollVertical">
                 <div class="content scroll">
                     <div class="container">
-                		<form action="">
-		        			<div class="profileArea listViewContainer">
-		        				<div class="row listView">
-		    						<ul class="listArea">
-		    							<li>
-		    								<i class="icon xn xn-list-alt"></i>
-		    								<div class="inputArea">
-		    									<input type="text" placeholder="Name">
-		    								</div>
-		    							</li>
-		    							<li>
-		    								<i class="icon xn xn-user"></i>
-		    								<div class="inputArea">
-		    									<input type="text" placeholder="Username">
-		    								</div>
-		    							</li>
-		    							<li>
-		    								<i class="icon xn xn-venus-mars"></i>
-		    								<div class="inputArea">
-			    								<select name="" id="">
-			    									<option value="">Male</option>
-			    									<option value="">Female</option>
-			    								</select>
-		    								</div>
-		    							</li>
-		    						</ul>
-		        					<div class="avatarArea">
-		        						<a href="">
-			        						<span class="image" style="background: url(img/profile-default.png) center no-repeat; background-size: cover;"></span>
-			        						<span class="">Add</span>
-		        						</a>
-		        					</div>
-		        				</div>
-		        			</div>
-		        			<div class="listViewContainer">
-		        				<label>Private Information</label>
-			        			<div class="listView">
-									<ul class="listArea">
-										<li>
-											<i class="icon xn xn-at"></i>
-											<div class="inputArea">
-		    									<input type="text" placeholder="Email">
-		    								</div>
-										</li>
-										<li>
-											<i class="icon xn xn-key"></i>
-											<div class="inputArea">
-		    									<input type="password" placeholder="Password">
-											</div>
-										</li>
-										<li>
-											<i class="icon xn xn-lock"></i>
-											<div class="inputArea">
-		    									<input type="password" placeholder="Confirm Password">
-											</div>
-										</li>
-									</ul>
-			    				</div>
-		            		</div>
-		            		<div class="submitPost">
-	        					<div class="buttonSubmit">
-	        						<input type="submit" class="button solid" value="Register">
-	        					</div>
-	        				</div>
-        				</form>
-	            	</div>
-	            </div>
+                        <form action="">
+                            <div class="profileArea listViewContainer">
+                                <div class="row listView">
+                                    <ul class="listArea">
+                                        <li>
+                                            <i class="icon xn xn-list-alt"></i>
+                                            <div class="inputArea">
+                                                <input type="text" placeholder="Name">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon xn xn-user"></i>
+                                            <div class="inputArea">
+                                                <input type="text" placeholder="Username">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon xn xn-venus-mars"></i>
+                                            <div class="inputArea">
+                                                <select name="" id="">
+                                                    <option value="">Male</option>
+                                                    <option value="">Female</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="avatarArea">
+                                        <a href="">
+                                            <span class="image" style="background: url(img/profile-default.png) center no-repeat; background-size: cover;"></span>
+                                            <span class="">Add</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listViewContainer">
+                                <label>Private Information</label>
+                                <div class="listView">
+                                    <ul class="listArea">
+                                        <li>
+                                            <i class="icon xn xn-at"></i>
+                                            <div class="inputArea">
+                                                <input type="text" placeholder="Email">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon xn xn-key"></i>
+                                            <div class="inputArea">
+                                                <input type="password" placeholder="Password">
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <i class="icon xn xn-lock"></i>
+                                            <div class="inputArea">
+                                                <input type="password" placeholder="Confirm Password">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="submitPost">
+                                <div class="buttonSubmit">
+                                    <input type="submit" class="button solid" value="Register">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -523,7 +538,7 @@
                             <div class="profileDesc">
                                 <h4>Raisa Andriana</h4>
                                 <h6>@raisa6690</h6>
-                                <a href="#" class="button follow animated">Follow</a>
+                                <a href="#" class="button follow">Follow</a>
                             </div>
                         </div>
                         <div class="row">
@@ -643,42 +658,42 @@
         <div data-role="view" data-uri="home" data-title="Home" data-layout="default" id="scrolling">
             <div class="scrollVertical">
                 <div class="content scroll">
-                	<div class="container">
-			            <h1 class="title">
-			                hello world !.
-			            </h1>
-			            <!-- listing-->
-			            <ul class="listing">
-			                <li>
-			                    <div class="thumb-img" style="background-image:url(./img/2014-01-28.jpg)"></div>
-			                    <div class="data">
-			                        <a href="#detail" class="title">Bpk. Ust. Jumrie</a>
-			                        <p class="sub-title noWrap">
-			                            <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
-			                        </p>
-			                    </div>
-			                </li>
-			                <li>
-			                    <div class="thumb-img" style="background-image:url(./img/2014-01-28.jpg)"></div>
-			                    <div class="data">
-			                        <a href="#detail" class="title">Bpk. Roy Tong</a>
-			                        <p class="sub-title noWrap">
-			                            <span class="descrip noWrap subheader">Tong@gmail.com</span>
-			                        </p>
-			                    </div>
-			                </li>
-			                <li>
-			                    <div class="data">
-			                        <a href="#detail" class="title">Bpk. Ust. Jumrie</a>
-			                        <p class="sub-title noWrap">
-			                            <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
-			                        </p>
-			                    </div>
-			                </li>
-			            </ul>
-			            <!-- end listing-->
+                    <div class="container">
+                        <h1 class="title">
+                            hello world !.
+                        </h1>
+                        <!-- listing-->
+                        <ul class="listing">
+                            <li>
+                                <div class="thumb-img" style="background-image:url(./img/2014-01-28.jpg)"></div>
+                                <div class="data">
+                                    <a href="#detail" class="title">Bpk. Ust. Jumrie</a>
+                                    <p class="sub-title noWrap">
+                                        <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumb-img" style="background-image:url(./img/2014-01-28.jpg)"></div>
+                                <div class="data">
+                                    <a href="#detail" class="title">Bpk. Roy Tong</a>
+                                    <p class="sub-title noWrap">
+                                        <span class="descrip noWrap subheader">Tong@gmail.com</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="data">
+                                    <a href="#detail" class="title">Bpk. Ust. Jumrie</a>
+                                    <p class="sub-title noWrap">
+                                        <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- end listing-->
 
-                	</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -687,16 +702,26 @@
         <div data-role="view" data-uri="search" data-title="Search" data-layout="search" id="scrolling">
             <div class="scrollVertical">
                 <div class="content scroll">
-                	<div class="container">
-                		<div class="article">
-                			<h1>This is a Simple Paragraphs</h1>
-                			<p>
-                				Nam quis quam accumsan, commodo metus in, dignissim sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec turpis metus, porttitor at sem vitae, fringilla dignissim sapien. Proin congue arcu nisl, quis pretium nulla cursus sit amet. Aliquam interdum risus sed nisl ultrices dignissim. Fusce adipiscing nisl vel nunc malesuada posuere. Ut rutrum tristique orci vitae iaculis. Donec scelerisque mattis tortor laoreet dictum. Praesent tortor turpis, aliquet in lobortis id, porta ut lorem. Nunc tincidunt viverra felis quis hendrerit. Vivamus imperdiet, nulla id rhoncus imperdiet, quam nulla pulvinar dui, vel fringilla nunc nibh id turpis.
-                				Maecenas id mauris diam. Maecenas volutpat purus id lectus malesuada euismod sit amet sed justo. Mauris est sapien, mollis nec rutrum vel, iaculis at lorem. Sed sed odio nec risus tempor molestie hendrerit ullamcorper urna. Nulla fermentum lacus ut enim semper.
-                			</p>
-                		</div>
-                	</div>
-	            </div>
+                    <div class="container">
+                        <h2>Example Paragraph</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -705,54 +730,53 @@
             <div class="scrollVertical">
                 <div class="content scroll">
                     <div class="container">
-						<form action="">
-							<div class="listViewContainer">
-	                			<label for="">List Form</label>
-		                    	<ul class="listText">
-		                            <li class="wrapper">
-		                                <div class="row">
-		                                    <span class="text">Name</span>
-		                                    <input type="text" class="text side" placeholder="Input here...">
-		                                </div>
-		                            </li>
-		                            <li class="wrapper">
-		                                <div class="row">
-		                                    <span class="text">Company</span>
-		                                    <input type="text" class="text side" placeholder="Input here...">
-		                                </div>
-		                            </li>
-		                            <li class="wrapper">
-		                                <div class="row">
-		                                    <span class="text">City</span>
-		                                    <input type="text" class="text side" placeholder="Input here...">
-		                                </div>
-		                            </li>
-		                            <li class="wrapper">
-		                                <div class="row">
-		                                    <span class="text">Name</span>
-		                                    <input type="text" class="text side" placeholder="Input here...">
-		                                </div>
-		                            </li>
-		                            <li class="wrapper">
-		                                <div class="row">
-		                                    <span class="text">Company</span>
-		                                    <input type="text" class="text side" placeholder="Input here...">
-		                                </div>
-		                            </li>
-		                            <li class="wrapper">
-		                                <div class="row">
-		                                    <span class="text">City</span>
-		                                    <input type="text" class="text side" placeholder="Input here...">
-		                                </div>
-		                            </li>
-		                        </ul>
-	                        </div>
-	                        <div class="submitPost">
+                        <form action="">
+                            <div class="listViewContainer">
+                                <label for="">List Form</label>
+                                <ul class="listText">
+                                    <li class="wrapper">
+                                        <div class="row">
+                                            <span class="text">Name</span>
+                                            <input type="text" class="text side" placeholder="Input here...">
+                                        </div>
+                                    </li>
+                                    <li class="wrapper">
+                                        <div class="row">
+                                            <span class="text">Company</span>
+                                            <input type="text" class="text side" placeholder="Input here...">
+                                        </div>
+                                    </li>
+                                    <li class="wrapper">
+                                        <div class="row">
+                                            <span class="text">City</span>
+                                            <input type="text" class="text side" placeholder="Input here...">
+                                        </div>
+                                    </li>
+                                    <li class="wrapper">
+                                        <div class="row">
+                                            <span class="text">Gender</span>
+                                            <select name="" id="" class="text side">
+                                                <option value="1">Man</option>
+                                                <option value="2">Woman</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="wrapper">
+                                        <div class="row">
+                                            <span class="text">City</span>
+                                            <div class="swipeArea text side">
+                                                <input class="swipe" name="category[]" value="1" type="checkbox" unchecked="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="submitPost">
                                 <div class="buttonSubmit">
                                     <input type="submit" class="button solid" value="Save">
                                 </div>
                             </div>
-						</form>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -762,130 +786,130 @@
         <div data-role="view" data-uri="activity" data-title="Activity" data-layout="activity" id="scrolling">
             <div class="scrollVertical">
                 <div class="content scroll">
-        			<div class="container">
-                		<div class="listViewContainer">
-                			<label for="">Upload</label>
-                			<div class="listView full">
-                				<ul class="listArea">
-                					<li>
-										<span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
-										<div class="inputArea">
-											<div class="flat">
-												<div class="notifArea">
-													<span class="texting">Your post is uploaded. You can now share it.</span>
-													<time>3 hours ago</time>
-												</div>
-												<div class="imageArea">
-													<a href="#">
-														<i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
-													</a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
-										<div class="inputArea">
-											<div class="flat">
-												<div class="notifArea">
-													<span class="texting">Your post is uploaded. You can now share it.</span>
-													<time>8 hours ago</time>
-												</div>
-												<div class="imageArea">
-													<a href="#">
-														<i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
-													</a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
-										<div class="inputArea">
-											<div class="flat">
-												<div class="notifArea">
-													<span class="texting">Your post is uploaded. You can now share it.</span>
-													<time>13 hours ago</time>
-												</div>
-												<div class="imageArea">
-													<a href="#">
-														<i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
-													</a>
-												</div>
-											</div>
-										</div>
-									</li>
-                				</ul>
-                			</div>
-                		</div>
-                		<div class="listViewContainer">
-                			<label for="">Notification</label>
-                			<div class="listView full">
-                				<ul class="listArea">
-                					<li>
-										<span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
-										<div class="inputArea">
-											<div class="flat">
-												<div class="notifArea">
-													<span class="texting">
-														<a href="#">xinixtechnology</a>, 
-														<a href="#">aliaraaab</a>, 
-														<a href="#">apriantopramana</a> 
-														and 32 others upvoted your post.
-													</span>
-													<time>3 hours ago</time>
-												</div>
-												<div class="imageArea">
-													<a href="#">
-														<i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
-													</a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
-										<div class="inputArea">
-											<div class="flat">
-												<div class="notifArea">
-													<span class="texting">
-														<a href="#">xinixtechnology</a>
-														upvoted your post.
-													</span>
-													<time>9 hours ago</time>
-												</div>
-												<div class="imageArea">
-													<a href="#">
-														<i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
-													</a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
-										<div class="inputArea">
-											<div class="flat">
-												<div class="notifArea">
-													<span class="texting">
-														<a href="#">aliaraaab</a>
-														upvoted your post.
-													</span>
-													<time>13 hours ago</time>
-												</div>
-												<div class="imageArea">
-													<a href="#">
-														<i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
-													</a>
-												</div>
-											</div>
-										</div>
-									</li>
-                				</ul>
-                			</div>
-                		</div>
-                	</div>
-	            </div>
+                    <div class="container">
+                        <div class="listViewContainer">
+                            <label for="">Upload</label>
+                            <div class="listView full">
+                                <ul class="listArea">
+                                    <li>
+                                        <span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <div class="flat">
+                                                <div class="notifArea">
+                                                    <span class="texting">Your post is uploaded. You can now share it.</span>
+                                                    <time>3 hours ago</time>
+                                                </div>
+                                                <div class="imageArea">
+                                                    <a href="#">
+                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <div class="flat">
+                                                <div class="notifArea">
+                                                    <span class="texting">Your post is uploaded. You can now share it.</span>
+                                                    <time>8 hours ago</time>
+                                                </div>
+                                                <div class="imageArea">
+                                                    <a href="#">
+                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <div class="flat">
+                                                <div class="notifArea">
+                                                    <span class="texting">Your post is uploaded. You can now share it.</span>
+                                                    <time>13 hours ago</time>
+                                                </div>
+                                                <div class="imageArea">
+                                                    <a href="#">
+                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listViewContainer">
+                            <label for="">Notification</label>
+                            <div class="listView full">
+                                <ul class="listArea">
+                                    <li>
+                                        <span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <div class="flat">
+                                                <div class="notifArea">
+                                                    <span class="texting">
+                                                        <a href="#">xinixtechnology</a>, 
+                                                        <a href="#">aliaraaab</a>, 
+                                                        <a href="#">apriantopramana</a> 
+                                                        and 32 others upvoted your post.
+                                                    </span>
+                                                    <time>3 hours ago</time>
+                                                </div>
+                                                <div class="imageArea">
+                                                    <a href="#">
+                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <div class="flat">
+                                                <div class="notifArea">
+                                                    <span class="texting">
+                                                        <a href="#">xinixtechnology</a>
+                                                        upvoted your post.
+                                                    </span>
+                                                    <time>9 hours ago</time>
+                                                </div>
+                                                <div class="imageArea">
+                                                    <a href="#">
+                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <div class="flat">
+                                                <div class="notifArea">
+                                                    <span class="texting">
+                                                        <a href="#">aliaraaab</a>
+                                                        upvoted your post.
+                                                    </span>
+                                                    <time>13 hours ago</time>
+                                                </div>
+                                                <div class="imageArea">
+                                                    <a href="#">
+                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -893,132 +917,132 @@
         <div data-role="view" data-uri="listview" data-title="List View" data-layout="listview" id="scrolling">
             <div class="scrollVertical">
                 <div class="content scroll">
-                	<div class="container">
-                		<div class="listViewContainer">
-                			<label for="">List View</label>
-                			<div class="listView row">
-                				<ul class="listArea">
-                					<li>
-										<div class="inputArea flat">
-											<span class="text">List 1</span>
-										</div>
-									</li>
-                					<li>
-										<div class="inputArea flat">
-											<span class="text">List 2</span>
-										</div>
-									</li>
-                					<li>
-										<div class="inputArea flat">
-											<span class="text">List 3</span>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-                		<div class="listViewContainer">
-                			<label for="">List View Icon</label>
-                			<div class="listView row">
-                				<ul class="listArea">
-                					<li>
-                						<i class="icon xn xn-list-alt"></i>
-										<div class="inputArea">
-											<span class="text">List 1</span>
-										</div>
-									</li>
-                					<li>
-                						<i class="icon xn xn-list-alt"></i>
-										<div class="inputArea">
-											<span class="text">List 2</span>
-										</div>
-									</li>
-                					<li>
-                						<i class="icon xn xn-list-alt"></i>
-										<div class="inputArea">
-											<span class="text">List 3</span>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-                		<div class="listViewContainer">
-                			<label for="">List Menu Image</label>
-                			<div class="listView category full">
-                				<ul class="listArea">
-                					<li>
-										<span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
-										<div class="inputArea">
-											<a class="link" href="#">Menu 1</a>
-											<i class="icon right xn xn-angle-right"></i>
-										</div>
-									</li>
-									<li>
-										<span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
-										<div class="inputArea">
-											<a class="link" href="#">Menu 2</a>
-											<i class="icon right xn xn-angle-right"></i>
-										</div>
-									</li>
-									<li>
-										<span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
-										<div class="inputArea">
-											<a class="link" href="#">Menu 3</a>
-											<i class="icon right xn xn-angle-right"></i>
-										</div>
-									</li>
-                				</ul>
-                			</div>
-                		</div>
-                		<div class="listViewContainer">
-                			<label for="">List Menu Icon</label>
-            				<div class="listView">
-								<ul class="listArea">
-									<li>
-										<i class="icon xn xn-cogs"></i>
-										<div class="inputArea">
-											<a class="link" href="#">Menu 1</a>
-											<i class="icon right xn xn-angle-right"></i>
-										</div>
-									</li>
-									<li>
-										<i class="icon xn xn-download"></i>
-										<div class="inputArea">
-											<a class="link" href="#">Menu 2</a>
-											<i class="icon right xn xn-angle-right"></i>
-										</div>
-									</li>
-								</ul>
-		    				</div>
-                		</div>
+                    <div class="container">
+                        <div class="listViewContainer">
+                            <label for="">List View</label>
+                            <div class="listView row">
+                                <ul class="listArea">
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 1</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 2</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 3</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listViewContainer">
+                            <label for="">List View Icon</label>
+                            <div class="listView row">
+                                <ul class="listArea">
+                                    <li>
+                                        <i class="icon xn xn-list-alt"></i>
+                                        <div class="inputArea">
+                                            <span class="text">List 1</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="icon xn xn-list-alt"></i>
+                                        <div class="inputArea">
+                                            <span class="text">List 2</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="icon xn xn-list-alt"></i>
+                                        <div class="inputArea">
+                                            <span class="text">List 3</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listViewContainer">
+                            <label for="">List Menu Image</label>
+                            <div class="listView category full">
+                                <ul class="listArea">
+                                    <li>
+                                        <span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <a class="link" href="#">Menu 1</a>
+                                            <i class="icon right xn xn-angle-right"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <a class="link" href="#">Menu 2</a>
+                                            <i class="icon right xn xn-angle-right"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <a class="link" href="#">Menu 3</a>
+                                            <i class="icon right xn xn-angle-right"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listViewContainer">
+                            <label for="">List Menu Icon</label>
+                            <div class="listView">
+                                <ul class="listArea">
+                                    <li>
+                                        <i class="icon xn xn-cogs"></i>
+                                        <div class="inputArea">
+                                            <a class="link" href="#">Menu 1</a>
+                                            <i class="icon right xn xn-angle-right"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="icon xn xn-download"></i>
+                                        <div class="inputArea">
+                                            <a class="link" href="#">Menu 2</a>
+                                            <i class="icon right xn xn-angle-right"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-                		<div class="listViewContainer">
-                			<label for="">List View Text</label>
-	                		<ul class="listText">
-	                            <li class="wrapper">
-	                                <div class="row">
-	                                    <span class="text">Name</span>
-	                                    <span class="text side">Muhammad Ali</span>
-	                                </div>
-	                            </li>
-	                            <li class="wrapper">
-	                                <div class="row">
-	                                    <span class="text">Company</span>
-	                                    <span class="text side">PT. Sagara Xinix Solusitama</span>
-	                                </div>
-	                            </li>
-	                            <li class="wrapper">
-	                                <div class="row">
-	                                    <span class="text">City</span>
-	                                    <span class="text side">Bekasi</span>
-	                                </div>
-	                            </li>
-	                            <li class="wrapper">
-	                                <div class="row">
-	                                    <span class="text">Birth Date</span>
-	                                    <span class="text side">01/01/1970</span>
-	                                </div>
-	                            </li>
-	                        </ul>
+                        <div class="listViewContainer">
+                            <label for="">List View Text</label>
+                            <ul class="listText">
+                                <li class="wrapper">
+                                    <div class="row">
+                                        <span class="text">Name</span>
+                                        <span class="text side">Muhammad Ali</span>
+                                    </div>
+                                </li>
+                                <li class="wrapper">
+                                    <div class="row">
+                                        <span class="text">Company</span>
+                                        <span class="text side">PT. Sagara Xinix Solusitama</span>
+                                    </div>
+                                </li>
+                                <li class="wrapper">
+                                    <div class="row">
+                                        <span class="text">City</span>
+                                        <span class="text side">Bekasi</span>
+                                    </div>
+                                </li>
+                                <li class="wrapper">
+                                    <div class="row">
+                                        <span class="text">Birth Date</span>
+                                        <span class="text side">01/01/1970</span>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
 
 
@@ -1120,82 +1144,84 @@
                                 </ul>
                             </div>
                         </div>
-                		<div class="listViewContainer">
-                			<label for="">List Input</label>
-                			<div class="listView">
-                				<ul class="listArea">
-                					<li>
-										<div class="inputArea flat">
-											<input type="text" placeholder="List Input 1">
-										</div>
-									</li>
-                					<li>
-										<div class="inputArea flat">
-											<input type="text" placeholder="List Input 2">
-										</div>
-									</li>
-                					<li>
-										<div class="inputArea flat">
-											<input type="text" placeholder="List Input 3">
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-                		<div class="listViewContainer">
-                			<label for="">List Input Icon</label>
-                			<div class="listView">
-                				<ul class="listArea">
-                					<li>
-                						<i class="icon xn xn-list-alt"></i>
-										<div class="inputArea">
-											<input type="text" placeholder="List Input 1">
-										</div>
-									</li>
-                					<li>
-                						<i class="icon xn xn-list-alt"></i>
-										<div class="inputArea">
-											<input type="text" placeholder="List Input 2">
-										</div>
-									</li>
-                					<li>
-                						<i class="icon xn xn-list-alt"></i>
-										<div class="inputArea">
-											<input type="text" placeholder="List Input 3">
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-                	</div>
-	            </div>
+                        <div class="listViewContainer">
+                            <label for="">List Input</label>
+                            <div class="listView">
+                                <ul class="listArea">
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <input type="text" placeholder="List Input 1">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <input type="text" placeholder="List Input 2">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <input type="text" placeholder="List Input 3">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listViewContainer">
+                            <label for="">List Input Icon</label>
+                            <div class="listView">
+                                <ul class="listArea">
+                                    <li>
+                                        <i class="icon xn xn-list-alt"></i>
+                                        <div class="inputArea">
+                                            <input type="text" placeholder="List Input 1">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="icon xn xn-list-alt"></i>
+                                        <div class="inputArea">
+                                            <input type="text" placeholder="List Input 2">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="icon xn xn-list-alt"></i>
+                                        <div class="inputArea">
+                                            <input type="text" placeholder="List Input 3">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
 
         <!-- tab Strip-->
         <div class="tabstrip">
-			<a class="tabspan-2 tabs active" href="#home">
-				<span class="xn xn-home"></span>
-				<span>Home</span>
-			</a>
-			<a class="tabspan-2 tabs" href="#search">
-				<span class="xn xn-search"></span>
-				<span>Search</span>
-			</a>
-			<a class="tabspan-2 tabs" href="#form">
-				<span class="xn xn-edit"></span>
-				<span>Form</span>
-			</a>
-			<a class="tabspan-2 tabs" href="#activity">
-				<span class="badge"></span>
+            <a class="tabspan-5 tabs active" href="#home">
+                <span class="xn xn-home"></span>
+                <span>Home</span>
+            </a>
+            <a class="tabspan-5 tabs" href="#search">
+                <span class="xn xn-search"></span>
+                <span>Search</span>
+            </a>
+            <a class="tabspan-5 tabs" href="#form">
+                <span class="xn xn-edit"></span>
+                <span>Form</span>
+            </a>
+            <a class="tabspan-5 tabs" href="#activity">
+                <span class="badge">
+                    <i>5</i>
+                </span>
                 <span class="xn xn-bolt"></span>
-				<span>Activity</span>
-			</a>
-			<a class="tabspan-2 tabs" href="#listview">
-				<span class="xn xn-tasks"></span>
-				<span>ListView</span>
-			</a>
+                <span>Activity</span>
+            </a>
+            <a class="tabspan-5 tabs" href="#listview">
+                <span class="xn xn-tasks"></span>
+                <span>ListView</span>
+            </a>
         </div>
         <!-- end tab Strip-->
 
@@ -1273,15 +1299,16 @@
     <script type="text/javascript" src="vendor/touchswipe/jquery.touchSwipe.min.js"></script>
     <script type="text/javascript" src="vendor/xin/js/xin.js"></script>-->
             <!-- ##End Development Javascript## -->
-	
+    
 
-	<!-- ##Development Javascript## -->
-	<script type="text/javascript" src="vendor/tshirt-scroll/tshirt-scroll.js"></script>
+    <!-- ##Development Javascript## -->
+    <script type="text/javascript" src="vendor/tshirt-scroll/tshirt-scroll.js"></script>
     <script type="text/javascript" src="vendor/tshirt-popup/tshirt-popup.js"></script>
     <script type="text/javascript" src="vendor/hammerjs/hammer.min.js"></script>
     <script type="text/javascript" src="vendor/jquery-hammerjs/jquery.hammer.min.js"></script>
     <script type="text/javascript" src="vendor/jquery-mousewheel/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="vendor/tshirt-background/tshirt-background.js"></script>
+    <script type="text/javascript" src="vendor/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
 
 
     <script type="text/javascript" src="./js/collections/countries.js"></script>
