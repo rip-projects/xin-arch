@@ -347,6 +347,64 @@ div[data-uri="register"] :-ms-input-placeholder { color: rgba(255, 255, 255, 0.5
 div[data-uri="register"] .loginInput { margin-top: -203px; }
 div[data-uri="register"] .profileArea .avatarArea span { color: #fff; }
 
+.bannerArea .bannerSlide { display: table; width: 100%; height: 200px; }
+.gridMenu { text-align: center; background-color: #f9f9f9; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.gridMenu a { padding: 5px; border-right: 1px solid #ddd; display: block; }
+.gridMenu a:last-child { border-right: 0; }
+.gridMenu .image { display: inline-block; width: 40px; height: 30px; margin-bottom: 5px; }
+.gridMenu .name { font-size: 0.8em; color: #666; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.gridMenu.slide a:last-child { border-right: 1px solid #ddd; }
+.gridMenu.slide .owl-item:last-child a { border-right: 0; }
+
+.gridMenu.rounded { background-color: transparent; border: 0; }
+.gridMenu.rounded a { border: 0; }
+.gridMenu.rounded .image { 
+	width: 60px; height: 60px; 
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
+	border-radius: 100%;
+}
+.gridMenu.rounded a:last-child { border: 0; }
+
+
+.listGrid { text-align: center; padding: 0 5px; }
+.listGrid .list { padding: 5px; min-height: 224px; }
+.listGrid .list a { display: block; }
+.listGrid .image { display: block; height: 150px; margin-bottom: 10px; }
+.listGrid .name { font-size: 1em; color: #666; display: block; padding: 0 5px; }
+.listGrid strong { display: block; color: #FF9500; font-weight: 600; margin-top: 8px; }
+
+.listGrid.rounded .image {
+	width: 130px; height: 130px; display: inline-block;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
+	border-radius: 100%;
+}
+
+
+
+.label { padding: 10px 0; position: relative; text-align: center; }
+.label hr { position: absolute; top: 50%; left: 0; right: 0; width: 100%; margin: 0 auto; border-color: #666; }
+.label h6 { text-align: center; margin: 0; line-height: 120%; display: inline-block; background: #fff; position: relative; z-index: 2; padding: 0 10px; text-transform: uppercase; font-size: 1em; color: #666; }
+
+
+.owl-theme .owl-controls { text-align: center; position: absolute; bottom: 0; right: 0; left: 0; }
+.owl-theme .owl-controls .owl-page { display: inline-block; zoom: 1; }
+.owl-theme .owl-controls .owl-page span {
+	display: block; width: 10px; height: 10px; margin: 3px; background: rgba(255, 255, 255, 0.6);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+}
+.owl-theme .owl-controls .owl-page.active span { background: #42A3EA; }
+
 
 
 /*MENU TOGGLE*/
@@ -373,3 +431,5 @@ div[data-uri="register"] .profileArea .avatarArea span { color: #fff; }
 	transform: translate(0px, -7px) rotate(45deg) scalex(1);               
 	-webkit-transform: translate(0px, -7px) rotate(45deg) scalex(1);               
 }
+
+

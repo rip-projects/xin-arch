@@ -45,6 +45,38 @@
 			});
 
 
+			$(".bannerArea").owlCarousel({
+				// itemsCustom : [
+				// 	[0, 4],
+				// 	[480, 4],
+				// 	[768, 4],
+				// 	[1024, 4],
+				// 	[1400, 5],
+				// 	[1600, 6],
+				// ],
+				autoPlay : true,
+				pagination: true,
+				navigation: false
+			});
+
+			$(".gridMenu.slide").owlCarousel({
+				itemsCustom : [
+					[0, 4],
+					[480, 4],
+					[768, 4],
+					[1024, 4],
+					[1400, 5],
+					[1600, 6],
+				],
+				autoPlay : false,
+				pagination: false,
+				navigation: false
+			});
+
+
+
+
+
 	    	if(app.config('db')) {
 
 				app.invoke('db.init', function() {

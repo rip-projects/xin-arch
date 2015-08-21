@@ -23,8 +23,8 @@
     "xin-theme": "adoel/xin-theme",
     "tshirt-popup": "1.0.x",
     "jacket-awesome": "1.0.x",
-    "tshirt-background": "~0.0.1"
-    // "owl-carousel": "~1.3.2"
+    "tshirt-background": "~0.0.1",
+    "owl-carousel": "~1.3.2"
   },
   "license": "MIT",
   "homepage": "xinix.co.id",

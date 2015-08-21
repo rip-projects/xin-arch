@@ -41,43 +41,33 @@
     <div data-role="layout" data-id="default" class="xc-flex vertical">
         <div data-region="header">
             <nav class="navbar navbar-default row" role="navigation">
-                <div class="span-2">
-                    <a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false">
-                        <div class="menu-toggle-btn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="span-8">
-                    <h6 class="label">Application</h6>
-                </div>
-                <div class="span-2">
-                    <span class="icon-menu navButton">
-                        <i class="pull-right xn xn-caret-down"></i>
-                    </span>
-                </div>
-                <div class="subMenu">
-                    <div class="listView">
-                        <ul class="listArea">
-                            <li>
-                                <i class="icon xn xn-cogs"></i>
-                                <div class="inputArea">
-                                    <a class="link" href="#">Settings</a>
-                                    <i class="icon right xn xn-angle-right"></i>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="icon xn xn-download"></i>
-                                <div class="inputArea">
-                                    <a class="link" href="#">Download</a>
-                                    <i class="icon right xn xn-angle-right"></i>
-                                </div>
-                            </li>
-                        </ul>
+                <form action="" class="row searching">
+                    <div class="span-2">
+                        <a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false">
+                            <div class="menu-toggle-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
                     </div>
-                </div>
+                    <div class="span-8">
+                        <h6 class="label">Application</h6>
+                    </div>
+                    <div class="span-2">
+                        <span class="icon-menu searchButton">
+                            <i class="pull-right xn xn-search"></i>
+                        </span>
+                    </div>
+                    <div class="search row">
+                        <div class="span-9">
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <div class="span-3">
+                            <input type="reset" class="cancel" value="Cancel">
+                        </div>
+                    </div>
+                </form>
             </nav>
         </div>
 
@@ -297,7 +287,7 @@
         <div data-region="body" class="center layout-body has-tabstrip"></div>
     </div>
 
-    <div data-role="layout" data-id="search" class="xc-flex vertical">
+    <div data-role="layout" data-id="listgrid" class="xc-flex vertical">
         <!-- nav -->
         <div data-region="header">
             <nav class="navbar searchMenu" role="navigation">
@@ -312,7 +302,7 @@
                         </a>
                     </div>
                     <div class="span-8">
-                        <h6 class="label">Search</h6>
+                        <h6 class="label">List Grid</h6>
                     </div>
                     <div class="span-2">
                         <span class="icon-menu searchButton">
@@ -659,50 +649,6 @@
             <div class="scrollVertical">
                 <div class="content scroll">
                     <div class="container">
-                        <h1 class="title">
-                            hello world !.
-                        </h1>
-                        <!-- listing-->
-                        <ul class="listing">
-                            <li>
-                                <div class="thumb-img" style="background-image:url(./img/2014-01-28.jpg)"></div>
-                                <div class="data">
-                                    <a href="#detail" class="title">Bpk. Ust. Jumrie</a>
-                                    <p class="sub-title noWrap">
-                                        <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="thumb-img" style="background-image:url(./img/2014-01-28.jpg)"></div>
-                                <div class="data">
-                                    <a href="#detail" class="title">Bpk. Roy Tong</a>
-                                    <p class="sub-title noWrap">
-                                        <span class="descrip noWrap subheader">Tong@gmail.com</span>
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="data">
-                                    <a href="#detail" class="title">Bpk. Ust. Jumrie</a>
-                                    <p class="sub-title noWrap">
-                                        <span class="descrip noWrap subheader">Jumrie@gmail.com</span>
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- end listing-->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ========== SEARCH ==========-->
-        <div data-role="view" data-uri="search" data-title="Search" data-layout="search" id="scrolling">
-            <div class="scrollVertical">
-                <div class="content scroll">
-                    <div class="container">
                         <h2>Example Paragraph</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -720,194 +666,6 @@
                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ========== FORM ==========-->
-        <div data-role="view" data-uri="form" data-title="Form" data-layout="form" id="scrolling">
-            <div class="scrollVertical">
-                <div class="content scroll">
-                    <div class="container">
-                        <form action="">
-                            <div class="listViewContainer">
-                                <label for="">List Form</label>
-                                <ul class="listText">
-                                    <li class="wrapper">
-                                        <div class="row">
-                                            <span class="text">Name</span>
-                                            <input type="text" class="text side" placeholder="Input here...">
-                                        </div>
-                                    </li>
-                                    <li class="wrapper">
-                                        <div class="row">
-                                            <span class="text">Company</span>
-                                            <input type="text" class="text side" placeholder="Input here...">
-                                        </div>
-                                    </li>
-                                    <li class="wrapper">
-                                        <div class="row">
-                                            <span class="text">City</span>
-                                            <input type="text" class="text side" placeholder="Input here...">
-                                        </div>
-                                    </li>
-                                    <li class="wrapper">
-                                        <div class="row">
-                                            <span class="text">Gender</span>
-                                            <select name="" id="" class="text side">
-                                                <option value="1">Man</option>
-                                                <option value="2">Woman</option>
-                                            </select>
-                                        </div>
-                                    </li>
-                                    <li class="wrapper">
-                                        <div class="row">
-                                            <span class="text">City</span>
-                                            <div class="swipeArea text side">
-                                                <input class="swipe" name="category[]" value="1" type="checkbox" unchecked="">
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="submitPost">
-                                <div class="buttonSubmit">
-                                    <input type="submit" class="button solid" value="Save">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ========== ACTIVITY ==========-->
-        <div data-role="view" data-uri="activity" data-title="Activity" data-layout="activity" id="scrolling">
-            <div class="scrollVertical">
-                <div class="content scroll">
-                    <div class="container">
-                        <div class="listViewContainer">
-                            <label for="">Upload</label>
-                            <div class="listView full">
-                                <ul class="listArea">
-                                    <li>
-                                        <span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
-                                        <div class="inputArea">
-                                            <div class="flat">
-                                                <div class="notifArea">
-                                                    <span class="texting">Your post is uploaded. You can now share it.</span>
-                                                    <time>3 hours ago</time>
-                                                </div>
-                                                <div class="imageArea">
-                                                    <a href="#">
-                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
-                                        <div class="inputArea">
-                                            <div class="flat">
-                                                <div class="notifArea">
-                                                    <span class="texting">Your post is uploaded. You can now share it.</span>
-                                                    <time>8 hours ago</time>
-                                                </div>
-                                                <div class="imageArea">
-                                                    <a href="#">
-                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
-                                        <div class="inputArea">
-                                            <div class="flat">
-                                                <div class="notifArea">
-                                                    <span class="texting">Your post is uploaded. You can now share it.</span>
-                                                    <time>13 hours ago</time>
-                                                </div>
-                                                <div class="imageArea">
-                                                    <a href="#">
-                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="listViewContainer">
-                            <label for="">Notification</label>
-                            <div class="listView full">
-                                <ul class="listArea">
-                                    <li>
-                                        <span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
-                                        <div class="inputArea">
-                                            <div class="flat">
-                                                <div class="notifArea">
-                                                    <span class="texting">
-                                                        <a href="#">xinixtechnology</a>, 
-                                                        <a href="#">aliaraaab</a>, 
-                                                        <a href="#">apriantopramana</a> 
-                                                        and 32 others upvoted your post.
-                                                    </span>
-                                                    <time>3 hours ago</time>
-                                                </div>
-                                                <div class="imageArea">
-                                                    <a href="#">
-                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
-                                        <div class="inputArea">
-                                            <div class="flat">
-                                                <div class="notifArea">
-                                                    <span class="texting">
-                                                        <a href="#">xinixtechnology</a>
-                                                        upvoted your post.
-                                                    </span>
-                                                    <time>9 hours ago</time>
-                                                </div>
-                                                <div class="imageArea">
-                                                    <a href="#">
-                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
-                                        <div class="inputArea">
-                                            <div class="flat">
-                                                <div class="notifArea">
-                                                    <span class="texting">
-                                                        <a href="#">aliaraaab</a>
-                                                        upvoted your post.
-                                                    </span>
-                                                    <time>13 hours ago</time>
-                                                </div>
-                                                <div class="imageArea">
-                                                    <a href="#">
-                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -1196,6 +954,396 @@
             </div>
         </div>
 
+        <!-- ========== LIST GRID ==========-->
+        <div data-role="view" data-uri="listgrid" data-title="List Grid" data-layout="listgrid" id="scrolling">
+            <div class="scrollVertical">
+                <div class="content scroll">
+                    <div class="bannerArea">
+                        <a href="#" class="bannerSlide" style="background: url(img/background3.jpg) center no-repeat; background-size: cover;"></a>
+                        <a href="#" class="bannerSlide" style="background: url(img/background2.jpg) center no-repeat; background-size: cover;"></a>
+                        <a href="#" class="bannerSlide" style="background: url(img/background1.jpg) center no-repeat; background-size: cover;"></a>
+                    </div>
+                    <div class="label">
+                        <hr>
+                        <h6>Grid Menu</h6>
+                    </div>
+                    <div class="gridMenu row">
+                        <a href="#" class="span-3">
+                            <span class="image" style="background: url(img/xin2.png) center no-repeat; background-size: contain;"></span>
+                            <span class="name">All Product</span>
+                        </a>
+                        <a href="#" class="span-3">
+                            <span class="image" style="background: url(img/xinix2.png) center no-repeat; background-size: contain;"></span>
+                            <span class="name">All Categories</span>
+                        </a>
+                        <a href="#" class="span-3">
+                            <span class="image" style="background: url(img/xin2.png) center no-repeat; background-size: contain;"></span>
+                            <span class="name">Clothings</span>
+                        </a>
+                        <a href="#" class="span-3">
+                            <span class="image" style="background: url(img/xinix2.png) center no-repeat; background-size: contain;"></span>
+                            <span class="name">Electronics</span>
+                        </a>
+                    </div>
+                    <div class="label">
+                        <hr>
+                        <h6>Grid Menu Slide</h6>
+                    </div>
+                    <div class="gridMenu slide">
+                        <a href="#">
+                            <span class="image" style="background: url(img/xin2.png) center no-repeat; background-size: contain;"></span>
+                            <span class="name">All Product</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/xinix2.png) center no-repeat; background-size: contain;"></span>
+                            <span class="name">All Categories</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/xin2.png) center no-repeat; background-size: contain;"></span>
+                            <span class="name">Clothings</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/xinix2.png) center no-repeat; background-size: contain;"></span>
+                            <span class="name">Electronics</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/xin2.png) center no-repeat; background-size: contain;"></span>
+                            <span class="name">All Product</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/xinix2.png) center no-repeat; background-size: contain;"></span>
+                            <span class="name">All Categories</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/xin2.png) center no-repeat; background-size: contain;"></span>
+                            <span class="name">Clothings</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/xinix2.png) center no-repeat; background-size: contain;"></span>
+                            <span class="name">Electronics</span>
+                        </a>
+                    </div>
+                    <div class="label">
+                        <hr>
+                        <h6>Grid Menu Rounded</h6>
+                    </div>
+                    <div class="gridMenu rounded row">
+                        <a href="#" class="span-3">
+                            <span class="image" style="background: url(img/background3.jpg) center no-repeat; background-size: cover;"></span>
+                            <span class="name">All Product</span>
+                        </a>
+                        <a href="#" class="span-3">
+                            <span class="image" style="background: url(img/background2.jpg) center no-repeat; background-size: cover;"></span>
+                            <span class="name">All Categories</span>
+                        </a>
+                        <a href="#" class="span-3">
+                            <span class="image" style="background: url(img/background1.jpg) center no-repeat; background-size: cover;"></span>
+                            <span class="name">Clothings</span>
+                        </a>
+                        <a href="#" class="span-3">
+                            <span class="image" style="background: url(img/background3.jpg) center no-repeat; background-size: cover;"></span>
+                            <span class="name">Electronics</span>
+                        </a>
+                    </div>
+                    <div class="label">
+                        <hr>
+                        <h6>Grid Menu Rounded Slide</h6>
+                    </div>
+                    <div class="gridMenu rounded slide">
+                        <a href="#">
+                            <span class="image" style="background: url(img/background3.jpg) center no-repeat; background-size: cover;"></span>
+                            <span class="name">All Product</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/background2.jpg) center no-repeat; background-size: cover;"></span>
+                            <span class="name">All Categories</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/background1.jpg) center no-repeat; background-size: cover;"></span>
+                            <span class="name">Clothings</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/background3.jpg) center no-repeat; background-size: cover;"></span>
+                            <span class="name">Electronics</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/background3.jpg) center no-repeat; background-size: cover;"></span>
+                            <span class="name">All Product</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/background2.jpg) center no-repeat; background-size: cover;"></span>
+                            <span class="name">All Categories</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/background1.jpg) center no-repeat; background-size: cover;"></span>
+                            <span class="name">Clothings</span>
+                        </a>
+                        <a href="#">
+                            <span class="image" style="background: url(img/background3.jpg) center no-repeat; background-size: cover;"></span>
+                            <span class="name">Electronics</span>
+                        </a>
+                    </div>
+                    <div class="label">
+                        <hr>
+                        <h6>List Grid</h6>
+                    </div>
+                    <div class="listGrid row">
+                        <div class="list span-6">
+                            <a href="#">
+                                <span class="image" style="background: url(img/background3.jpg) center no-repeat; background-size: cover;"></span>
+                                <span class="name">Lorem ipsum dolor sit amet, consectetur</span>
+                                <strong>Rp. 25.000</strong>
+                            </a>
+                        </div>
+                        <div class="list span-6">
+                            <a href="#">
+                                <span class="image" style="background: url(img/background2.jpg) center no-repeat; background-size: cover;"></span>
+                                <span class="name">Ut enim ad minim veniam, quis</span>
+                                <strong>Rp. 25.000</strong>
+                            </a>
+                        </div>
+                        <div class="list span-6">
+                            <a href="#">
+                                <span class="image" style="background: url(img/background1.jpg) center no-repeat; background-size: cover;"></span>
+                                <span class="name">Duis aute irure dolor in reprehenderit</span>
+                                <strong>Rp. 25.000</strong>
+                            </a>
+                        </div>
+                        <div class="list span-6">
+                            <a href="#">
+                                <span class="image" style="background: url(img/background3.jpg) center no-repeat; background-size: cover;"></span>
+                                <span class="name">Excepteur sint occaecat cupidatat</span>
+                                <strong>Rp. 25.000</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="label">
+                        <hr>
+                        <h6>List Grid Rounded</h6>
+                    </div>
+                    <div class="listGrid rounded row">
+                        <div class="list span-6">
+                            <a href="#">
+                                <span class="image" style="background: url(img/background3.jpg) center no-repeat; background-size: cover;"></span>
+                                <span class="name">Lorem ipsum dolor sit amet, consectetur</span>
+                                <strong>Rp. 25.000</strong>
+                            </a>
+                        </div>
+                        <div class="list span-6">
+                            <a href="#">
+                                <span class="image" style="background: url(img/background2.jpg) center no-repeat; background-size: cover;"></span>
+                                <span class="name">Ut enim ad minim veniam, quis</span>
+                                <strong>Rp. 25.000</strong>
+                            </a>
+                        </div>
+                        <div class="list span-6">
+                            <a href="#">
+                                <span class="image" style="background: url(img/background1.jpg) center no-repeat; background-size: cover;"></span>
+                                <span class="name">Duis aute irure dolor in reprehenderit</span>
+                                <strong>Rp. 25.000</strong>
+                            </a>
+                        </div>
+                        <div class="list span-6">
+                            <a href="#">
+                                <span class="image" style="background: url(img/background3.jpg) center no-repeat; background-size: cover;"></span>
+                                <span class="name">Excepteur sint occaecat cupidatat</span>
+                                <strong>Rp. 25.000</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== ACTIVITY ==========-->
+        <div data-role="view" data-uri="activity" data-title="Activity" data-layout="activity" id="scrolling">
+            <div class="scrollVertical">
+                <div class="content scroll">
+                    <div class="container">
+                        <div class="listViewContainer">
+                            <label for="">Upload</label>
+                            <div class="listView full">
+                                <ul class="listArea">
+                                    <li>
+                                        <span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <div class="flat">
+                                                <div class="notifArea">
+                                                    <span class="texting">Your post is uploaded. You can now share it.</span>
+                                                    <time>3 hours ago</time>
+                                                </div>
+                                                <div class="imageArea">
+                                                    <a href="#">
+                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <div class="flat">
+                                                <div class="notifArea">
+                                                    <span class="texting">Your post is uploaded. You can now share it.</span>
+                                                    <time>8 hours ago</time>
+                                                </div>
+                                                <div class="imageArea">
+                                                    <a href="#">
+                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="image" style="background: url(img/raisa.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <div class="flat">
+                                                <div class="notifArea">
+                                                    <span class="texting">Your post is uploaded. You can now share it.</span>
+                                                    <time>13 hours ago</time>
+                                                </div>
+                                                <div class="imageArea">
+                                                    <a href="#">
+                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="listViewContainer">
+                            <label for="">Notification</label>
+                            <div class="listView full">
+                                <ul class="listArea">
+                                    <li>
+                                        <span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <div class="flat">
+                                                <div class="notifArea">
+                                                    <span class="texting">
+                                                        <a href="#">xinixtechnology</a>, 
+                                                        <a href="#">aliaraaab</a>, 
+                                                        <a href="#">apriantopramana</a> 
+                                                        and 32 others upvoted your post.
+                                                    </span>
+                                                    <time>3 hours ago</time>
+                                                </div>
+                                                <div class="imageArea">
+                                                    <a href="#">
+                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <div class="flat">
+                                                <div class="notifArea">
+                                                    <span class="texting">
+                                                        <a href="#">xinixtechnology</a>
+                                                        upvoted your post.
+                                                    </span>
+                                                    <time>9 hours ago</time>
+                                                </div>
+                                                <div class="imageArea">
+                                                    <a href="#">
+                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="image" style="background: url(img/xinix.png) center no-repeat; background-size: cover;"></span>
+                                        <div class="inputArea">
+                                            <div class="flat">
+                                                <div class="notifArea">
+                                                    <span class="texting">
+                                                        <a href="#">aliaraaab</a>
+                                                        upvoted your post.
+                                                    </span>
+                                                    <time>13 hours ago</time>
+                                                </div>
+                                                <div class="imageArea">
+                                                    <a href="#">
+                                                        <i class="rightImg" style="background: url(img/cat.jpg) center no-repeat; background-size: cover;"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== FORM ==========-->
+        <div data-role="view" data-uri="form" data-title="Form" data-layout="form" id="scrolling">
+            <div class="scrollVertical">
+                <div class="content scroll">
+                    <div class="container">
+                        <form action="">
+                            <div class="listViewContainer">
+                                <label for="">List Form</label>
+                                <ul class="listText">
+                                    <li class="wrapper">
+                                        <div class="row">
+                                            <span class="text">Name</span>
+                                            <input type="text" class="text side" placeholder="Input here...">
+                                        </div>
+                                    </li>
+                                    <li class="wrapper">
+                                        <div class="row">
+                                            <span class="text">Company</span>
+                                            <input type="text" class="text side" placeholder="Input here...">
+                                        </div>
+                                    </li>
+                                    <li class="wrapper">
+                                        <div class="row">
+                                            <span class="text">City</span>
+                                            <input type="text" class="text side" placeholder="Input here...">
+                                        </div>
+                                    </li>
+                                    <li class="wrapper">
+                                        <div class="row">
+                                            <span class="text">Gender</span>
+                                            <select name="" id="" class="text side">
+                                                <option value="1">Man</option>
+                                                <option value="2">Woman</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="wrapper">
+                                        <div class="row">
+                                            <span class="text">City</span>
+                                            <div class="swipeArea text side">
+                                                <input class="swipe" name="category[]" value="1" type="checkbox" unchecked="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="submitPost">
+                                <div class="buttonSubmit">
+                                    <input type="submit" class="button solid" value="Save">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
 
         <!-- tab Strip-->
         <div class="tabstrip">
@@ -1203,13 +1351,13 @@
                 <span class="xn xn-home"></span>
                 <span>Home</span>
             </a>
-            <a class="tabspan-5 tabs" href="#search">
-                <span class="xn xn-search"></span>
-                <span>Search</span>
+            <a class="tabspan-5 tabs" href="#listview">
+                <span class="xn xn-tasks"></span>
+                <span>ListView</span>
             </a>
-            <a class="tabspan-5 tabs" href="#form">
-                <span class="xn xn-edit"></span>
-                <span>Form</span>
+            <a class="tabspan-5 tabs" href="#listgrid">
+                <span class="xn xn-columns"></span>
+                <span>ListGrid</span>
             </a>
             <a class="tabspan-5 tabs" href="#activity">
                 <span class="badge">
@@ -1218,9 +1366,9 @@
                 <span class="xn xn-bolt"></span>
                 <span>Activity</span>
             </a>
-            <a class="tabspan-5 tabs" href="#listview">
-                <span class="xn xn-tasks"></span>
-                <span>ListView</span>
+            <a class="tabspan-5 tabs" href="#form">
+                <span class="xn xn-edit"></span>
+                <span>Form</span>
             </a>
         </div>
         <!-- end tab Strip-->
