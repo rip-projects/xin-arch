@@ -1,24 +1,5 @@
 ;(function() {
 
-    window.AuthMiddleware = function() {};
-
-    _.extend(AuthMiddleware.prototype, {
-        call: function(a) {
-
-            var d = xin.Deferred();
-            if (location.hash === '#login.html') {
-                location.href = 'login.html';
-                d.reject();
-            } else if (location.hash === '#signup.html') {
-                location.href = 'signup.html';
-                d.reject();
-            } else {
-                d.resolve();
-            }
-            return d.promise();
-        }
-    });
-
     var ValueDirective = function() {
 
     };
@@ -51,7 +32,6 @@
         }
 
     });
-
 
     _.extend(app, {
         db: null,
@@ -139,6 +119,5 @@
         }
 
     });
-
 
 })();
