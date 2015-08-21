@@ -1,0 +1,41 @@
+{
+  "name": "tshirt-background",
+  "version": "0.0.1",
+  "homepage": "https://github.com/xinix-technology/tshirt-background",
+  "authors": [
+    "Dwan <me@dwaan.com>"
+  ],
+  "description": "A media query background attribute",
+  "main": "tshirt-list.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "tshirt",
+    "background"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "holderjs": "~2.8.x",
+    "lato": "~0.3.x"
+  },
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "e89375f9a82cb314db98d9ef1c4dc1c9b10d3695"
+  },
+  "_source": "git://github.com/xinix-technology/tshirt-background.git",
+  "_target": "~0.0.1",
+  "_originalSource": "tshirt-background",
+  "_direct": true
+}

@@ -1,0 +1,29 @@
+{
+  "name": "xin",
+  "description": "SPA framework",
+  "author": "Ganesha <reekoheek@gmail.com>",
+  "dependencies": {
+    "backbone": "~1.0.0",
+    "underscore": "~1.4.3",
+    "jquery": "http://code.jquery.com/jquery-2.1.1.min.js"
+  },
+  "version": "1.0.0",
+  "ignore": [
+    "**/.*",
+    "vendor",
+    "test"
+  ],
+  "devDependencies": {
+    "naked": "ssh://git@111.221.43.117:22033/home/git/internal/naked.git"
+  },
+  "homepage": "https://github.com/faridlab/xin",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "e79aa9fa6bb38cec73174104a2112a1f7b185abc"
+  },
+  "_source": "git://github.com/faridlab/xin.git",
+  "_target": "1.0.0",
+  "_originalSource": "faridlab/xin"
+}

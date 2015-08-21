@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naked CSS</title>
+    <link rel="stylesheet" href="../vendor/jacket-awesome/dist/css/jacket-awesome.css">
+    <link rel="stylesheet" href="../vendor/google-code-prettify/bin/prettify.min.css">
+    <link rel="stylesheet" href="../vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../css/naked.css">
+    <link rel="stylesheet" href="../css/docs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script type="text/javascript" charset="utf-8" src="../vendor/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="nav-menu">
+        <div class="pull-left">
+            <h1 class="brand">
+                <a href="index.html">
+                    <span class="logo">
+                        <img src="../img/xinix-logo.png" alt="">
+                    </span>
+                    <span>Naked CSS</span>
+                </a>
+            </h1>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <script type="text/javascript">
+            $("aside.sidebar").load("aside.html", function() {
+                var docname = window.location.href;
+                docname = docname.split("/");
+            });
+        </script>
+    <!-- NAVBAR -->
+    <nav class="nav-menu">
+        <div class="pull-left">
+            <h1 class="brand">
+                <a href="index.html">
+                    <span class="logo">
+                        <img src="../img/xinix-logo.png" alt="">
+                    </span>
+                    <span>Naked CSS</span>
+                </a>
+            </h1>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+                $("aside.sidebar .nav a[href='" + docname[docname.length - 1] + "']").addClass ("select");
+            });
+        </script>
+    </aside>
+    <!-- END OF SIDEBAR -->
+
+    <!-- CONTENT -->
+    <main class="content">
+        <div class="wrapper">
+            <h1 class="title">Helper</h1>
+            <hr>
+            <p>There are several helper that you can use to help your life</p>
+            <h4 class="sub-title">Positioning</h4>
+            <p>Sometimes you need to put something on the left or right side. We have the regular .pull-right, .pull-left and .clearfix helper that you can use.</p>
+            <div class="box">
+                <div class="pull-left">Content Left</div>
+                <div class="pull-right">Content Right</div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<div class="pull-left">Content Left</div>
+<div class="pull-right">Content Right</div>
+<div class="clearfix"></div>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">Lists</h4>
+            <p>The list have many kind of use.</p>
+            <h5>List Flat</h5>
+            <p>It's a list, but it's flat. You can use it to form anything, from a bar, a menu or a list</p>
+            <div class="box">
+                <ul class="flat">
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="flat">
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h5>Plain Flat</h5>
+            <p>It's a list, but it's plan. Because sometime you don't need the bullet or numbering function.</p>
+            <div class="box">
+                <ul class="plain">
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                </ul>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="plain">
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div id="footer">
+            <p>Copyright &copy; 2014
+                <a href="http://xinix.co.id" target="_BLANK">Xinix Technology</a>. Some right(s) reserved.
+            </p>
+        </div>
+    </main>
+    <!-- END OF CONTENT -->
+
+    <!-- PAGE LEVEL SCRIPT -->
+    <script type="text/javascript" charset="utf-8" src="../js/docs.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../vendor/google-code-prettify/bin/prettify.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $.each($('.content pre.prettyprint'), function(index, dom) {
+            $(dom).html($('<div/>').text($(dom).html()).html());
+        });
+        prettyPrint();
+    </script>
+    <!-- END OF PAGE LEVEL SCRIPT -->
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "xin-theme",
+  "version": "0.0.1",
+  "main": "app.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+  }
+}
