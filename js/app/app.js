@@ -22,10 +22,10 @@
             '[data-uri]': xin.directive.URIDirective,
             '[data-bind]': xin.directive.BindDirective,
             '[data-value]': ValueDirective,
-            // '[data-background]': xin.directive.BackgroundDirective
+            '[data-background]': xin.directive.BackgroundDirective
         },
         middlewares: {
-            // 'AuthMiddleware': AuthMiddleware
+            'AuthMiddleware': AuthMiddleware
         },
         providers: {
 
