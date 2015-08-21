@@ -32,11 +32,45 @@
 			});
 
 			$(".searchButton").click(function(){
-				$(this).toggleClass("clicked").parent().siblings(".subMenu").slideToggle(128);
+				$(this).parent().siblings(".search").addClass("show");
+				$("input:text:visible:first").focus();
+			});
+
+			$(".search .cancel").click(function(){
+				$(this).parent().parent(".search").removeClass("show");
 			});
 
 			$(".navButton").click(function(){
 				$(this).toggleClass("clicked").parent().siblings(".subMenu").slideToggle(128);
+			});
+
+
+			$(".bannerArea").owlCarousel({
+				// itemsCustom : [
+				// 	[0, 4],
+				// 	[480, 4],
+				// 	[768, 4],
+				// 	[1024, 4],
+				// 	[1400, 5],
+				// 	[1600, 6],
+				// ],
+				autoPlay : true,
+				pagination: true,
+				navigation: false
+			});
+
+			$(".gridMenu.slide").owlCarousel({
+				itemsCustom : [
+					[0, 4],
+					[480, 4],
+					[768, 4],
+					[1024, 4],
+					[1400, 5],
+					[1600, 6],
+				],
+				autoPlay : false,
+				pagination: false,
+				navigation: false
 			});
 
 
