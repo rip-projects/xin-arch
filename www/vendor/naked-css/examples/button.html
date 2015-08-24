@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naked CSS</title>
+    <link rel="stylesheet" href="../vendor/jacket-awesome/dist/css/jacket-awesome.css">
+    <link rel="stylesheet" href="../vendor/google-code-prettify/bin/prettify.min.css">
+    <link rel="stylesheet" href="../vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../css/naked.css">
+    <link rel="stylesheet" href="../css/docs.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script type="text/javascript" charset="utf-8" src="../vendor/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="nav-menu">
+        <div class="pull-left">
+            <h1 class="brand">
+                <a href="index.html">
+                    <span class="logo">
+                        <img src="../img/xinix-logo.png" alt="">
+                    </span>
+                    <span>Naked CSS</span>
+                </a>
+            </h1>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <script type="text/javascript">
+            $("aside.sidebar").load("aside.html", function() {
+                var docname = window.location.href;
+                docname = docname.split("/");
+            });
+        </script>
+    <!-- NAVBAR -->
+    <nav class="nav-menu">
+        <div class="pull-left">
+            <h1 class="brand">
+                <a href="index.html">
+                    <span class="logo">
+                        <img src="../img/xinix-logo.png" alt="">
+                    </span>
+                    <span>Naked CSS</span>
+                </a>
+            </h1>
+        </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+                $("aside.sidebar .nav a[href='" + docname[docname.length - 1] + "']").addClass ("select");
+            });
+        </script>
+    </aside>
+    <!-- END OF SIDEBAR -->
+
+    <!-- CONTENT -->
+    <main class="content">
+        <div class="wrapper">
+            <h1 class="title">Button</h1>
+            <hr>
+            <p>Button in Naked Css look like this :</p>
+            <div class="row">
+                <div class="span-3">
+                    <p><b>Button</b></p>
+                    <a href="#" class="button">Button</a>
+                </div>
+                <div class="span-3">
+                    <p><b>Button Error</b></p>
+                    <a href="#" class="button error">Error</a>
+                </div>
+                <div class="span-3">
+                    <p><b>Button Success</b></p>
+                    <a href="#" class="button success">Success</a>
+                </div>
+                <div class="span-3">
+                    <p><b>Button Warning</b></p>
+                    <a href="#" class="button warning">Warning</a>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<a href="#" class="button">Button</a>
+
+<a href="#" class="button error">Error</a>
+
+<a href="#" class="button success">Success</a>
+
+<a href="#" class="button warning">Warning</a>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">Button Round</h4>
+            <div class="row">
+                <div class="span-3">
+                    <p><b>Button</b></p>
+                    <a href="#" class="button round">Button</a>
+                </div>
+                <div class="span-3">
+                    <p><b>Button Error</b></p>
+                    <a href="#" class="button round error">Error</a>
+                </div>
+                <div class="span-3">
+                    <p><b>Button Success</b></p>
+                    <a href="#" class="button round success">Success</a>
+                </div>
+                <div class="span-3">
+                    <p><b>Button Warning</b></p>
+                    <a href="#" class="button round warning">Warning</a>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<a href="#" class="button round">Button</a>
+
+<a href="#" class="button round error">Error</a>
+
+<a href="#" class="button round success">Success</a>
+
+<a href="#" class="button round warning">Warning</a>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">Button Group</h4>
+            <p>
+                Button groups are great when you need to display a group of actions in a bar. These build off the button styles and work perfectly with the grid.
+                There are two ways to build button groups in Naked CSS: with our predefined HTML classes or with our structure and mixins. Building button groups using our predefined classes is a breeze, you'll just wrap a button inside an <code>&lt;ul&gt;</code>.
+            </p>
+            <p>
+                The button styles will work the same as they do when building a single button, but they'll float next to each other to create a group. You also have access to the same radius classes as buttons, only they'll go on the unordered list instead of the button. You can even make sure the buttons take up even space within the container you put them in.
+            </p>
+            <ul class="button-group">
+                <li><a href="#" class="button">Button 1</a></li>
+                <li><a href="#" class="button">Button 2</a></li>
+                <li><a href="#" class="button">Button 3</a></li>
+            </ul>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="button-group">
+    <li><a href="#" class="button">Button 1</a></li>
+    <li><a href="#" class="button">Button 2</a></li>
+    <li><a href="#" class="button">Button 3</a></li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">Button Group Round</h4>
+            <div class="row">
+                <div class="span-6">
+                    <ul class="button-group round">
+                        <li><a href="#" class="button">Button 1</a></li>
+                        <li><a href="#" class="button error">Button 2</a></li>
+                    </ul>
+                </div>
+                <div class="span-6">
+                    <ul class="button-group round">
+                        <li><a href="#" class="button">Button 1</a></li>
+                        <li><a href="#" class="button warning">Button 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="button-group round">
+    <li><a href="#" class="button">Button 1</a></li>
+    <li><a href="#" class="button error">Button 2</a></li>
+</ul>
+
+<ul class="button-group round">
+    <li><a href="#" class="button">Button 1</a></li>
+    <li><a href="#" class="button warning">Button 2</a></li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">Button Bar</h4>
+            <p>
+                A button bar is a group of button groups (I N C E P T I O N), perfect for situations where you want groups of actions that are all related to a similar element or page. Simply wrap two or more button groups in a <code>.button-bar</code>.
+            </p>
+            <div class="button-bar">
+                <ul class="button-group left">
+                    <li><a href="#" class="button">Cancel</a></li>
+                    <li><a href="#" class="button">Submit</a></li>
+                </ul>
+                <ul class="button-group centered">
+                    <li><a href="#" class="button">Cancel</a></li>
+                    <li><a href="#" class="button">Submit</a></li>
+                </ul>
+                <ul class="button-group right">
+                    <li><a href="#" class="button">Cancel</a></li>
+                    <li><a href="#" class="button">Submit</a></li>
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<div class="button-bar">
+    <ul class="button-group left">
+        <li><a href="#" class="button">Cancel</a></li>
+        <li><a href="#" class="button">Submit</a></li>
+    </ul>
+    <ul class="button-group centered">
+        <li><a href="#" class="button">Cancel</a></li>
+        <li><a href="#" class="button">Submit</a></li>
+    </ul>
+    <ul class="button-group right">
+        <li><a href="#" class="button">Cancel</a></li>
+        <li><a href="#" class="button">Submit</a></li>
+    </ul>
+    <div style="clear: both;"></div>
+</div>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h1 class="title">Button Solid</h1>
+            <hr>
+            <div class="row">
+                <div class="span-3">
+                    <p><b>Button Solid</b></p>
+                    <a href="#" class="button solid">Button</a>
+                </div>
+                <div class="span-3">
+                    <p><b>Button Solid Error</b></p>
+                    <a href="#" class="button solid error">Error</a>
+                </div>
+                <div class="span-3">
+                    <p><b>Button Solid Success</b></p>
+                    <a href="#" class="button solid success">Success</a>
+                </div>
+                <div class="span-3">
+                    <p><b>Button Solid Warning</b></p>
+                    <a href="#" class="button solid warning">Warning</a>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<a href="#" class="button solid">Button</a>
+
+<a href="#" class="button solid error">Error</a>
+
+<a href="#" class="button solid success">Success</a>
+
+<a href="#" class="button solid warning">Warning</a>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">Button Solid Round</h4>
+            <div class="row">
+                <div class="span-3">
+                    <p><b>Button Solid</b></p>
+                    <a href="#" class="button solid round">Button</a>
+                </div>
+                <div class="span-3">
+                    <p><b>Button Solid Error</b></p>
+                    <a href="#" class="button solid round error">Error</a>
+                </div>
+                <div class="span-3">
+                    <p><b>Button Solid Success</b></p>
+                    <a href="#" class="button solid round success">Success</a>
+                </div>
+                <div class="span-3">
+                    <p><b>Button Solid Warning</b></p>
+                    <a href="#" class="button solid round warning">Warning</a>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<a href="#" class="button solid round">Button</a>
+
+<a href="#" class="button solid round error">Error</a>
+
+<a href="#" class="button solid round success">Success</a>
+
+<a href="#" class="button solid round warning">Warning</a>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">Button Solid Group</h4>
+            <p>
+                Button groups are great when you need to display a group of actions in a bar. These build off the button styles and work perfectly with the grid.
+                There are two ways to build button groups in Naked CSS: with our predefined HTML classes or with our structure and mixins. Building button groups using our predefined classes is a breeze, you'll just wrap a button inside an <code>&lt;ul&gt;</code>. <br><br>
+
+                The button styles will work the same as they do when building a single button, but they'll float next to each other to create a group. You also have access to the same radius classes as buttons, only they'll go on the unordered list instead of the button. You can even make sure the buttons take up even space within the container you put them in.
+            </p>
+            <ul class="button-group">
+                <li><a href="#" class="button solid">Button 1</a></li>
+                <li><a href="#" class="button solid">Button 2</a></li>
+                <li><a href="#" class="button solid">Button 3</a></li>
+            </ul>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="button-group">
+    <li><a href="#" class="button solid">Button 1</a></li>
+    <li><a href="#" class="button solid">Button 2</a></li>
+    <li><a href="#" class="button solid">Button 3</a></li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">Button Solid Group Round</h4>
+            <div class="row">
+                <div class="span-6">
+                    <ul class="button-group round">
+                        <li><a href="#" class="button solid">Button 1</a></li>
+                        <li><a href="#" class="button solid error">Button 2</a></li>
+                    </ul>
+                </div>
+                <div class="span-6">
+                    <ul class="button-group round">
+                        <li><a href="#" class="button solid">Button 1</a></li>
+                        <li><a href="#" class="button solid warning">Button 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<ul class="button-group round">
+    <li><a href="#" class="button solid">Button 1</a></li>
+    <li><a href="#" class="button solid error">Button 2</a></li>
+</ul>
+
+<ul class="button-group round">
+    <li><a href="#" class="button solid">Button 1</a></li>
+    <li><a href="#" class="button solid warning">Button 2</a></li>
+</ul>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+            <h4 class="sub-title">Button Solid Bar</h4>
+            <p>
+                A button bar is a group of button groups (I N C E P T I O N), perfect for situations where you want groups of actions that are all related to a similar element or page. Simply wrap two or more button groups in a <code>.button-bar</code>.
+            </p>
+            <div class="button-bar">
+                <ul class="button-group left">
+                    <li><a href="#" class="button solid">Cancel</a></li>
+                    <li><a href="#" class="button solid">Submit</a></li>
+                </ul>
+                <ul class="button-group centered">
+                    <li><a href="#" class="button solid">Cancel</a></li>
+                    <li><a href="#" class="button solid">Submit</a></li>
+                </ul>
+                <ul class="button-group right">
+                    <li><a href="#" class="button solid">Cancel</a></li>
+                    <li><a href="#" class="button solid">Submit</a></li>
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="html">
+                <div class="highlight">
+                    <pre class="prettyprint">
+<div class="button-bar">
+    <ul class="button-group left">
+        <li><a href="#" class="button solid">Cancel</a></li>
+        <li><a href="#" class="button solid">Submit</a></li>
+    </ul>
+    <ul class="button-group centered">
+        <li><a href="#" class="button solid">Cancel</a></li>
+        <li><a href="#" class="button solid">Submit</a></li>
+    </ul>
+    <ul class="button-group right">
+        <li><a href="#" class="button solid">Cancel</a></li>
+        <li><a href="#" class="button solid">Submit</a></li>
+    </ul>
+    <div style="clear: both;"></div>
+</div>
+                    </pre>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div id="footer">
+            <p>Copyright &copy; 2014
+                <a href="http://xinix.co.id" target="_BLANK">Xinix Technology</a>. Some right(s) reserved.
+            </p>
+        </div>
+    </main>
+    <!-- END OF CONTENT -->
+
+    <!-- PAGE LEVEL SCRIPT -->
+    <script type="text/javascript" charset="utf-8" src="../js/docs.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../vendor/google-code-prettify/bin/prettify.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $.each($('.content pre.prettyprint'), function(index, dom) {
+            $(dom).html($('<div/>').text($(dom).html()).html());
+        });
+        prettyPrint();
+    </script>
+    <!-- END OF PAGE LEVEL SCRIPT -->
+</body>
+</html>

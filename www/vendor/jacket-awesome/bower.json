@@ -1,0 +1,33 @@
+{
+  "name": "jacket-awesome",
+  "version": "1.0.1",
+  "homepage": "https://github.com/dwaan/jacket-awesome",
+  "authors": [
+    "Dwan <me@dwaan.com>"
+  ],
+  "license": "MIT",
+  "description": "Class converter for Font-Awesome",
+  "main": "jacket-awesome.css",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "font",
+    "awesome",
+    "css",
+    "jacket"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "font-awesome": "4.4.x"
+  }
+}
+

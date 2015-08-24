@@ -1,0 +1,291 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<title>T-Shirt Scroll Example</title>
+
+	<!-- Bare minimun javascript include -->
+	<script src="../vendor/hammerjs/hammer.min.js" type="application/javascript"></script>
+	<script src="../vendor/jquery/dist/jquery.min.js" type="application/javascript"></script>
+	<script src="../vendor/jquery-hammerjs/jquery.hammer.js" type="application/javascript"></script>
+	<script src="../vendor/jquery-mousewheel/jquery.mousewheel.min.js" type="application/javascript"></script>
+	<script src="../tshirt-scroll.js" type="application/javascript"></script>
+
+	<!-- Additional CSS include -->
+	<link rel="stylesheet" href="../vendor/lato/css/lato.min.css" />
+
+	<link rel="shortcut icon" type="image/png" href="../tshirt.png">
+
+	<!-- Custom CSS -->
+	<style type="text/css">
+		html, body { width:100%; height:100% }
+
+		html,
+		body {
+			font: 16px/160%"Lato", sans-serif;
+			color: #333;
+			padding: 30px 0;
+		}
+		body {
+			width: 80%;
+			padding: 0;
+			margin: 0 auto;
+		}
+		h1 {
+			margin: 0;
+			padding: 12px 0;
+		}
+		p {
+			margin: 0;
+			padding: 8px 0;
+		}
+		pre {
+			background: #fafafa;
+			border: 1px solid #f5f5f5;
+			padding: 10px;
+		}
+		.scrollWrapper,
+		.scrollWrapperRubber,
+		.scrollWrapperHorizontal,
+		.scrollWrapperBoth,
+		.scrollWrapperBothSmaller {
+			overflow: hidden;
+			width: 100%;
+			height: 250px;
+		}
+		.scrollWrapperHorizontal > div {
+			width: 1500px;
+		}
+		.scrollWrapperBoth > div {
+			width: 1500px;
+		}
+		.scrollWrapperBothSmaller > div {
+			width: 50%;
+		}
+		.example {
+			padding: 10px 20px;
+			background: #f5f5f5;
+			margin: 0 0 30px;
+		}
+		a {
+			color: #a00
+		}
+	</style>
+</head>
+
+<body>
+	<h1>T-shirt Scroll</h1>
+	<p>Apply a scroll momentum, Makes sure the outer tag is wrapped with overflow:hidden in it.</p>
+
+	<h2>Single Scroll</h2>
+	<p>By applying the plugins into the selector, without any configuration. </p>
+	<pre>
+$(function () {
+	$(".scrollWrapper > div").scroll ();
+});
+	</pre>
+	<p>Example:</p>
+	<div class="example">
+		<div class="scrollWrapper">
+			<div>
+				<h1>THE UGLY DUCKLING</h1>
+				<p>Once upon a time, there lived a mother duck with six cute yellow ducklings and one strange looking gray duckling.</p>
+				<p>The gray duckling was very unhappy. His brothers didn’t want to play with him. He felt that nobody wanted him.</p>
+				<p>One day he ran away. He asked every bird he met if they knew why he looked so different. They all told him they did not know any duckling as ugly as he.</p>
+				<p>He went to live on a pond far from his home. There was plenty of food, but he was lonely.</p>
+				<p>One day he saw a flock of beautiful birds flying away. They were white, with long slender necks and large wings. "If only I could look like they do," said the duckling.</p>
+				<p>Winter came and the water in the pond froze. The poor duckling would have died if it had not been for a kind farmer who took the duckling home.</p>
+				<p>When the duckling grew big the farmer set him free. The duckling went back to the pond where he saw himself in the water. “Goodness! How I've changed! I hardly look like myself!”</p>
+				<p>One day, the flock of beautiful birds came back to the pond. They looked just like he looked. He went to swim with them.</p>
+				<p>One day, he heard children by the pond say, "Look at that beautiful swan!" He was so proud. The ugly duckling was now a beautiful swan. And he lived happily ever.</p>
+				<p>The end</p>
+			</div>
+		</div>
+	</div>
+
+	<h2>Single Scroll With Rubber Effect</h2>
+	<p>Because we love rubber.</p>
+	<pre>
+$(".scrollWrapperRubber > div").scroll ({
+	rubber: true
+});
+	</pre>
+	<p>Example:</p>
+	<div class="example">
+		<div class="scrollWrapperRubber">
+			<div>
+				<h1>THE UGLY DUCKLING</h1>
+				<p>Once upon a time, there lived a mother duck with six cute yellow ducklings and one strange looking gray duckling.</p>
+				<p>The gray duckling was very unhappy. His brothers didn’t want to play with him. He felt that nobody wanted him.</p>
+				<p>One day he ran away. He asked every bird he met if they knew why he looked so different. They all told him they did not know any duckling as ugly as he.</p>
+				<p>He went to live on a pond far from his home. There was plenty of food, but he was lonely.</p>
+				<p>One day he saw a flock of beautiful birds flying away. They were white, with long slender necks and large wings. "If only I could look like they do," said the duckling.</p>
+				<p>Winter came and the water in the pond froze. The poor duckling would have died if it had not been for a kind farmer who took the duckling home.</p>
+				<p>When the duckling grew big the farmer set him free. The duckling went back to the pond where he saw himself in the water. “Goodness! How I've changed! I hardly look like myself!”</p>
+				<p>One day, the flock of beautiful birds came back to the pond. They looked just like he looked. He went to swim with them.</p>
+				<p>One day, he heard children by the pond say, "Look at that beautiful swan!" He was so proud. The ugly duckling was now a beautiful swan. And he lived happily ever.</p>
+				<p>The end</p>
+			</div>
+		</div>
+	</div>
+
+	<h2>Single Horizontal Scroll</h2>
+	<p>Because it's the opposite of vertical, there are two parameters for it: scrollVertical and scrollHorizontal.</p>
+	<pre>
+$(".scrollWrapperHorizontal > div").scroll ({
+	scrollVertical: false,
+	scrollHorizontal: true
+});
+	</pre>
+	<p>Example:</p>
+	<div class="example">
+		<div class="scrollWrapperHorizontal">
+			<div>
+				<h1>THE UGLY DUCKLING</h1>
+				<p>Once upon a time, there lived a mother duck with six cute yellow ducklings and one strange looking gray duckling. The gray duckling was very unhappy. His brothers didn’t want to play with him. He felt that nobody wanted him. One day he ran away. He asked every bird he met if they knew why he looked so different. They all told him they did not know any duckling as ugly as he. He went to live on a pond far from his home. There was plenty of food, but he was lonely. One day he saw a flock of beautiful birds flying away. They were white, with long slender necks and large wings. "If only I could look like they do," said the duckling. Winter came and the water in the pond froze. The poor duckling would have died if it had not been for a kind farmer who took the duckling home. When the duckling grew big the farmer set him free. The duckling went back to the pond where he saw himself in the water. “Goodness! How I've changed! I hardly look like myself!” One day, the flock of beautiful birds came back to the pond. They looked just like he looked. He went to swim with them. One day, he heard children by the pond say, "Look at that beautiful swan!" He was so proud. The ugly duckling was now a beautiful swan. And he lived happily ever. The end</p>
+			</div>
+		</div>
+	</div>
+
+	<h2>Twin Scroll, because we can</h2>
+	<p>Apply attributes "data-twin" to your scroll element, it will detect the same value as their twin</p>
+	<div class="example">
+		<div class="scrollWrapperRubber" style="width:50%; float:left">
+			<div data-twin="twin">
+				<h1>THE UGLY DUCKLING</h1>
+				<p>Once upon a time, there lived a mother duck with six cute yellow ducklings and one strange looking gray duckling.</p>
+				<p>The gray duckling was very unhappy. His brothers didn’t want to play with him. He felt that nobody wanted him.</p>
+				<p>One day he ran away. He asked every bird he met if they knew why he looked so different. They all told him they did not know any duckling as ugly as he.</p>
+				<p>He went to live on a pond far from his home. There was plenty of food, but he was lonely.</p>
+				<p>One day he saw a flock of beautiful birds flying away. They were white, with long slender necks and large wings. "If only I could look like they do," said the duckling.</p>
+				<p>Winter came and the water in the pond froze. The poor duckling would have died if it had not been for a kind farmer who took the duckling home.</p>
+				<p>When the duckling grew big the farmer set him free. The duckling went back to the pond where he saw himself in the water. “Goodness! How I've changed! I hardly look like myself!”</p>
+				<p>One day, the flock of beautiful birds came back to the pond. They looked just like he looked. He went to swim with them.</p>
+				<p>One day, he heard children by the pond say, "Look at that beautiful swan!" He was so proud. The ugly duckling was now a beautiful swan. And he lived happily ever.</p>
+				<p>The end</p>
+			</div>
+		</div>
+		<div class="scrollWrapperRubber" style="width:50%; float:left">
+			<div data-twin="twin">
+				<h1>THE UGLY DUCKLING</h1>
+				<p>Once upon a time, there lived a mother duck with six cute yellow ducklings and one strange looking gray duckling.</p>
+				<p>The gray duckling was very unhappy. His brothers didn’t want to play with him. He felt that nobody wanted him.</p>
+				<p>One day he ran away. He asked every bird he met if they knew why he looked so different. They all told him they did not know any duckling as ugly as he.</p>
+				<p>He went to live on a pond far from his home. There was plenty of food, but he was lonely.</p>
+				<p>One day he saw a flock of beautiful birds flying away. They were white, with long slender necks and large wings. "If only I could look like they do," said the duckling.</p>
+				<p>Winter came and the water in the pond froze. The poor duckling would have died if it had not been for a kind farmer who took the duckling home.</p>
+				<p>When the duckling grew big the farmer set him free. The duckling went back to the pond where he saw himself in the water. “Goodness! How I've changed! I hardly look like myself!”</p>
+				<p>One day, the flock of beautiful birds came back to the pond. They looked just like he looked. He went to swim with them.</p>
+				<p>One day, he heard children by the pond say, "Look at that beautiful swan!" He was so proud. The ugly duckling was now a beautiful swan. And he lived happily ever.</p>
+				<p>The end</p>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+
+	<h2>Single Free Scroll</h2>
+	<p>Sometime you need to scroll for both side, such as in map like navigation. Do something like this.</p>
+	<pre>
+$(".scrollWrapperBoth > div").scroll ({
+	scrollVertical: true,
+	scrollHorizontal: true
+});
+	</pre>
+	<p>Example:</p>
+	<div class="example">
+		<div class="scrollWrapperBoth">
+			<div >
+				<h1>THE UGLY DUCKLING</h1>
+				<p>Once upon a time, there lived a mother duck with six cute yellow ducklings and one strange looking gray duckling. The gray duckling was very unhappy. His brothers didn’t want to play with him. He felt that nobody wanted him. One day he ran away. He asked every bird he met if they knew why he looked so different. They all told him they did not know any duckling as ugly as he. He went to live on a pond far from his home. There was plenty of food, but he was lonely. One day he saw a flock of beautiful birds flying away. They were white, with long slender necks and large wings. "If only I could look like they do," said the duckling. Winter came and the water in the pond froze. The poor duckling would have died if it had not been for a kind farmer who took the duckling home. When the duckling grew big the farmer set him free. The duckling went back to the pond where he saw himself in the water. “Goodness! How I've changed! I hardly look like myself!” One day, the flock of beautiful birds came back to the pond. They looked just like he looked. He went to swim with them. One day, he heard children by the pond say, "Look at that beautiful swan!" He was so proud. The ugly duckling was now a beautiful swan. And he lived happily ever. The end</p>
+				<p>Once upon a time, there lived a mother duck with six cute yellow ducklings and one strange looking gray duckling. The gray duckling was very unhappy. His brothers didn’t want to play with him. He felt that nobody wanted him. One day he ran away. He asked every bird he met if they knew why he looked so different. They all told him they did not know any duckling as ugly as he. He went to live on a pond far from his home. There was plenty of food, but he was lonely. One day he saw a flock of beautiful birds flying away. They were white, with long slender necks and large wings. "If only I could look like they do," said the duckling. Winter came and the water in the pond froze. The poor duckling would have died if it had not been for a kind farmer who took the duckling home. When the duckling grew big the farmer set him free. The duckling went back to the pond where he saw himself in the water. “Goodness! How I've changed! I hardly look like myself!” One day, the flock of beautiful birds came back to the pond. They looked just like he looked. He went to swim with them. One day, he heard children by the pond say, "Look at that beautiful swan!" He was so proud. The ugly duckling was now a beautiful swan. And he lived happily ever. The end</p>
+				<p>Once upon a time, there lived a mother duck with six cute yellow ducklings and one strange looking gray duckling. The gray duckling was very unhappy. His brothers didn’t want to play with him. He felt that nobody wanted him. One day he ran away. He asked every bird he met if they knew why he looked so different. They all told him they did not know any duckling as ugly as he. He went to live on a pond far from his home. There was plenty of food, but he was lonely. One day he saw a flock of beautiful birds flying away. They were white, with long slender necks and large wings. "If only I could look like they do," said the duckling. Winter came and the water in the pond froze. The poor duckling would have died if it had not been for a kind farmer who took the duckling home. When the duckling grew big the farmer set him free. The duckling went back to the pond where he saw himself in the water. “Goodness! How I've changed! I hardly look like myself!” One day, the flock of beautiful birds came back to the pond. They looked just like he looked. He went to swim with them. One day, he heard children by the pond say, "Look at that beautiful swan!" He was so proud. The ugly duckling was now a beautiful swan. And he lived happily ever. The end</p>
+			</div>
+		</div>
+	</div>
+	<p>&nbsp;</p>
+
+	<h2>Smaller content Scroll</h2>
+	<p>You have smaller size content, but you want them to still have scroll.</p>
+	<pre>
+$(".scrollWrapperBothSmaller > div").scroll ({
+	scrollVertical: true,
+	scrollHorizontal: true,
+	allowSmaller: true
+});
+	</pre>
+	<p>Example:</p>
+	<div class="example">
+		<div class="scrollWrapperBothSmaller">
+			<div >
+				<h1>THE UGLY DUCKLING</h1>
+				<p>Once upon a time, there lived a mother duck with six cute yellow ducklings and one strange looking gray duckling. The gray duckling was very unhappy. His brothers didn’t want to play with him. He felt that nobody wanted him. One day he ran away.</p>
+			</div>
+		</div>
+	</div>
+
+	<h2>Bonus Callback</h2>
+	<p>Sometime we just need someone to call us back, so we made this several callback. Open your Javascript console, and observe the first example.</p>
+	<pre>
+$(element).scroll ({
+	onScroll: function (posX, posY, scaleX, scaleY, originX, originY, transition) {
+		// Do something while on scroll
+	},
+	onReachTop: function (posX, posY, scaleX, scaleY, originX, originY, transition) {
+		// Do something while it reach top
+	},
+	onReachBottom: function (posX, posY, scaleX, scaleY, originX, originY, transition) {
+		// Do something while it reach bottom
+	},
+	onReachLeft: function (posX, posY, scaleX, scaleY, originX, originY, transition) {
+		// Do something while it reach left
+	},
+	onReachRight: function (posX, posY, scaleX, scaleY, originX, originY, transition) {
+		// Do something while it reach right
+	}
+});
+	</pre>
+	<p>&nbsp;</p>
+</body>
+
+<script type="text/javascript">
+	$(function () {
+		$(".scrollWrapper > div").scroll ({
+			onScroll: function (posX, posY, scaleX, scaleY, originX, originY, transition) {
+				console.log ("On Scroll", posX, posY, scaleX, scaleY, originX, originY, transition);
+			},
+			onReachTop: function (posX, posY, scaleX, scaleY, originX, originY, transition) {
+				console.log ("Reach Top", posX, posY, scaleX, scaleY, originX, originY, transition);
+			},
+			onReachBottom: function (posX, posY, scaleX, scaleY, originX, originY, transition) {
+				console.log ("Reach Bottom", posX, posY, scaleX, scaleY, originX, originY, transition);
+			},
+			onReachLeft: function (posX, posY, scaleX, scaleY, originX, originY, transition) {
+				console.log ("Reach Left", posX, posY, scaleX, scaleY, originX, originY, transition);
+			},
+			onReachRight: function (posX, posY, scaleX, scaleY, originX, originY, transition) {
+				console.log ("Reach Right", posX, posY, scaleX, scaleY, originX, originY, transition);
+			}
+		});
+		$(".scrollWrapperRubber > div").scroll ({
+			rubber: true
+		});
+		$(".scrollWrapperHorizontal > div").scroll ({
+			scrollVertical: false,
+			scrollHorizontal: true
+		});
+		$(".scrollWrapperBoth > div").scroll ({
+			scrollVertical: false,
+			scrollHorizontal: false
+		});
+		$(".scrollWrapperBothSmaller > div").scroll ({
+			scrollVertical: false,
+			scrollHorizontal: false,
+			allowSmaller: true
+		});
+	});
+</script>
+
+</html>
