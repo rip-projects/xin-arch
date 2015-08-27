@@ -12,6 +12,8 @@ bower_components/*
 node_modules/*
 /vendor/*
 vendor/*
+/www/*
+www/*
 
 /node_modules/*
 node_modules/*
