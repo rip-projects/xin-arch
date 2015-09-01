@@ -41,19 +41,20 @@
 			});
 
 			$(".navButton").click(function(){
-				$(this).toggleClass("clicked").parent().siblings(".subMenu").slideToggle(128);
+				// $(this).toggleClass("clicked").parent().siblings(".subMenu").slideToggle(128);
+				$(this).addClass("out").siblings(".in").addClass("showAfter").parent().siblings(".subMenu").addClass("show");
+			});
+			$(".in").click(function(){
+				$(this).removeClass("showAfter").siblings(".navButton").removeClass("out").parent().siblings(".subMenu").removeClass("show");
 			});
 
 
+			$(".pageSlide").owlCarousel({
+				pagination: true,
+				navigation: false
+			});
+
 			$(".bannerArea").owlCarousel({
-				// itemsCustom : [
-				// 	[0, 4],
-				// 	[480, 4],
-				// 	[768, 4],
-				// 	[1024, 4],
-				// 	[1400, 5],
-				// 	[1600, 6],
-				// ],
 				autoPlay : true,
 				pagination: true,
 				navigation: false

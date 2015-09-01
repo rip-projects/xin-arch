@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "authors": [
     "Farid Hidayat <e.faridhidayat@gmail.com>",
+    "Muhammad Ali <muhammadali.alaydrus@gmail.com>",
     "Abdul Rasman <adoel4razman@gmail.com>"
   ],
   "description": "xin-archetype.",
@@ -18,11 +19,11 @@
     "underscore": "1.8.3",
     "backbone": "1.2.1",
     "xin": "faridlab/xin#1.0.0",
-    "naked-css": "1.0.2",
+    "naked-css": "1.0.x",
     "tshirt-scroll": "0.0.6",
     "xin-theme": "adoel/xin-theme",
     "tshirt-popup": "1.0.x",
-    "jacket-awesome": "1.0.x",
+    "jacket-awesome": "2.0.x",
     "tshirt-background": "~0.0.1",
     "owl-carousel": "~1.3.2"
   },
