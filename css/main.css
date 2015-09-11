@@ -115,7 +115,7 @@ input[type="submit"].button { background: #42A3EA; border: 0; padding: 10px 16px
 .navbar .icon-menu.in { opacity: 0; position: absolute; top: 0; right: 0; pointer-events: none; }
 .navbar .icon-menu.showAfter { display: inline-block; opacity: 1; pointer-events: visible; }
 .navbar .icon-menu span,
-.navbar .icon-menu i { margin: 0; }
+.navbar .icon-menu i { margin: 0; line-height: 25px; }
 .navbar span.direct { font-size: 1.2em; padding: 0; color: #fff; line-height: 25px; font-weight: 600; padding: 10px 0 10px 10px; display: block; }
 .navbar .direct.close { padding: 10px 0 9px 15px; }
 .navbar .direct.close span { display: table; width: 20px; height: 20px; background: url(../img/close.png)center no-repeat; background-size: contain; }
@@ -218,7 +218,7 @@ input[type="submit"].button { background: #42A3EA; border: 0; padding: 10px 16px
 .xin-drawer .listview li.plain .searching input[type="text"] { padding: 10px 30px 10px 10px; }
 .xin-drawer .listview li.plain .searching i.xn-search { position: absolute; margin-top: -7px; top: 50%; right: 20px; margin-right: 0; color: #666; font-size: 1em; float: none; }
 
-.scrollVertical { position: absolute; top: 0; right: 0; left: 0; bottom: 0; overflow: hidden; }
+.scrollVertical { position: absolute!important; top: 0; right: 0; left: 0; bottom: 0; overflow: hidden; }
 .content .container { padding: 30px 15px; }
 div[data-uri="login-input"] .content .container,
 div[data-uri="register"] .content .container { padding: 10px 15px 30px 15px; }
@@ -485,6 +485,12 @@ div[data-uri="register"] .profileArea .avatarArea span { color: #fff; }
 
 
 
+.context-menu li a { color: #416B9B; font-size: 1em; line-height: 20px; }
+.context-menu li.first-child:before, 
+.context-menu li:first-child:before { top: -17px; left: 50%; margin-left: -8px; }
+
+
+
 /*MENU TOGGLE*/
 .menu-toggle-btn { cursor: pointer; display: inline-block; }
 .menu-toggle-btn span {
@@ -508,6 +514,34 @@ div[data-uri="register"] .profileArea .avatarArea span { color: #fff; }
 .toggleDrawer .menu-toggle-btn span:nth-child(3) {
 	transform: translate(0px, -5px) rotate(45deg) scalex(1);               
 	-webkit-transform: translate(0px, -5px) rotate(45deg) scalex(1);               
+}
+
+
+
+
+.item {
+	width:  50%;
+	float: left;
+	background: #2296DD;
+	border: 2px solid #fff;
+}
+
+.item.thumbnail {
+	width:  100px;
+	height: 100px;
+	background: #cfcfcf
+}
+
+.item.medium {
+	width:  150px;
+	height: 50px;
+	background: #A6E392
+}
+
+.item.large {
+	width:  200px;
+	height: 100px;
+	background: #D092E3
 }
 
 
