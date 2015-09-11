@@ -95,7 +95,7 @@ input[type="submit"].button { background: #42A3EA; border: 0; padding: 10px 16px
 .navbar .span-8,
 .navbar .span-9,
 .navbar .span-10 { float: none; display: inline-block; vertical-align: middle; }
-.navbar .span-8 { width: 64.5%; }
+.navbar .span-8 { width: 64.4%; }
 .navbar .span-10 { width: 80%; }
 .navbar .subMenu .span-2 { width: auto; }
 .navbar a { font-size: 1.5em; line-height: 25px; display: inline-block; width: auto; color: #fff; }
@@ -116,7 +116,7 @@ input[type="submit"].button { background: #42A3EA; border: 0; padding: 10px 16px
 .navbar .icon-menu.showAfter { display: inline-block; opacity: 1; pointer-events: visible; }
 .navbar .icon-menu span,
 .navbar .icon-menu i { margin: 0; line-height: 25px; }
-.navbar span.direct { font-size: 1.2em; padding: 0; color: #fff; line-height: 25px; font-weight: 600; padding: 10px 0 10px 10px; display: block; }
+.navbar span.direct { font-size: 1.2em; padding: 0; color: #fff; line-height: 23px; font-weight: 600; padding: 10px 0 10px 10px; display: block; }
 .navbar .direct.close { padding: 10px 0 9px 15px; }
 .navbar .direct.close span { display: table; width: 20px; height: 20px; background: url(../img/close.png)center no-repeat; background-size: contain; }
 
@@ -163,7 +163,7 @@ input[type="submit"].button { background: #42A3EA; border: 0; padding: 10px 16px
 	transition: all .1s ease;
 }
 .searching .search.show { opacity: 1; pointer-events: visible; }
-.searching .search .span-9 { width: 74%; padding: 8px 0 8px 15px; }
+.searching .search .span-9 { width: 73.8%; padding: 8px 0 8px 15px; }
 .searching .search .span-3 { padding-right: 15px; }
 .searching .search input[type="text"] { font-size: 1.1em; height: auto; line-height: 120%; padding: 5px 10px; }
 .searching .search input[type="reset"] { margin: 0; color: #fff; border: 0; display: block; text-align: right; width: 100%; padding: 0; font-size: 1.2em; padding: 8px 0; outline: 0; font-weight: 600; background-color: transparent; }
@@ -227,7 +227,7 @@ div[data-uri="register"] .content .container { padding: 10px 15px 30px 15px; }
 .listViewContainer { padding: 30px 0 0px; }
 .listViewContainer:first-child { padding: 0; }
 .listView {
-	padding: 0 0 0 10px; background: #f9f9f9; border: 1px solid #ddd;
+	background: #f9f9f9; border: 1px solid #ddd;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
@@ -242,7 +242,7 @@ div[data-uri="register"] .content .container { padding: 10px 15px 30px 15px; }
 .listView input[type="password"],
 .listView input[type="email"] { padding: 10px 0; display: block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; font-weight: 400; color: #444; font-size: 1em; border: 0; border-bottom: 1px solid #ddd; background-color: transparent; border-radius: 0; }
 .listView .listArea { list-style: none; display: inline-block; vertical-align: middle; width: 100%; padding: 0; margin: 0; }
-.listView .listArea li { position: relative; margin: 0; }
+.listView .listArea>li { padding: 0 0 0 10px; position: relative; margin: 0; }
 .listView .listArea .inputArea { padding-left: 30px; }
 .listView .listArea .inputArea.flat { padding-left: 5px; }
 .listView .listArea .icon { position: absolute; top: 50%; margin-top: -12px; color: #666; font-size: 1.3em; width: 18px; text-align: center; }
@@ -279,7 +279,7 @@ div[data-uri="register"] .content .container { padding: 10px 15px 30px 15px; }
 .listView .listArea.large a { padding: 15px 0; }
 .listView.full { padding: 0; }
 .listView.full .listArea li { padding-left: 10px; min-height: 52px; }
-.listView.full .listArea li:hover { background: #eeeeee; }
+.listView .listArea li:hover { background: #e5e5e5; }
 .listView.full .listArea .image { width: 40px; height: 40px; margin-top: -20px; }
 .listView.full .listArea .inputArea { padding-left: 50px; }
 .listView.full .listArea .inputArea a { white-space: normal; position: relative; padding-right: 0; }
@@ -314,7 +314,7 @@ div[data-uri="register"] .content .container { padding: 10px 15px 30px 15px; }
 .profileArea { padding: 0; }
 .profileArea .listArea,
 .profileArea .avatarArea { display: inline-block; vertical-align: middle; }
-.profileArea .listArea { width: 69%; padding-right: 5px; }
+.profileArea .listArea { width: 68.6%; padding-right: 5px; }
 .profileArea .avatarArea { width: 30%; text-align: center; padding-right: 10px; }
 .profileArea .avatarArea a { display: table; float: right; }
 .profileArea .avatarArea span { margin-top: 10px; display: block; font-size: 0.9em; color: #42A3EA; font-weight: 600; }
