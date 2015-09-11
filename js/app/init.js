@@ -41,7 +41,7 @@
 			});
 
 			$(".navButton").click(function(){
-				// $(this).toggleClass("clicked").parent().siblings(".subMenu").slideToggle(128);
+				// $(this).toggleClass("clicked").parent().siblings(".subMenu").slideToggle(128).addClass("showAfter");
 				$(this).addClass("out").siblings(".in").addClass("showAfter").parent().siblings(".subMenu").addClass("show");
 			});
 			$(".in").click(function(){
@@ -73,6 +73,22 @@
 				pagination: false,
 				navigation: false
 			});
+
+
+			$('#masonry').masonry({
+				itemSelector: '.item',
+				isAnimated: true
+			});
+
+			// var $container = $('#masonry');
+			// $container.imagesLoaded(function(){
+			// 	$container.masonry({
+			// 		itemSelector : '.item',
+			// 		columnWidth : 200,
+			// 		gutterWidth: 20,
+			// 		percentPosition: true
+			// 	});
+			// });
 
 
 

@@ -12,22 +12,20 @@
 
     <!--    ##Start Production Stylesheet## -->
     <link rel="stylesheet" type="text/css" href="dist/css/production.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/extensions.min.css">
     <!--    ##End Production Stylesheet## -->
 
-    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./css/style.css" /> -->
 
        <!-- ##Start Development Stylesheet## -->
     <!-- <link rel="stylesheet" type="text/css" href="vendor/xin/css/xin.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/xin/css/xin-contrib.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/jacket-awesome/dist/css/jacket-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="vendor/naked-css/css/naked.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="vendor/xin-theme/style/style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="vendor/naked-css/css/naked.css" />
 
     <link rel="stylesheet" type="text/css" href="vendor/owl-carousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="vendor/owl-carousel/owl-carousel/owl.transitions.css">
-
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" /> -->
         <!-- ##End Development Stylesheet## -->
 
 </head>
@@ -321,6 +319,65 @@
                         </div>
                     </div>
                 </form>
+            </nav>
+        </div>
+
+        <!-- body -->
+        <div data-region="body" class="center layout-body has-tabstrip"></div>
+    </div>
+
+    <div data-role="layout" data-id="masonry" class="xc-flex vertical">
+        <!-- nav -->
+        <div data-region="header">
+            <nav class="navbar navbar-default row" role="navigation">
+                <div class="span-2">
+                    <a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false">
+                        <div class="menu-toggle-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="span-8">
+                    <h6 class="label">Masonry</h6>
+                </div>
+                <div class="span-2">
+                    <span class="icon-menu navButton">
+                        <i class="pull-right xn xn-down-open-big"></i>
+                    </span>
+                    <span class="icon-menu in">
+                        <i class="pull-right xn xn-up-open-big"></i>
+                    </span>
+                </div>
+                <div class="subMenu">
+                    <div class="row subNav">
+                        <div class="span-3">
+                            <a href="#">
+                                <i class="xn xn-heart-empty"></i>
+                                <span>Favorite</span>
+                            </a>
+                        </div>
+                        <div class="span-3">
+                            <a href="#">
+                                <i class="xn xn-block"></i>
+                                <span>Block</span>
+                            </a>
+                        </div>
+                        <div class="span-3">
+                            <a href="#">
+                                <i class="xn xn-trash"></i>
+                                <span>Delete</span>
+                            </a>
+                        </div>
+                        <div class="span-3">
+                            <a href="#">
+                                <i class="xn xn-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
 
@@ -1006,6 +1063,31 @@
             </div>
         </div>
 
+
+
+        <!-- ========== MASONRY ==========-->
+        <div data-role="view" data-uri="masonry" data-id="page.masonry" data-title="Masonry" data-layout="masonry" id="scrolling">
+            <div class="scrollVertical">
+                <div class="content scroll">
+                    <div id="masonry">
+                        <img class="item" src="img/background3.jpg" alt="">
+                        <img class="item" src="img/background2.jpg" alt="">
+                        <img class="item" src="img/raisa.png" alt="">
+                        <img class="item" src="img/cat.jpg" alt="">
+                        <img class="item" src="img/background1.jpg" alt="">
+                        <img class="item" src="img/background3.jpg" alt="">
+                        <img class="item" src="img/background2.jpg" alt="">
+                        <img class="item" src="img/raisa.png" alt="">
+                        <img class="item" src="img/cat.jpg" alt="">
+                        <img class="item" src="img/background1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
         <!-- ========== FORM ==========-->
         <div data-role="view" data-uri="form" data-title="Form" data-layout="form" id="scrolling">
             <div class="scrollVertical">
@@ -1531,6 +1613,13 @@
                             <span class="arrow xn xn-right-open-mini iconRight"></span>
                         </a>
                     </li>
+                    <li class="plain">
+                        <a href="#masonry">
+                            <i class="xn xn-layout iconLeft"></i>
+                            <span>Masonry</span>
+                            <span class="arrow xn xn-right-open-mini iconRight"></span>
+                        </a>
+                    </li>
                 </ul>
             </li>
             <li class="list-group-container logout">
@@ -1556,38 +1645,40 @@
 
     <!--    ##Start Production Javascript## -->
     <script type="text/javascript" src="dist/js/vendor.min.js"></script>
+    <script type="text/javascript" src="dist/js/extensions.min.js"></script>
     <!-- ##End Production Javascript## -->
 
-       <!-- ##Start Development Javascript## -->
 
+    <!-- ##Start Development Javascript## -->
     <!--<script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="vendor/underscore/underscore-min.js"></script>
     <script type="text/javascript" src="vendor/backbone/backbone-min.js"></script>
     <script type="text/javascript" src="vendor/localforage/dist/localforage.min.js"></script>
     <script type="text/javascript" src="vendor/touchswipe/jquery.touchSwipe.min.js"></script>
     <script type="text/javascript" src="vendor/xin/js/xin.js"></script>-->
-            <!-- ##End Development Javascript## -->
 
 
     <!-- ##Development Javascript## -->
-    <script type="text/javascript" src="vendor/tshirt-scroll/tshirt-scroll.js"></script>
-    <script type="text/javascript" src="vendor/tshirt-popup/tshirt-popup.js"></script>
-    <script type="text/javascript" src="vendor/hammerjs/hammer.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery-hammerjs/jquery.hammer.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-    <script type="text/javascript" src="vendor/tshirt-background/tshirt-background.js"></script>
-    <script type="text/javascript" src="vendor/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+    <!-- <script type="text/javascript" src="vendor/hammerjs/hammer.min.js"></script>
+    // <script type="text/javascript" src="vendor/jquery-hammerjs/jquery.hammer.min.js"></script>
+    // <script type="text/javascript" src="vendor/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    // <script type="text/javascript" src="vendor/tshirt-background/tshirt-background.js"></script>
+    // <script type="text/javascript" src="vendor/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+    // <script type="text/javascript" src="vendor/masonry/dist/masonry.pkgd.min.js"></script>
+    // <script type="text/javascript" src="vendor/tshirt-scroll/tshirt-scroll.js"></script>
+    // <script type="text/javascript" src="vendor/tshirt-popup/tshirt-popup.js"></script> -->
+    <!--<script type="text/javascript" src="vendor/masonry/masonry.js"></script>-->
 
-
-    <script type="text/javascript" src="./js/collections/countries.js"></script>
-    <script type="text/javascript" src="./js/api/db.js"></script>
-    <script type="text/javascript" src="./js/app/constant.js"></script>
-    <script type="text/javascript" src="./js/app/directives.js"></script>
-    <script type="text/javascript" src="./js/app/middlewares.js"></script>
-    <script type="text/javascript" src="./js/app/app.js"></script>
-    <script type="text/javascript" src="./js/app/config.js"></script>
-    <script type="text/javascript" src="./js/app/routes.js"></script>
-    <script type="text/javascript" src="./js/app/init.js"></script>
+    <!-- <script type="text/javascript" src="./js/collections/countries.js"></script>
+    // <script type="text/javascript" src="./js/api/db.js"></script>
+    // <script type="text/javascript" src="./js/app/constant.js"></script>
+    // <script type="text/javascript" src="./js/app/directives.js"></script>
+    // <script type="text/javascript" src="./js/app/middlewares.js"></script>
+    // <script type="text/javascript" src="./js/app/app.js"></script>
+    // <script type="text/javascript" src="./js/app/config.js"></script>
+    // <script type="text/javascript" src="./js/app/routes.js"></script>
+    // <script type="text/javascript" src="./js/app/init.js"></script> -->
+    <!-- ##End Development Javascript## -->
 
 
 </body>

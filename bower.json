@@ -20,12 +20,13 @@
     "backbone": "1.2.1",
     "xin": "faridlab/xin#1.0.0",
     "naked-css": "1.0.x",
-    "tshirt-scroll": "0.0.6",
-    "xin-theme": "adoel/xin-theme",
+    "tshirt-scroll": "1.0.6.fix-1",
+    "jquery-mousewheel": "~3.1.x",
     "tshirt-popup": "1.0.x",
     "jacket-awesome": "2.0.x",
     "tshirt-background": "~0.0.1",
-    "owl-carousel": "~1.3.2"
+    "owl-carousel": "~1.3.2",
+    "masonry": "desandro/masonry"
   },
   "license": "MIT",
   "homepage": "xinix.co.id",
