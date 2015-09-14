@@ -80,6 +80,15 @@
 				isAnimated: true
 			});
 
+
+			$(".actionShow").click(function(){
+				$(".actionSheet").addClass("show");
+			});
+
+			$(".actionSheet .cancel").click(function(){
+				$(".actionSheet").removeClass("show");
+			});
+
 			// var $container = $('#masonry');
 			// $container.imagesLoaded(function(){
 			// 	$container.masonry({
