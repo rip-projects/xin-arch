@@ -464,18 +464,27 @@ div[data-uri="register"] .profileArea .avatarArea span { color: #fff; }
 .contentSlide .titleArea h1 { margin: 0; }
 .contentSlide .imageArea img { display: table; width: 100%; }
 
+.animated {
+	-webkit-animation-duration: .3s;
+	animation-duration: .3s;
+}
+
 .actionSheet {
-	display: none;
+	/*display: none;*/
+	display: block;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	left: 0;
 	top: 0;
 	background: rgba(0,0,0,.5);
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
 }
 .actionSheet.show {
-	display: block;
-    z-index: 9999;
+    opacity: 1;
+    pointer-events: auto;
 }
 .actionSheet .actionArea {
 	position: absolute;
@@ -484,15 +493,15 @@ div[data-uri="register"] .profileArea .avatarArea span { color: #fff; }
     bottom: 10px;
     top: initial;
 }
-.actionSheet ul {
+.actionSheet .actionArea ul {
     margin: 0 0 10px;
 	padding: 0;
 	list-style: none;
 }
-.actionSheet ul:last-child {
+.actionSheet .actionArea ul:last-child {
 	margin: 0;
 }
-.actionSheet ul li {
+.actionSheet .actionArea ul li {
     font-size: 20px;
     color: #2087fc;
     text-align: center;
@@ -500,28 +509,105 @@ div[data-uri="register"] .profileArea .avatarArea span { color: #fff; }
 	background-color: #fff;
 	padding: 10px 0;
 }
-.actionSheet ul li:hover {
+.actionSheet .actionArea ul li:hover {
 	background-color: #e5e5e5;
 }
-.actionSheet ul li.label:hover {
+.actionSheet .actionArea ul li.label:hover {
 	background-color: #fff;
 }
-.actionSheet ul li:first-child {
+.actionSheet .actionArea ul li:first-child {
 	border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
-.actionSheet ul li:last-child {
+.actionSheet .actionArea ul li:last-child {
 	margin: 0;
 	border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.actionSheet ul li.label {
+.actionSheet .actionArea ul li.label {
 	font-size: 14px;
     color: #666;
 }
-.actionSheet ul li.red {
+.actionSheet .actionArea ul li.red {
 	color: #fd3c31;
 }
+
+.actionSheet .actionList {
+	position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #fff;
+}
+.ios .actionList .headArea {
+	padding-top: 20px;
+}
+.actionList .headArea {
+	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: initial;
+	background: #f8f8f8;
+    border-bottom: 1px solid #c8c8c8;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+.actionList .label {
+	font-size: 1.2em;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 600;
+    padding: 10px 0;
+    letter-spacing: .3pt;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.actionList .close {
+	line-height: 25px;
+    font-weight: 600;
+    padding: 10px 10px 10px 0;
+    color: #2087fc;
+    text-align: right;
+}
+.ios .actionList .contentArea {
+    top: 66px;
+}
+.actionList .contentArea {
+	position: absolute;
+    top: 46px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.actionList .listView {
+	background: transparent;
+	border-radius: 0;
+	border: 0;
+}
+.actionList .listView span.text {
+    font-size: 16px;
+    border-color: #e5e5eb;
+    padding: 10px 36px 10px 0;
+}
+.actionList .listView span.text .xn {
+	margin: 0;
+    position: absolute;
+    right: 10px;
+    color: #2087fc;
+}
+.actionList .listView .listArea {
+    padding-bottom: 1px;
+	box-shadow: 0 -1px rgba(0,0,0,0.08),0 1px rgba(0,0,0,0.07),0 1px 1px rgba(0,0,0,0.05);
+}
+.actionList .listView .listArea li {
+	margin-bottom: -1px;
+}
+
+.scrollbar { display: none!important; }
+
 
 
 

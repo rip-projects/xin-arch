@@ -83,10 +83,22 @@
 
 			$(".actionShow").click(function(){
 				$(".actionSheet").addClass("show");
+				$(".actionSheet .actionArea").addClass("slideInUp").removeClass("slideOutDown");
+				$(".actionSheet .actionList").addClass("slideInUp").removeClass("slideOutDown");
 			});
 
 			$(".actionSheet .cancel").click(function(){
-				$(".actionSheet").removeClass("show");
+				$(".actionSheet .actionArea").removeClass("slideInUp").addClass("slideOutDown");
+	    		setTimeout(function() {
+					$(".actionSheet").removeClass("show");
+	    		}, 300);
+			});
+
+			$(".actionSheet .close").click(function(){
+				$(".actionSheet .actionList").removeClass("slideInUp").addClass("slideOutDown");
+	    		setTimeout(function() {
+					$(".actionSheet").removeClass("show");
+	    		}, 300);
 			});
 
 			// var $container = $('#masonry');

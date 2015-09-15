@@ -42,6 +42,7 @@ var js = [
     ], cssExtensions = [
         "./vendor/owl-carousel/owl-carousel/owl.carousel.css",
         "./vendor/owl-carousel/owl-carousel/owl.transitions.css",
+        "./vendor/animate.css/animate.css"
     ], fonts = [
         "./vendor/jacket-awesome/dist/fonts/*.*"
     ], font = [
