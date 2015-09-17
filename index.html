@@ -135,7 +135,10 @@
                     </a>
                 </div>
                 <div class="span-8">
-                    <h6 class="label">Profile</h6>
+                    <h6 class="label actionShow">
+                        Profile
+                        <span class="xn xn-down-dir"></span>
+                    </h6>
                 </div>
                 <div class="span-2">
                     <a href="#edit-profile" class="link">Edit</a>
@@ -382,6 +385,39 @@
 
         <!-- body -->
         <div data-region="body" class="center layout-body has-tabstrip"></div>
+    </div>
+
+    <div data-role="layout" data-id="tabs" class="xc-flex vertical">
+        <!-- nav -->
+        <div data-region="header">
+            <nav class="navbar navbar-default row" role="navigation">
+                <div class="span-2">
+                    <a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false">
+                        <div class="menu-toggle-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="span-8">
+                    <h6 class="label">Tabs</h6>
+                </div>
+                <div class="span-2">
+                    &nbsp;
+                </div>
+                <div class="navTabs three">
+                    <ul class="button-group centered">
+                        <li class="active"><a href="#" class="button">Recent</a></li>
+                        <li><a href="#" class="button">Titles</a></li>
+                        <li><a href="#" class="button">Categories</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- body -->
+        <div data-region="body" class="center layout-body has-tabstrip tabsArea"></div>
     </div>
 
     <div data-role="layout" data-id="form" class="xc-flex vertical">
@@ -1062,8 +1098,6 @@
             </div>
         </div>
 
-
-
         <!-- ========== MASONRY ==========-->
         <div data-role="view" data-uri="masonry" data-id="page.masonry" data-title="Masonry" data-layout="masonry" id="scrolling">
             <div class="scrollVertical">
@@ -1084,8 +1118,32 @@
             </div>
         </div>
 
-
-
+        <!-- ========== TABS ==========-->
+        <div data-role="view" data-uri="tabs" data-title="Tabs" data-layout="tabs" id="scrolling">
+            <div class="scrollVertical">
+                <div class="content scroll">
+                    <div class="container">
+                        <h2>Example Paragraph</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- ========== FORM ==========-->
         <div data-role="view" data-uri="form" data-title="Form" data-layout="form" id="scrolling">
@@ -1574,6 +1632,164 @@
         </div>
         <!-- end tab Strip-->
 
+
+
+        <!-- ============= ActionSheet AREA ============= -->
+        <!-- Model 1 -->
+        <div class="actionSheet">
+            <div class="actionList animated" id="scrolling">
+                <div class="headArea row">
+                    <div class="span-2">
+                        &nbsp;
+                    </div>
+                    <div class="span-8">
+                        <h6 class="label">Collections</h6>
+                    </div>
+                    <div class="span-2">
+                        <h6 class="close">Done</h6>
+                    </div>
+                </div>
+                <div class="contentArea">
+                    <div class="scrollVertical">
+                        <div class="content scroll">
+                            <div class="listView row">
+                                <ul class="listArea">
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">
+                                                List 1
+                                                <i class="xn xn-check"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 2</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 3</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 4</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 5</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 6</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 7</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 8</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 9</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">
+                                                List 1
+                                                <i class="xn xn-check"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 2</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 3</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 4</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 5</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 6</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 7</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 8</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="inputArea flat">
+                                            <span class="text">List 9</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end Model 1 -->
+
+        <!-- Model 2 -->
+        <!-- <div class="actionSheet">
+            <div class="actionArea animated">
+                <ul>
+                    <li class="label">
+                        Sort by:
+                    </li>
+                    <li>
+                        Time Received
+                        <span class="xn xn-check"></span>
+                    </li>
+                    <li>
+                        Favorite
+                    </li>
+                    <li class="red">
+                        Delete
+                    </li>
+                </ul>
+                <ul>
+                    <li class="cancel">
+                        <strong>Cancel</strong>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+        <!-- end Model 2 -->
+        <!-- ============================================ -->
+
+
+
         <span class="exit hide">+</span>
         <div class="overlay hide"></div>
     </div>
@@ -1616,6 +1832,13 @@
                         <a href="#masonry">
                             <i class="xn xn-layout iconLeft"></i>
                             <span>Masonry</span>
+                            <span class="arrow xn xn-right-open-mini iconRight"></span>
+                        </a>
+                    </li>
+                    <li class="plain">
+                        <a href="#tabs">
+                            <i class="xn xn-window iconLeft"></i>
+                            <span>Tabs</span>
                             <span class="arrow xn xn-right-open-mini iconRight"></span>
                         </a>
                     </li>
