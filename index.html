@@ -387,6 +387,39 @@
         <div data-region="body" class="center layout-body has-tabstrip"></div>
     </div>
 
+    <div data-role="layout" data-id="tabs" class="xc-flex vertical">
+        <!-- nav -->
+        <div data-region="header">
+            <nav class="navbar navbar-default row" role="navigation">
+                <div class="span-2">
+                    <a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false">
+                        <div class="menu-toggle-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="span-8">
+                    <h6 class="label">Tabs</h6>
+                </div>
+                <div class="span-2">
+                    &nbsp;
+                </div>
+                <div class="navTabs three">
+                    <ul class="button-group centered">
+                        <li class="active"><a href="#" class="button">Recent</a></li>
+                        <li><a href="#" class="button">Titles</a></li>
+                        <li><a href="#" class="button">Categories</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- body -->
+        <div data-region="body" class="center layout-body has-tabstrip tabsArea"></div>
+    </div>
+
     <div data-role="layout" data-id="form" class="xc-flex vertical">
         <!-- nav -->
         <div data-region="header">
@@ -1085,6 +1118,33 @@
             </div>
         </div>
 
+        <!-- ========== TABS ==========-->
+        <div data-role="view" data-uri="tabs" data-title="Tabs" data-layout="tabs" id="scrolling">
+            <div class="scrollVertical">
+                <div class="content scroll">
+                    <div class="container">
+                        <h2>Example Paragraph</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- ========== FORM ==========-->
         <div data-role="view" data-uri="form" data-title="Form" data-layout="form" id="scrolling">
             <div class="scrollVertical">
@@ -1772,6 +1832,13 @@
                         <a href="#masonry">
                             <i class="xn xn-layout iconLeft"></i>
                             <span>Masonry</span>
+                            <span class="arrow xn xn-right-open-mini iconRight"></span>
+                        </a>
+                    </li>
+                    <li class="plain">
+                        <a href="#tabs">
+                            <i class="xn xn-window iconLeft"></i>
+                            <span>Tabs</span>
                             <span class="arrow xn xn-right-open-mini iconRight"></span>
                         </a>
                     </li>
