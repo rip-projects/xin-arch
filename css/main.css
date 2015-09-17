@@ -183,8 +183,8 @@ input[type="submit"].button { background: #2087fc; border: 0; padding: 10px 16px
 .searching .search input[type="reset"]:hover { background: transparent; opacity: 0.5; }
 
 .navTabs { padding: 0 10px 10px 10px; }
-.navTabs .button-group { margin-bottom: 0; width: 100%; text-align: center; }
-.navTabs .button-group li { width: 50%; border: 1px solid #2087fc; float: none; display: inline-block; }
+.navTabs ul.button-group { margin: 0 auto; width: 100%; text-align: center; }
+.navTabs .button-group li { width: 50%; border: 1px solid #2087fc; }
 .navTabs.three .button-group li { width: 33%; }
 .navTabs.three .button-group li:nth-child(2) { width: 34%; }
 .navTabs .button-group li.active { background: #2087fc; }
