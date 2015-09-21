@@ -23,9 +23,9 @@
 				scrollVertical: true
 			});
 
-			$(".drawer-button").click(function() {
-				$('[data-role="pane"]').toggleClass('toggleDrawer');
-			});
+			// $(".drawer-button").click(function() {
+			// 	$('[data-role="pane"]').toggleClass('toggleDrawer');
+			// });
 
 			$('[data-region="body"]').on('click', function(evt){
 				$('[data-role="pane"]').removeClass('toggleDrawer');
@@ -111,8 +111,7 @@
 			// 	});
 			// });
 
-
-
+			touch.sideMenu ();
 
 
 	    	if(app.config('db')) {

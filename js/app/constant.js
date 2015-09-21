@@ -9,6 +9,12 @@ window.SWIPE_VERTICAL_DIRECTION = "vertical";
 
 window.HORIZONTAL_DIRECTION = "horizontal";
 window.VERTICAL_DIRECTION = "vertical";
-window.ONSWIPE = false;
 
 window.DEBUG = true;
+
+window.DDMMYYYY = 'DD-MM-YYYY';
+window.MMDDYYYY = 'MM-DD-YYYY';
+window.YYYYMMDD = 'YYYY-MM-DD';
+
+window.IMPERIAL = 'imperial';
+window.METRIC = 'metric';

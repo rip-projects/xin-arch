@@ -11,6 +11,7 @@
     <title>Xin Archetype | Xinix Technology</title>
 
     <!--    ##Start Production Stylesheet## -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/extensions.min.css">
     <link rel="stylesheet" type="text/css" href="./css/production.min.css">
     <!--    ##End Production Stylesheet## -->
@@ -40,8 +41,9 @@
         <div data-region="header">
             <nav class="navbar navbar-default row" role="navigation">
                 <form action="" class="row searching">
-                    <div class="span-2">
-                        <a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false">
+                    <div class="span-2 showDrawer">
+                        <!-- <a class="drawer-button" onclick="xin.$('.xin-drawer').data('instance').show(); return false"> -->
+                        <a class="drawer-button">
                             <div class="menu-toggle-btn">
                                 <span></span>
                                 <span></span>
@@ -520,7 +522,7 @@
 
 
 <!-- ==================== BODY CONTENT ==================== -->
-    <div data-role="pane" data-transition="slide" class="xc-fill" data-id="pane">
+    <div data-role="pane" data-transition="slide" class="xc-fill" data-id="pane" id="pane">
 
         <!-- ========== LOGIN ========== -->
         <div data-role="view" data-uri="login" data-title="Login" data-layout="login" data-id="page.login">
@@ -1797,7 +1799,8 @@
 
 
 <!-- ==================== DRAWER ==================== -->
-    <div data-role="drawer" data-align="left" data-layout="drawer" style="width: 80%" id="drawer">
+    <!-- <div data-role="drawer" data-align="left" data-layout="drawer" style="width: 80%" id="drawer"> -->
+    <div data-role="drawer" data-align="left" data-layout="drawer" class="sideMenu slightlyLeft" id="sideMenu">
         <ul class="listview" data-role="list">
             <li class="list-group-container">
                 <ul class="list-group">
@@ -1865,41 +1868,44 @@
     <!-- Uncomment below when it used as Cordova app -->
     <!-- <script type="text/javascript" src="cordova.js"></script> -->
 
-    <!--    ##Start Production Javascript## -->
+    <!--    ##Start Production Javascript##
     <script type="text/javascript" src="./js/vendor.min.js"></script>
     <script type="text/javascript" src="./js/extensions.min.js"></script>
-    <!-- ##End Production Javascript## -->
+    ##End Production Javascript## -->
 
 
     <!-- ##Start Development Javascript## -->
-    <!--<script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="vendor/underscore/underscore-min.js"></script>
     <script type="text/javascript" src="vendor/backbone/backbone-min.js"></script>
-    <script type="text/javascript" src="vendor/localforage/dist/localforage.min.js"></script>
-    <script type="text/javascript" src="vendor/touchswipe/jquery.touchSwipe.min.js"></script>
-    <script type="text/javascript" src="vendor/xin/js/xin.js"></script>-->
+    <!-- <script type="text/javascript" src="vendor/localforage/dist/localforage.min.js"></script> -->
+    <!-- <script type="text/javascript" src="vendor/touchswipe/jquery.touchSwipe.min.js"></script> -->
+    <script type="text/javascript" src="vendor/xin/js/xin.js"></script>
 
+    <script type="text/javascript" src="vendor/hammerjs/hammer.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery-hammerjs/jquery.hammer.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="vendor/tshirt-background/tshirt-background.js"></script>
+    <script type="text/javascript" src="vendor/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="vendor/masonry/dist/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="vendor/tshirt-scroll/tshirt-scroll.js"></script>
+    <script type="text/javascript" src="vendor/tshirt-popup/tshirt-popup.js"></script>
+    <script type="text/javascript" src="vendor/masonry/masonry.js"></script>
 
-    <!-- ##Development Javascript## -->
-    <!-- <script type="text/javascript" src="vendor/hammerjs/hammer.min.js"></script>
-    // <script type="text/javascript" src="vendor/jquery-hammerjs/jquery.hammer.min.js"></script>
-    // <script type="text/javascript" src="vendor/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-    // <script type="text/javascript" src="vendor/tshirt-background/tshirt-background.js"></script>
-    // <script type="text/javascript" src="vendor/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
-    // <script type="text/javascript" src="vendor/masonry/dist/masonry.pkgd.min.js"></script>
-    // <script type="text/javascript" src="vendor/tshirt-scroll/tshirt-scroll.js"></script>
-    // <script type="text/javascript" src="vendor/tshirt-popup/tshirt-popup.js"></script> -->
-    <!--<script type="text/javascript" src="vendor/masonry/masonry.js"></script>-->
+    <!-- <script type="text/javascript" src="./js/collections/countries.js"></script> -->
 
-    <!-- <script type="text/javascript" src="./js/collections/countries.js"></script>
-    // <script type="text/javascript" src="./js/api/db.js"></script>
-    // <script type="text/javascript" src="./js/app/constant.js"></script>
-    // <script type="text/javascript" src="./js/app/directives.js"></script>
-    // <script type="text/javascript" src="./js/app/middlewares.js"></script>
-    // <script type="text/javascript" src="./js/app/app.js"></script>
-    // <script type="text/javascript" src="./js/app/config.js"></script>
-    // <script type="text/javascript" src="./js/app/routes.js"></script>
-    // <script type="text/javascript" src="./js/app/init.js"></script> -->
+    <script type="text/javascript" src="./js/app/constant.js"></script>
+    <script type="text/javascript" src="./js/helper/aside.js"></script>
+    <script type="text/javascript" src="./js/helper/touch.js"></script>
+
+    <script type="text/javascript" src="./js/api/db.js"></script>
+    <script type="text/javascript" src="./js/app/constant.js"></script>
+    <script type="text/javascript" src="./js/app/directives.js"></script>
+    <script type="text/javascript" src="./js/app/middlewares.js"></script>
+    <script type="text/javascript" src="./js/app/app.js"></script>
+    <script type="text/javascript" src="./js/app/config.js"></script>
+    <script type="text/javascript" src="./js/app/routes.js"></script>
+    <script type="text/javascript" src="./js/app/init.js"></script>
     <!-- ##End Development Javascript## -->
 
 
