@@ -246,26 +246,4 @@ console.log(app.config('getApi')('user.login'));
 // output: "http://xinix.co.id/api-development/user/login"
 ```
 
-
-#Cordova plugins
-*   https://github.com/brodysoft/Cordova-SQLitePlugin
-*   https://github.com/apache/cordova-plugin-file
-*   https://github.com/apache/cordova-plugin-file-transfer
-*   https://github.com/MobileChromeApps/zip
-*   https://github.com/Initsogar/cordova-activityindicator
-*   https://github.com/apache/cordova-plugin-splashscreen
-*   https://github.com/MobileChromeApps/zip
-*   https://github.com/apache/cordova-plugin-dialogs
-
-```bash
-cordova plugin add https://github.com/brodysoft/Cordova-SQLitePlugin.git
-cordova plugin add https://github.com/apache/cordova-plugin-file.git
-cordova plugin add https://github.com/apache/cordova-plugin-file-transfer.git
-cordova plugin add https://github.com/MobileChromeApps/zip.git
-cordova plugin add https://github.com/Initsogar/cordova-activityindicator.git
-cordova plugin add https://github.com/apache/cordova-plugin-splashscreen.git
-cordova plugin add https://github.com/MobileChromeApps/zip.git
-cordova plugin add https://github.com/apache/cordova-plugin-dialogs.git
-```
-
 Thats it!
