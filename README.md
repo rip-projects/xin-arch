@@ -1,7 +1,11 @@
-#Xin-archetype
+# Xin-archetype
+
+> DEPRECATED: Please see [xin-example](https://github.com/reekoheek/xin-example) to use new [xin](https://github.com/xinix-technology/xin)
+
 Pada pengembangan awal, Xin-archetype ditargetkan pada *Mobile Application* (Single Page Application).
 
-#Instalasi
+## Instalasi
+
 Xin-archetype menggunakan bower sebagai pengatur dependencies (ketergantungan) library yang dibutuhkan. lakukan `bower install` untuk mengunduh semua library yang dibutuhkan.
 
 ```bash
